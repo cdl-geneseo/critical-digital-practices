@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Critical Digital Practices
+description: Course development sandbox
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://cdl-geneseo.github.io/critical-digital-practices
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
