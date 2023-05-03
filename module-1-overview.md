@@ -5,10 +5,10 @@ layout: default
 
 ## Learning outcomes for this module
 
-At the completion of this module, you'll
+At the completion of this module, you should
 
 1.  Understand some basic operations of the computer.
-2.  Be able to describe some ways in which gender, race, and other socially-constructed concepts have influenced and continue to influence our interactions with computers.
+2.  Understand some ways in which gender, race, and other socially-constructed concepts have influenced and continue to influence our interactions with computers.
 3.  Understand the differences between common operating systems.
 4.  Understand how to navigate the file system on a Mac or Windows computer.
 
