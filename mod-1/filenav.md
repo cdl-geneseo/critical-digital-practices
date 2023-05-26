@@ -1,6 +1,8 @@
 ---
 title: Navigating a filesystem
 layout: default
+parent: Module 1
+nav_order: 4
 ---
 
 Most of the time, we navigate the filesystem on our computers through the Graphical User Interface or GUI. MacOS calls this the "Finder." Windows calls it the "File Explorer."

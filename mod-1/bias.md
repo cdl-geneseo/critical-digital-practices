@@ -1,6 +1,8 @@
 ---
 title: Humans and machines
 layout: default
+parent: Module 1
+nav_order: 5
 ---
 
 Isn't it nice that computers are pure blank slates unbound by the politics and biases that plague us humans?

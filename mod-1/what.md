@@ -1,6 +1,8 @@
 ---
 title: What is a Computer?
 layout: default
+parent: Module 1
+nav_order: 2
 ---
 
 In the age of artificial intelligence, we often see humans and computers set in opposition to one another, as in headlines asking whether computers will soon replace humans in some job category, or even develop super-powers that enable them to destroy humanity.

@@ -1,6 +1,8 @@
 ---
 title: Operating systems
 layout: default
+parent: Module 1
+nav_order: 3
 ---
 
 ## What is an operating system?
