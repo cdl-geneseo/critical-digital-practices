@@ -7,11 +7,27 @@ nav_order: 2
 
 ## The Command Line
 
-The command line is the most direct way by which you can communicate with your computer. A strictly hierarchical, linear mode of access, your command line can take some time to adjust to, especially if the directory structure is already an unfamiliar concept to you. That being said, once you get the hang of it, working out the command line is an informed and powerful way to access and get things done on your computer. You can use the command line to easily navigate to all areas of your computer, not having to rely on what\'s available via the GUI (Graphical User Interface), to manipulate files and folders, to run and automate scripts, and more.
+The command line is an interface for communicating with your computer's operaring system. You'll sometimes see it referred to with the abbreviation "CLI" for "Command Line Interface."
 
-The screenshot above shows my terminal window. Now, yours isn\'t going to look like this; mine is customized to fit my ✨aesthetic✨\... but it won\'t be too different. Yours will look especially different if you\'re operating on a Windows machine. This difference is due to the difference between command line instances known as \"shells\". For a long time, the Windows Command Line shell that was built-in was the Command Prompt, or, CMD. In 2016, PowerShell came onto the scene as an open source, cross-platform shell for the Windows command line and is widely understood as a game-changer. 
+You typically access the command line through a program called a "shell." Common shell programs for Unix-related operating systems (including macOS and Linux) are Bash (an acronym for Bourne Again SHell) and Zsh (Z shell). For Windows, there's PowerShell.
 
-Since Dr. Schacht and I are Mac users, we have little to no experience with or knowledge of PowerShell commands, only UNIX-based commands. So, to make it easy for us all to work together, we\'ve asked you all to download and install a program called [Git Bash](https://gitforwindows.org/){.inline_disabled target="_blank" rel="noopener"}, which will allow you to interact with a UNIX-familiar command line instance. \"Bash\" (Bourne Again Shell) is the command line shell most typically associated with Linux and MacOS.
+You can use the command line to navigate, access information about, and manipulate your file system (folders and files), access and manipulate peripherals (such as an external drive), and run programs. Before the advent of the graphical user interface (GUI), the command line was the only way to interact with a personal computer. Before the advent of the personal computer, a computer operator might use the command line on a device called a "terminal" to connect and interact with a computer located somewhere other than the operator's desktop. This "mainframe" computer might take up an entire room. One way to think about the command line on your desktop computer is as a kind of terminal emulator, recreating, on a single machine, that pre-graphical, text-based relationship between user and computer. This is why the program you use on a Mac to launch and work inside a shell is called `Terminal.app`. You can find it by navigating to `/Applications/Utilities/` in your file system and looking for it by name.
+
+## UNIX-like vs. Windows Commands
+
+The commands you type at the Bash/Zsh command line on a machine running macOS or Linux are sometimes similar to, but often quite different from, the commands you type in a Windows shell. Linux and macOS are said to be ["UNIX-like"](https://en.wikipedia.org/wiki/Unix-like) operating systems because of their similarity to the [UNIX](https://www.computerhope.com/jargon/u/unix.htm) operating system developed at Bell Labs in the 1960s. 
+
+There are two reasons why, in this course, you'll learn to use UNIX-like rather than Windows commands, whether or not your computer's main operating system is Windows. The first reason is simplicity. The second is that a major use of the command line is to issue commands on a computer other than your own&mdash;for example, a remote server hosting a website that belongs to you. Since many servers employ UNIX-like operating systems, it's essential to become conversant in UNIX-like commands. 
+
+Still, if you're a Windows user, you'll at least want to get yourself familiar with the way file paths are represented in Windows&mdash;in particular, the use of the backslash (`\`) where UNIX-like systems use the forward slash (`/`). (Yes, there's a difference between the two kinds of slash, and now that you know, be kind, not patronizing, when you correct friends you confuse them.)
+
+## Using Bash on a Windows machine
+
+You have a few options for installing Bash in a Windows environment. One is to install [Git Bash](https://gitforwindows.org/). This has the advantage that the installation process also installs the git software for you, ensuring that you're all set up for using git and GitHub in one of the later modules.
+
+Another very good option is to install Ubuntu Linux in a dedicated area of your Windows machine. Doing this will actually give you a working Linux system.
+
+<!--
 
 ## What does all that text even *mean*?
 
@@ -39,5 +55,4 @@ Now it\'s time to pull up your own window and see what it looks like on *your* m
 
 **Windows users:** In your search bar (either in directly in your dock or within the \"Start\" button) start typing \"Git Bash\" and select the application from the results.
 
-Try to identify everything we covered on this page in your own terminal window.
-:::
+Try to identify everything we covered on this page in your own terminal window. -->
