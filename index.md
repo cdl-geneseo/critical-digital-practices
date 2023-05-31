@@ -37,6 +37,12 @@ It also seeks to earn the adjective by advancing, in its own small way, the caus
 
 This isn't a programming course&mdash;although it will touch on a few programming basics. But as Rushkoff is suggesting here, simply to know *that* there is code behind behind an interface is to loosen somewhat its dominating grip; to understand, even in a very basic way, how that code operates is presumably to loosen it still more. Coding itself aside, this course assumes that even the simple step of interacting with your computer's operating system through the command line rather than its graphical user interface (GUI) of windows and icons&mdash;one of the first steps we'll take together&mdash;will give you a significantly greater sense of control as a digital citizen.
 
+## Isn't this all very political?
+
+Well, yeah&mdash;to the extent that it's "political" to advance values such as freedom and autonomy. And again, the impossibility of identifying significant digital practices that don't work to advance *some* set of values is part of what's asserted in the course title. But keep in mind that there's no universally accepted definition of freedom, autonomy, or any other value people care about deeply, leaving plenty of room for multiple views. And even where there may be broad agreement on definitions, that agreement doesn't translate into a unified "left," "right," or "centrist" take on any specific law, policy, or regulation designed to protect the values in question. Consider how [Section 230 of the Communications Decency Act of 1996](https://en.wikipedia.org/wiki/Section_230), or the applicability of copyright law to products of generative AI, has recently divided people who are united on other political questions.
+
+Rest assured that this course won't require you to take a particular position on these or any other issues, even as the course takes the position that understanding what's at stake in such issues will increase your own freedom and autonomy. 
+
 ## Course overview
 
 ## Improving the course
