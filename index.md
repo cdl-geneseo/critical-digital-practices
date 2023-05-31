@@ -13,7 +13,7 @@ All that said, from here on out, "you" refers to learners, not teachers.
 
 *"But lo! men have become the tools of their tools." &mdash;Henry David Thoreau,* [Walden](https://commons.digitalthoreau.org/walden/economy/economy-45-58/?s=tool#pTvsanomslitpaitaalttlhsbasnWhwrwfschjaHdaiwtwetvocpcmtBlmhbttwipfwhifsutfshWnnlcnsdoefhaCmaimiacbfmntbwaaestfhfceomlschbTapvwfiahcusl)*, 1847*
 
-You're likely familiar with the controversy raging at the present moment over something called "critical race theory." Although certain politicians have incorrectly slapped the "CRT" label on just about any mention of historical or current racism in American law, politics, and society, whether or not the mentioner has the slightest familiarity with the body of thought to which the label actually refers, these politicians are at least right in understanding critical race theory itself as an effort to understand how racism works at the level of systems and institutions: that is, to see it as not merely a matter of individual beliefs and attitudes but as something woven deeply into the fabric of American life&mdash;more "feature," you might say, than "bug."
+You're likely familiar with the controversy raging at the present moment over something called "critical race theory." Although certain politicians have incorrectly slapped the "CRT" label on just about any mention of historical or current racism in American law, politics, and society&mdash;whether or not the mentioner has the slightest familiarity with the body of thought to which the label actually refers&mdash;these politicians are at least right to regard critical race theory itself as an effort to understand how racism works at the level of systems and institutions: to understand it, that is, not merely as a matter of individual beliefs and attitudes but as something woven deeply into the fabric of American life&mdash;more "feature," you might say, than "bug."
 
 This orientation towards systems is part of what the "critical" in "critical race theory" is meant to signal. The theory is critical not only in the ordinary sense of passing negative judgment on the reality it studies, but also in several more important ways&mdash;including its systems-orientation&mdash;not obvious to anyone unfamiliar with the [broad history of "critical theory"](https://plato.stanford.edu/entries/critical-theory/) in modern social thought. Explanatory models, methodologies, and college courses&mdash;like this one&mdash; that name themselves "critical" often do so with an eye towards that history. As a result, they're likely to exhibit (at least) some combination of the following characteristics:
 
@@ -39,11 +39,20 @@ This isn't a programming course&mdash;although it will touch on a few programmin
 
 ## Isn't this all very political?
 
-Well, yeah&mdash;to the extent that it's "political" to advance values such as freedom and autonomy. And again, the impossibility of identifying significant digital practices that don't work to advance *some* set of values is part of what's asserted in the course title. But keep in mind that there's no universally accepted definition of freedom, autonomy, or any other value people care about deeply, leaving plenty of room for multiple views. And even where there may be broad agreement on definitions, that agreement doesn't translate into a unified "left," "right," or "centrist" take on any specific law, policy, or regulation designed to protect the values in question. Consider how [Section 230 of the Communications Decency Act of 1996](https://en.wikipedia.org/wiki/Section_230), or the applicability of copyright law to products of generative AI, has recently divided people who are united on other political questions.
+Well, sure&mdash;to the extent that it's political to advance values such as freedom, autonomy, and equity. Again, the impossibility of identifying significant digital practices that *don't* work to advance *some* set of values is part of what's asserted in the course title. But keep in mind that there's no universally accepted definition of freedom, autonomy, equity, or any other value people care about deeply, leaving plenty of room for multiple views. And even where there may be broad agreement on definitions, that agreement doesn't translate into a unified "left," "right," or "centrist" take on any specific law, policy, or regulation designed to protect the values in question. Consider how [Section 230 of the Communications Decency Act of 1996](https://en.wikipedia.org/wiki/Section_230), or the applicability of copyright law to products of generative AI, has recently divided people who are united on other political questions.
 
-Rest assured that this course won't require you to take a particular position on these or any other issues, even as the course takes the position that understanding what's at stake in such issues will increase your own freedom and autonomy. 
+Rest assured that this course won't require you to take a particular position on these or any other issues, even as the course takes the position that understanding what's at stake in such issues will increase your freedom and autonomy. 
 
 ## Course overview
+
+Module 1: Meet Your Computer  
+Module 2: Working at the Command Line  
+Module 3: What is Text?  
+Module 4: The Web  
+Module 5: Open for Learning  
+Module 6: Working with Data  
+Module 7: A Very Brief Introduction to the Python Programming Language  
+Module 8: Content Management: WordPress and Omeka
 
 ## Improving the course
 
