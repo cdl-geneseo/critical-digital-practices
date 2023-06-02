@@ -15,25 +15,25 @@ A few adjustments to your GUI may help make navigating via the terminal seem mor
 
 You'll want to make some adjustments to your File Explorer in Windows. To make them, open the pane that reveals File Explorer preferences by using the caret icon at the upper-right corner of an Explorer window (1), then click on the "View" tab (2). Selecting the "List" view of your files (3) will highlight the hierarchical structure of your filesystem, making the relationships between folders and files in your filesystem more transparent. Checking the File name extensions box (4) will reveal the extensions at the ends of your filenames (e.g., .png, .docx, .pdf, .jpg). (The box is not checked in the image below. You should check it.)
 
-![Windows File Explorer view](https://canvas.geneseo.edu/courses/20408/files/1304198/preview){width="1125" height="593" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304198" api-returntype="File"}
+![Windows File Explorer view](/assets/file_extensions_windows.png)
 
-## MacOS
+## macOS
 
-To show **filename extensions** in MacOS, go to Finder > Preferences > Advanced and check the box next to "Show all filename extensions."
+To show **filename extensions** in macOS, go to Finder > Preferences > Advanced and check the box next to "Show all filename extensions." (Depending on what version of macOS you're running, the path may be Finder > Settings > Advanced, and the title bar in the window may read "Finder Settings.")
 
-![View of Mac Finder Advanced Preferences to show marking Show File Extensions](https://canvas.geneseo.edu/courses/20408/files/1304202/preview){width="886" height="942" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304202" api-returntype="File"}
+![View of Mac Finder Advanced Preferences to show marking Show File Extensions](/assets/file_extensions_mac.png)
 
-To **display your files as a list**, you have two options. You can select the View > as List from the Finder. But you may find that another option makes your file hierarchy even more transparent: View > as Columns. The "column" view shows the folders and files inside an enclosing folder in the next column to the right.
+To **display your files as a list**, you have two options. You can select View > as List from the Finder. But you may find that another option makes your file hierarchy even more transparent: View > as Columns. The "column" view shows the folders and files inside an enclosing folder in the next column to the right.
 
-![Mac list view in Finder](https://canvas.geneseo.edu/courses/20408/files/1304336/preview){width="1696" height="234" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304336" api-returntype="File"}
+![Mac list view in Finder](/assets/list_view_mac.png)
 
 On your Mac, you'll also find it helpful to make sure that the following, at least, are visible in the **Sidebar**: Desktop, Documents, Downloads, ---'s Computer, and your home folder (home icon).
 
-![Mac sidebar setup in Finder](https://canvas.geneseo.edu/courses/20408/files/1304343/preview){width="842" height="1410" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304343" api-returntype="File"}
+![Mac sidebar setup in Finder](/assets/sidebar_mac.png)
 
 Finally, to further familiarize yourself with your computer's file hierarchy, show your **file path**: View > Show Path Bar. This will display a bar at the bottom of your Finder window showing you the breadcrumb trail to where you currently are in your filesystem GUI.
 
-![Example of path bar view on Mac](https://canvas.geneseo.edu/courses/20408/files/1304398/preview){width="1188" height="80" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304398" api-returntype="File"}
+![Example of path bar view on Mac](/assets/path_bar_mac.png)
 
 ## Navigating through your browser
 
@@ -43,16 +43,16 @@ To navigate your filesystem in a browser window, go to the browser's location ba
 
 Instead of typing `http://`  or `https://`, however, type `file://`. You're now telling your browser that you want to go to a location in your filesystem rather than a location on the web.
 
-How do you get to a particular location in your filesystem? Simply type the path to that location in your file hierarchy, beginning with `/Users`  (on a Mac) or `/C:/Users`  (in Windows). *Note that this results in 3 forward slashes (`///`) following `file:`*. Keep in mind that the first two are part of the protocol (`file://`) and the third is actually part of the file path (`/Users/...`  or `/C:/Users/...`).
+How do you get to a particular location in your filesystem? Simply type the path to that location in your file hierarchy, beginning with `/Users`  (on a Mac) or `/C:/Users` (in Windows). *Note that this results in 3 forward slashes (`///`) following `file:`*. Keep in mind that the first two are part of the protocol (`file://`) and the third is actually part of the file path (`/Users/...`  or `/C:/Users/...`).
 
-To navigate to your Documents folder, type `file:///Users/your_username/Documents/`  (Mac) or `file:///C:/Users/your_username/Documents/`  (Windows). Hit `Return`  or `Enter`. Depending on your operating system and browser, your browser will either take you to your Documents folder in the operating system's GUI or display the contents of the folder in your browser window.
+To navigate to your Documents folder, type `file:///Users/your_username/Documents/`  (Mac) or `file:///C:/Users/your_username/Documents/` (Windows). Hit `Return` or `Enter`. Depending on your operating system and browser, your browser will either take you to your Documents folder in the operating system's GUI or display the contents of the folder in your browser window.
 
 (In place of `your_username` type your actual username on the computer you're using.)
 
 In the Mac example below, the username has been obscured.
 
-![View of file navigation using the browser.](https://canvas.geneseo.edu/courses/20408/files/1304607/preview){width="1866" height="698" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1304607" api-returntype="File"}
+![View of file navigation using the browser.](/assets/navigate_via_browser.png)
 
 If there's a plain text (e.g., `.md`, `.txt`) file in there, or a `.html`  file, or a `.pdf`  file, or an image file (e.g., `.jpg`, `.png`) it will open right in your browser window.
 
-When you browse your filesystem this way, you may also see files and folders that are hidden from you when browsing via your GUI. Their names begin with a `.`, e.g., `.DS_Store`. These files and folders are normally hidden from users for a reason: altering them in any way can seriously affect your computer's functioning. Best to leave them alone unless you're absolutely sure you know what you're doing.
+When you browse your filesystem this way, you may also see files and folders that are hidden from you when browsing via your GUI. Their names begin with a `.`, e.g., `.DS_Store`. These files and folders are normally hidden from users for a reason: altering them in any way can seriously affect your computer's functioning. *Best to leave them alone unless you're absolutely sure you know what you're doing.*
