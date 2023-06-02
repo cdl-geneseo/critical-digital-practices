@@ -15,7 +15,7 @@ A few adjustments to your GUI may help make navigating via the terminal seem mor
 
 You'll want to make some adjustments to your File Explorer in Windows. To make them, open the pane that reveals File Explorer preferences by using the caret icon at the upper-right corner of an Explorer window (1), then click on the "View" tab (2). Selecting the "List" view of your files (3) will highlight the hierarchical structure of your filesystem, making the relationships between folders and files in your filesystem more transparent. Checking the File name extensions box (4) will reveal the extensions at the ends of your filenames (e.g., .png, .docx, .pdf, .jpg). (The box is not checked in the image below. You should check it.)
 
-![Windows File Explorer view](../assets/file_extensions_windows.png)
+<a href="../assets/file_extensions_windows.png" target="_blank">![Windows File Explorer view](../assets/file_extensions_windows.png)</a>
 
 ## macOS
 
