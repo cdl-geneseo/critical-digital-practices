@@ -15,25 +15,25 @@ A few adjustments to your GUI may help make navigating via the terminal seem mor
 
 You'll want to make some adjustments to your File Explorer in Windows. To make them, open the pane that reveals File Explorer preferences by using the caret icon at the upper-right corner of an Explorer window (1), then click on the "View" tab (2). Selecting the "List" view of your files (3) will highlight the hierarchical structure of your filesystem, making the relationships between folders and files in your filesystem more transparent. Checking the File name extensions box (4) will reveal the extensions at the ends of your filenames (e.g., .png, .docx, .pdf, .jpg). (The box is not checked in the image below. You should check it.)
 
-![Windows File Explorer view](/assets/file_extensions_windows.png)
+![Windows File Explorer view](../assets/file_extensions_windows.png)
 
 ## macOS
 
 To show **filename extensions** in macOS, go to Finder > Preferences > Advanced and check the box next to "Show all filename extensions." (Depending on what version of macOS you're running, the path may be Finder > Settings > Advanced, and the title bar in the window may read "Finder Settings.")
 
-![View of Mac Finder Advanced Preferences to show marking Show File Extensions](/assets/file_extensions_mac.png)
+![View of Mac Finder Advanced Preferences to show marking Show File Extensions](../assets/file_extensions_mac.png)
 
 To **display your files as a list**, you have two options. You can select View > as List from the Finder. But you may find that another option makes your file hierarchy even more transparent: View > as Columns. The "column" view shows the folders and files inside an enclosing folder in the next column to the right.
 
-![Mac list view in Finder](/assets/list_view_mac.png)
+![Mac list view in Finder](../assets/list_view_mac.png)
 
 On your Mac, you'll also find it helpful to make sure that the following, at least, are visible in the **Sidebar**: Desktop, Documents, Downloads, ---'s Computer, and your home folder (home icon).
 
-![Mac sidebar setup in Finder](/assets/sidebar_mac.png)
+![Mac sidebar setup in Finder](../assets/sidebar_mac.png)
 
 Finally, to further familiarize yourself with your computer's file hierarchy, show your **file path**: View > Show Path Bar. This will display a bar at the bottom of your Finder window showing you the breadcrumb trail to where you currently are in your filesystem GUI.
 
-![Example of path bar view on Mac](/assets/path_bar_mac.png)
+![Example of path bar view on Mac](../assets/path_bar_mac.png)
 
 ## Navigating through your browser
 
@@ -51,7 +51,7 @@ To navigate to your Documents folder, type `file:///Users/your_username/Documen
 
 In the Mac example below, the username has been obscured.
 
-![View of file navigation using the browser.](/assets/navigate_via_browser.png)
+![View of file navigation using the browser.](../assets/navigate_via_browser.png)
 
 If there's a plain text (e.g., `.md`, `.txt`) file in there, or a `.html`  file, or a `.pdf`  file, or an image file (e.g., `.jpg`, `.png`) it will open right in your browser window.
 
