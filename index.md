@@ -3,6 +3,8 @@ title: Introduction
 layout: home
 nav_order: 0
 ---
+# Critical Digital Practices
+
 ## Welcome, whoever you are
 
 Critical Digital Practices is a self-paced course designed to introduce you to some fundamental skills and concepts in computing. Of course, if "you" aren't someone in pursuit of computing skills and concepts but rather someone looking for materials you can use to teach those skills and concepts to others, you can think of Critical Digital Practices as an open-access teaching resource. In that case, you should feel free to copy, adapt, and remix the content you find here according to your needs&mdash;for example, by incorporating one or more modules or parts of modules into a course you're offering through your institution's learning management system&mdash;in accordance with the site's Creative Commons License. You can [fork or clone the course on GitHub](https://github.com/cdl-geneseo/critical-digital-practices) or just copy, paste, and edit. Just be sure, please, to provide appropriate attribution.
