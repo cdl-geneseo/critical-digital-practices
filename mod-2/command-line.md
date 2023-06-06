@@ -1,7 +1,7 @@
 ---
 title: What is the Command Line?
 layout: default
-parent: Module 2
+parent: The Command Line
 nav_order: 2
 ---
 # What is the Command Line? 
