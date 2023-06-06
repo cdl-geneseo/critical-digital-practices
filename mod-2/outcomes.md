@@ -1,11 +1,12 @@
 ---
-title: Learning Outcomes
+title: Outcomes and Readings
 layout: default
-parent: Module 2
+parent: The Command Line
 nav_order: 1
 ---
+# The Command Line
 
-## Learning outcomes
+## Outcomes
 
 1.  Understand how to access your computer\'s command line (\"terminal\" for MacOS, [\"git bash\"](https://gitforwindows.org/) for Windows).
 2.  Use the command line to navigate your computer\'s directory.

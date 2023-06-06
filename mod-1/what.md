@@ -1,15 +1,14 @@
 ---
 title: What is a Computer?
 layout: default
-parent: Module 1
+parent: Meet Your Computer
 nav_order: 2
 ---
-
-## Computers are people, too, my friend
+# What is a Computer?
 
 In the age of artificial intelligence, we often see humans and computers set in opposition to one another, as in headlines asking whether computers will soon replace humans in some job category, or even develop super-powers that enable them to destroy humanity.
 
-But in fact the first computers *were* humans. The [word "computer"](https://www.etymonline.com/search?q=computer) is first recorded in English in the 1640's, meaning "one who calculates, a reckoner, one whose occupation is to make arithmetical calculations." The book (and later the film) [*Hidden Figures*](http://www.hiddenfigures.com/) tells the story of the very human computers who worked in the U.S. space program in its early years, focusing on the lives of four Black women who performed essential mathematical calculations by hand: Dorothy Vaughan, Mary Jackson, Katherine Johnson, and Christine Darden.
+In fact, however, the first computers *were* humans. The [word "computer"](https://www.etymonline.com/search?q=computer) is first recorded in English in the 1640's, meaning "one who calculates, a reckoner, one whose occupation is to make arithmetical calculations." The book (and later the film) [*Hidden Figures*](http://www.hiddenfigures.com/) tells the story of the very human computers who worked in the U.S. space program in its early years, focusing on the lives of four Black women who performed essential mathematical calculations by hand: Dorothy Vaughan, Mary Jackson, Katherine Johnson, and Christine Darden.
 
 Nowadays, the word "computer" is more likely to call to mind a desktop, laptop, mobile or other device that can be programmed to perform its own calculations. The first computer of this type, the [ENIAC](https://www.computerhope.com/jargon/e/eniac.htm) (Electronic Numerical Integrator and Computer) was completed in 1946. In the years since, with the development of the silicon-based integrated circuit and rapid advances in minutiarization (advances often associated with a concept known as [Moore's Law](https://www.computerhope.com/jargon/m/moorelaw.htm)), computers of the non-human type have been packing more and more computational power into smaller and smaller devices.
 
