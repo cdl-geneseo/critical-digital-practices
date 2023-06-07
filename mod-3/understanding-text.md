@@ -2,7 +2,7 @@
 title: Understanding Text
 layout: default
 parent: What is Text?
-nav_order: 1
+nav_order: 2
 ---
 # Understanding Text
 
@@ -56,7 +56,7 @@ Here's another little comparison we can do at the command line, using the `wc` c
 
 ![Word document file size comparison, .docx vs. .txt](../assets/byte-count.png)
 
-The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` file is much lighter at 44K. Notice also that 44 is exactly the number of characters in the file, if we include two invisible characters that Word included as part of its conversion. At the command line, we can see the ASCII byte equivalent for each character.
+The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` file is much lighter at a mere 44 bytes or .044K. Notice also that 44 is exactly the number of characters in the file, if we include two invisible characters that Word included as part of its conversion. At the command line, we can see the ASCII byte equivalent for each character.
 
 ![Word document byte contents as seen at the command line](../assets/xxd-b.png)
 
