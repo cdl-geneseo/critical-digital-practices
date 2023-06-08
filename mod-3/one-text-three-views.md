@@ -20,21 +20,23 @@ Your browser will show you a plain text version of *Walden and Civil Disobedienc
 
 Let's pause a moment to notice a couple of interesting things here. Three lines from the bottom of the above screenshot, you're seeing information about the encoding standard that this plain text file is using. It's a different standard from the one we used in the previous section, ASCII. The Gutenberg file is encoded using the **UTF-8** encoding scheme, which is part of the [Unicode](https://home.unicode.org/) standard. Unicode, first introduced in 1991, was developed to address significant limitations in ASCII, which, among other limitations, lacks the capability to represent the variety of the world's languages. Unicode provides not only comprehensive support for text characters across languages but support for a wealth of symbols, including emoji. &#x1f642; 
 
-Notice also, a few lines above, the release date for this copy of *Walden*: 1995. Not only is plain text highly interoperable, it's also highly durable. Good luck opening a Microsoft Word or MacWrite document from created in 1991.
+Notice also, a few lines above, the release date for this copy of *Walden*: 1995. Plain text doesn't only hold up well across operating systems and software applications; it also holds up extremely well over time.
 
 Now open a terminal window and type (or paste)
 
 `curl https://www.gutenberg.org/files/205/205-0.txt | less`
 
-You may have to wait a few seconds, but very soon you should see exactly the same content in your terminal window that you see in your browser. What happened here? You used the `curl` command to get the contents of the file from Project Gutenberg, then you piped the output of that command to `less`, which shows you the first page of the contents. 
+You may have to wait a few seconds, but very soon you should see exactly the same content in your terminal window that you see in your browser. What happened here? You used the `curl` command to get the contents of the file from Project Gutenberg, then you piped the output of that command to `less`, which shows you the first page of the contents. (On a Mac, you can move up and down in the file one page at a time by holding down the `fn` key and using the up/down keys; in Windows, you can use the `PgUp` and `PgDown` keys.)
 
 ![Walden in a terminal window](../assets/walden-in-terminal.png)
 
 Whether you’re in your browser or your terminal, you’re looking at a file that's been transferred from a remote computer to your own. The remote computer is one capable of *serving* files to other computers that connect to it&mdash;hence the term *server*. The server *hosts* the file, accepts connections from *client* computers like your own, and responds to a *request* for the file&mdash;such as that made by your browser or by `curl`&mdash;by delivering the file’s contents.
 
-In either case, the file’s contents are printed to your screen, but they’re not *permanently saved* anywhere on your computer’s own drive; they're saved only temporarily in your computer's memory. With `curl`, you can take the next step and save those contents locally using adding a *redirect*. Let's try this out. 
+In either case, the file’s contents are printed to your screen, but they’re not *permanently saved* anywhere on your computer’s own drive; they're saved only temporarily in your computer's memory. With `curl`, you can take the next step and save those contents locally using adding a *redirect*. Let's try this out.
 
-First, navigate to your home folder:
+To get out of *Walden* in your terminal, type `q`. That will land you back at the command prompt.
+
+Now, navigate to your home folder:
 
 ```zsh
 cd ~
