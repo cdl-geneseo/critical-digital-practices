@@ -11,7 +11,7 @@ nav_order: 6
 You may also see your username to the left of the command prompt `$`. Let's try our first command. Type the following and press <kbd>enter</kbd> on your keyboard:
 
 ```zsh
-$ whoami
+whoami
 ```
 
 The `whoami` command should print out your username. Congrats, you've executed your first command! This is a basic pattern of use in the command line: type a command, press <kbd>enter</kbd> on your keyboard, and receive output.
@@ -31,7 +31,7 @@ Note that we are using the word "directory" interchangeably with "folder"—they
 OK, let's try a command that tells us where we are in the filesystem:
 
 ```zsh
-$ pwd
+pwd
 ```
 
 You should get output like `/Users/your-username`. That means you're in the `your-username` directory in the `Users` folder inside the `/` or root directory. This directory is often called the "home" directory.
@@ -41,7 +41,7 @@ On Windows, your output would instead be `C:/Users/your-username`. The folder yo
 Now we know "where" we are. But what if we want to know what files and folders are in the `your-username` directory, a.k.a. the working directory? Try entering:
 
 ```zsh
-$ ls
+ls
 ```
 
 You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
@@ -57,7 +57,7 @@ The `cd` command lets us "change directory." (Make sure the "D" in "Desktop" is 
 So how do we know it worked? That's right, let's use our `pwd` command again. We should get:
 
 ```zsh
-$ pwd
+pwd
 /Users/your-username/Desktop
 ```
 
@@ -68,13 +68,13 @@ Now try `ls` again to see what's on your desktop. These three commands—`pwd`, 
 Before moving on, take a minute to navigate through our computer's file system using the command line. Use the three commands you've just learned—`pwd`, `ls` and `cd`—eight (8) times each. Go poking around your `Photos` folder, or see what's so special about that root `/` directory. When you're done, come back to your "home" folder with
 
 ```zsh
-$ cd ~
+cd ~
 ```
 
 (That's a tilde <kbd>~</kbd>, on the top left of your keyboard.) One more command you might find useful is `cd ..` which will move you one directory up in the filesystem. That's a `cd` with two periods after it:
 
 ```zsh
-$ cd ..
+cd ..
 ```
 
 ### Compare with the GUI
