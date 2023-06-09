@@ -7,13 +7,13 @@ nav_order: 3
 
 # Text Editors
 
-You've seen that you can create and edit plain text documents [right from the command line](/mod-2/editing-from-the-command-line). That's a handy skill to have, especially when you find yourself needing to edit a file on a remote server. But most of the time you'll want to do you plain text editing in a dedicated application that runs in your GUI. There are many such applications to choose from.
+You've seen that you can create and edit plain text documents [right from the command line](/mod-2/editing-from-the-command-line). That's a handy skill to have, especially when you find yourself needing to edit a file on a remote server. You've also seen that Word documents can be saved as plain text files. But it would be an understatement to say that for plain-text editing, Word is not an ideal tool. It's not what Word was built for.
+
+For most work with plain text, you want a dedicated plain-text editor. One in particular, Visual Studio Code, is described below and recommended for this course. But it's worth mentioning two others, Notepad and TextEdit, because they they're the default text editors on Windows and macOS respectively and for that reason will likely thrust themselves upon your attention even if you don't seek them out. 
 
 ## Notepad and TextEdit
 
-Notepad, mentioned in the previous section, is a plain text editor that comes bundled with the Windows operating system. Apple bundles its own text editor with macOS, called TextEdit. These applications provide minimal functionality for plain text editing, but it's good to know they're there and to understand a bit about how they work. By default your Mac will try to open files ending with the `.txt` extension in TextEdit. You'll want to change that behavior at some point, but until you do, you're certain to find yourself looking at the TextEdit interface.
-
-You can launch Notepad by going to the Start menu and typing "Notepad" in the search box. You can launch TextEdit from your Applications folder or by holding down `command` while typing `Space` and typing "TextEdit" in the Spotlight search box.
+Notepad and TextEdit provide minimal functionality for plain-text editing. You can launch Notepad by going to the Start menu and typing "Notepad" in the search box. You can launch TextEdit from your Applications folder or by holding down `command` while typing `Space` and typing "TextEdit" in the Spotlight search box.
 
 By default, TextEdit will open in a "rich text" interface and want to save your files with the `.rtf` extension. RTF stands for "rich text format," a file format meant to be interoperable with Word and other word-processing applications. In RTF, you can format text just as you would in Word. You'll know you're looking at an RTF file in TextEdit if you see a formatting toolbar and ruler above your text.
 

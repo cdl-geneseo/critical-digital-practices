@@ -18,21 +18,13 @@ Here's a simple Word document containing a single sentence, saved in Word's defa
 
 ![Word doc with a single sentence](../assets/word-doc-one-sentence.png)
 
-If we take a peek inside this document from a terminal window, using the `cat` command you [learned about previously](/mod-2/create-a-cheat-sheet#cat), here's what we see:
+Let's see if we can take a look inside this file from the command line using `less`.
 
-![Word doc in Word format streamed at the command line](../assets/word-doc-streamed.png)
+![Less command with Word doc in .docx format](../assets/word-doc-with-less.png)
 
-This is just a bit of the output we get when we stream the file contents using `cat`. There's lots more. It isn't gibberish to Word, but it certainly is to human eyes. It's not *human-readable*, even though it's *machine-readable*.
+Our shell warns us that this Word file may be a [binary file](https://www.computerhope.com/jargon/b/binaryfi.htm)&mdash;that is, a file that contains more than just text. Trying to view a binary file with `less` or `cat` will output a bunch of characters to our terminal that will look like gibberish; it might also have some unpredictable and adverse effects on our shell. We'll politely decline to go any farther by typing `n`, for "no." That will land us back at the command-line prompt.
 
-There was a time when, if you wanted to open a Word document, you were pretty much out of luck if you didn't have the Microsoft Word application installed on your computer. Even then, a Word document created on a Windows computer wouldn't open on a Mac, and vice versa. Word documents were barely **interoperable** with different word-processing applications or operating systems. (We'll come back shortly to the important principle of interoperability.) That's because the way Word *encoded* text was highly specific&mdash;and proprietary.
-
-Nowadays, Word is more interoperable than it used to be. Word documents can be opened on all major operating systems and in more than one software application. And if you create your documents using free and open source software such as [LibreOffice](https://www.libreoffice.org/), your documents can be readily used by someone using Word.
-
-Still, even now, there are significant limits to Word's interoperabilty, as you may have discovered for yourself if you've ever tried to copy and paste text content from a Word document into, say, a web form or the editor for a website content management system such as WordPress and found yourself dealing with strange characters and unexpected line breaks.
-
-## Plain text
-
-Let's see what happens if we save the same one-sentence Word file in a format other than the default `.docx`. We can do this by choosing File > Save As and using the dropdown menu in the dialog that pops up to select a different file format.
+Now let's see what happens if we save the same one-sentence Word file in a format other than the default `.docx`. We can do this by choosing File > Save As and using the dropdown menu in the dialog that pops up to select a different file format.
 
 ![Word document "Save As" pop-up showing file-type options](../assets/word-doc-save-as.png)
 
@@ -46,19 +38,31 @@ We're going to save our Word file in [ASCII](https://www.computerhope.com/jargon
 
 Note the warning in the screenshot above that saving a Word file as plain text will cause text formatting&mdash;bold, italic, and other formatted text, as well as varieties of font style&mdash;to be lost, together with images and other objects. The relative absence of formatting is a key part of what makes plain text&mdash;whatever its encoding&mdash;plain. We *can* format plain text, but we do so in a way that keeps the text itself and the formatting instructions separate from one another. This separation may look like a limitation, but in fact it's a key part of plain text's interoperability and flexibility, as we'll have occasion to see.
 
-Let's go back to the command line to see what our plain text version of the Word file looks like there, once again using the `cat` command.
+Let's go back to the command line to see what our plain text version of the Word file looks like there, this time using the `cat` command. (We could use `less` again, but for this example `cat` will more clearly demonstrate what's different now.)
 
 ![Word document in plain text format streamed at the command line](../assets/word-doc-as-text-streamed.png)
 
-Nice.
+No warning this time. Our terminal just shows us the text content of the file. Nice.
 
-Here's another little comparison we can do at the command line, using the `wc` command and passing the `-c` option to show the number of [bytes](https://www.computerhope.com/jargon/b/byte.htm) in both the `.docx` file and the `.txt`. This is one way to measure the file size. (A kilobyte&mdash;typically abbreviated "K"&mdash;is equivalent to 1,000 bytes, a megabyte&mdash;"M" or "MB"&mdash;1,000,000 or 10<sup>6</sup> bytes, a gigabyte&mdash;"G" or "GB"&mdash;1,000,000,000 or 10<sup>9</sup> bytes.)
+Now let's do another comparison, using the `wc` command and passing the `-c` option to show the number of [bytes](https://www.computerhope.com/jargon/b/byte.htm) in both the `.docx` file and the `.txt`. This is one way to measure the file size. (A kilobyte&mdash;typically abbreviated "K"&mdash;is equivalent to 1,000 bytes, a megabyte&mdash;"M" or "MB"&mdash;1,000,000 or 10<sup>6</sup> bytes, a gigabyte&mdash;"G" or "GB"&mdash;1,000,000,000 or 10<sup>9</sup> bytes.)
 
 ![Word document file size comparison, .docx vs. .txt](../assets/byte-count.png)
 
-The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` file is much lighter at a mere 44 bytes or .044K. Notice also that 44 is exactly the number of characters in the file, if we include two invisible characters that Word included as part of its conversion. (*NB*, spaces and punctuation are also characters.) At the command line, we can see the ASCII byte equivalent for each character.
+The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` file is much lighter at a mere 44 bytes or .044K. Notice also that 44 is exactly the number of characters in the file, if we count two invisible characters that Word included as part of its conversion. (*NB*, spaces and punctuation are also characters.) At the command line, we can see the ASCII byte equivalent for each character.
 
 ![Word document byte contents as seen at the command line](../assets/xxd-b.png)
+
+(**Note:** Your shell may not have `xxd` installed.) It would appear that the content we care about represents well under 1% of what's in the Word file. The other 99+% is providing valuable functionality, but it may also make it harder for us to use the content we care about in other contexts.
+
+## The interoperability of plain text
+
+There was a time when, if you wanted to open a Word document, you were pretty much out of luck if you didn't have the Microsoft Word application installed on your computer. Even then, a Word document created on a Windows computer wouldn't open on a Mac, and vice versa. Word documents were barely **interoperable** with different word-processing applications or operating systems. That's because the way Word *encoded* text was highly specific&mdash;and proprietary.
+
+Nowadays, Word is more interoperable than it used to be. Word documents can be opened on all major operating systems and in more than one software application. And if you create your documents using free and open source software such as [LibreOffice](https://www.libreoffice.org/), your documents can be readily used by someone using Word.
+
+But even now there are significant limits to the interoperabilty of Word or word-processed documents, as you may have discovered for yourself if you've ever tried to copy and paste text content from a Word document or a Google doc into, say, a web form or the editor for a website content management system such as WordPress and found yourself dealing with strange characters and unexpected line breaks.
+
+Plain text, by contrast, is highly interoperable across operating systems, software applications, and platforms, as we'll shortly have occasion to see. 
 
 ## A story
 

@@ -6,7 +6,7 @@ nav_order: 4
 ---
 # One Text, Three Views
 
-As we saw in the the previous section, plain text is a highly interoperable format for storing and sharing textual content (e.g., books, blog posts). We can work with plain text documents in any text editor or even in a terminal window. We can begin working on a plain text document with one of these tools, save it, then open it in another and pick up right where we left off. The visual presentation of the text content may vary from one tool to another (for example, by including syntax highlighting), but the content itself will not.
+As previously mentioned, plain text is a highly interoperable format for storing and sharing textual content (e.g., books, blog posts). We can work with plain text documents in any text editor or even in a terminal window. We can begin working on a plain text document with one of these tools, save it, then open it in another and pick up right where we left off. The visual presentation of the text content may vary from one tool to another (for example, by including syntax highlighting), but the content itself will not.
 
 Let's test this out for ourselves.
 
@@ -32,7 +32,7 @@ You may have to wait a few seconds, but very soon you should see exactly the sam
 
 Whether you’re in your browser or your terminal, you’re looking at a file that's been transferred from a remote computer to your own. The remote computer is one capable of *serving* files to other computers that connect to it&mdash;hence the term *server*. The server *hosts* the file, accepts connections from *client* computers like your own, and responds to a *request* for the file&mdash;such as that made by your browser or by `curl`&mdash;by delivering the file’s contents.
 
-In either case, the file’s contents are printed to your screen, but they’re not *permanently saved* anywhere on your computer’s own drive; they're saved only temporarily in your computer's memory. With `curl`, you can take the next step and save those contents locally using adding a *redirect*. Let's try this out.
+In either case, the file’s contents are printed to your screen, but they’re not *permanently saved* anywhere on your computer’s own drive; they're saved only temporarily in your computer's memory. With `curl`, you can take the next step and save those contents locally by adding a *redirect*. Let's try this out.
 
 To get out of *Walden* in your terminal, type `q`. That will land you back at the command prompt.
 
