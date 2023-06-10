@@ -52,7 +52,7 @@ The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` f
 
 ![Word document byte contents as seen at the command line](../assets/xxd-b.png)
 
-(**Note:** Your shell may not have `xxd` installed.) It would appear that the content we care about represents well under 1% of what's in the Word file. The other 99+% is providing valuable functionality, but it may also make it harder for us to use the content we care about in other contexts.
+(**Note:** Your shell may not have `xxd` installed, so you may not be able to run this command on your own machine.) It would appear that the content we care about represents well under 1% of what's in the Word file. The other 99+% is providing valuable functionality, but it may also make it harder for us to use the content we care about in other contexts.
 
 ## The interoperability of plain text
 
@@ -60,7 +60,7 @@ There was a time when, if you wanted to open a Word document, you were pretty mu
 
 Nowadays, Word is more interoperable than it used to be. Word documents can be opened on all major operating systems and in more than one software application. And if you create your documents using free and open source software such as [LibreOffice](https://www.libreoffice.org/), your documents can be readily used by someone using Word.
 
-But even now there are significant limits to the interoperabilty of Word or word-processed documents, as you may have discovered for yourself if you've ever tried to copy and paste text content from a Word document or a Google doc into, say, a web form or the editor for a website content management system such as WordPress and found yourself dealing with strange characters and unexpected line breaks.
+But there are still significant limits to the interoperabilty of Word and other word-processed documents, as you may have discovered for yourself if you've ever tried to copy and paste text content from a Word document or a Google doc into, say, a web form or the editor for a website content management system such as WordPress and found yourself dealing with strange characters and unexpected line breaks.
 
 Plain text, by contrast, is highly interoperable across operating systems, software applications, and platforms, as we'll shortly have occasion to see. 
 
