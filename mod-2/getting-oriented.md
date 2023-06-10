@@ -8,27 +8,33 @@ nav_order: 6
 
 ## Know thyself
 
-You may also see your username to the left of the command prompt `$`. Let's try our first command. Type the following and press <kbd>enter</kbd> on your keyboard:
+Type the following and press `enter` on your keyboard:
 
 ```zsh
 whoami
 ```
 
-The `whoami` command should print out your username. Congrats, you've executed your first command! This is a basic pattern of use in the command line: type a command, press <kbd>enter</kbd> on your keyboard, and receive output.
+The `whoami` command should print out your username. Congrats, you've executed your first command! This is the basic routine at the command line: type a command, press `enter`, see output in your terminal. The terminal is said to *print* the output&mdash;a nomenclature that may be a little confusing at first, if you're used to thinking of printing as something done on paper, with ink, by a physical printer&mdash;and output that's printed to the terminal window is said to be printed to `stdout` (short for "standard output").
 
-## Orienting Yourself in the Command Line: Folders
+## Move around
 
-OK, we're going to try another command. But first, let's make sure we understand some things about how your computer's filesystem works.
+Let's revisit your computer's [file system](/mod-1/file-system) and note some things about its structure.
 
-Your computer's files are organized in what's known as a hierarchical filesystem. That means there's a top level or `root` folder on your system. That folder has other folders in it, and those folders have folders in them, and so on. You can draw these relationships in a tree:
+Your file system's structure is *hierarchical*. It consists of directories (also known as "folders") containing other directories and *files*. We can also describe this hierarchical structure as a *tree*.
 
-![An example of how a hierarchical filesystem looks](../images/hierarchical-filesystem-example.png)
+As illustrated below, at the highest level of the tree we have the computer's main drive. By default, macOS calls this "Macintosh HD," although your Mac will let you rename it to something else. In Windows, the main drive is called the "C:" drive. (The "HD" in "Macintosh HD" stands for "hard disk," and the icon for it in your GUI may look like a hard disk drive, but increasingly, this drive is a solid-state drive with no spinning disk.)
+
+At the next level down we have a "Users" directory, which can hold directories for multiple users. In this example, there's just one user, you, whose username is whatever your username is. This is the "home" directory, on many systems represented in the GUI as &#x1f3e0; or something similar. Beneath this level, the diagram shows two directories, "Documents" and "Downloads." These are at the same level of the hierarchy; they're parallel directories. Of course, these are only two of the many directories inside your home directory. In this example, there are two directories at the next level down, one named "some_folder," the other named "another_folder." Down one more level, inside "some_folder," there are two files, "foo.txt" and "bar.txt". Climbing back up a level, "another_folder", parallel to "some_folder", also contains a file named "foo.txt". We can have two files with the same name within two different directories, but not within the same directory. The same holds true for directory names.
+
+![Illustration of file hierarchy](../assets/file-tree.png)
+
+<!-- That means there's a top level or `root` folder on your system. That folder has other folders in it, and those folders have folders in them, and so on. You can draw these relationships in a tree:
 
 The root or highest-level folder on macOS is just called `/`. We won't need to go in there, though, since that's mostly just files for the operating system. On Windows, the root directory is usually called `C:`. (If you are curious why `C:` is the default name on Windows, you can read about it [here](http://www.todayifoundout.com/index.php/2015/04/c-drive-default-windows-based-computers-2).)
 
-Note that we are using the word "directory" interchangeably with "folder"—they both refer to the same thing.
+Note that we are using the word "directory" interchangeably with "folder"—they both refer to the same thing. -->
 
-OK, let's try a command that tells us where we are in the filesystem:
+Let's try a command that tells us where we are in the filesystem:
 
 ```zsh
 pwd
