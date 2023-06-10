@@ -49,7 +49,7 @@ You should see a number of folders, probably including `Documents`, `Desktop`, a
 Wonder what's in the `Desktop` folder? Let's try navigating to it with the following command:
 
 ```zsh
-$ cd Desktop
+cd Desktop
 ```
 
 The `cd` command lets us "change directory." (Make sure the "D" in "Desktop" is capitalized.) If the command was successful, you won't see any output. This is normal—often, the command line will succeed silently.

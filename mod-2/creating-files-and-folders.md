@@ -38,7 +38,7 @@ cd Desktop
 On Mac and in Windows, this will move you to your Desktop folder. In Ubuntu for Windows, a Desktop folder isn't automatically created. You can create one using the `mkdir` command. 
 
 ```zsh
-mkdir Desktop # Only necessary for Ubuntu useres
+mkdir Desktop # Only necessary for Ubuntu users
 ```
 Or you can simply create a new folder with any other name you like. The name should not contain spaces. After doing so, use `cd` to move into the new directory, as shown above for Mac and Windows.
 
