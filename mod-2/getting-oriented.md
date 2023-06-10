@@ -8,7 +8,7 @@ nav_order: 6
 
 ## Know thyself
 
-Type the following and press `enter` on your keyboard:
+Launch a terminal, type the following, and press `enter` on your keyboard:
 
 ```zsh
 whoami
@@ -16,7 +16,7 @@ whoami
 
 The `whoami` command should print out your username. Congrats, you've executed your first command! This is the basic routine at the command line: type a command, press `enter`, see output in your terminal. The terminal is said to *print* the output&mdash;a nomenclature that may be a little confusing at first, if you're used to thinking of printing as something done on paper, with ink, by a physical printer&mdash;and output that's printed to the terminal window is said to be printed to `stdout` (short for "standard output").
 
-## Move around
+## Know thy file system
 
 Let's revisit your computer's [file system](/mod-1/file-system) and note some things about its structure.
 
@@ -24,35 +24,52 @@ Your file system's structure is *hierarchical*. It consists of directories (also
 
 As illustrated below, at the highest level of the tree we have the computer's main drive. By default, macOS calls this "Macintosh HD," although your Mac will let you rename it to something else. In Windows, the main drive is called the "C:" drive. (The "HD" in "Macintosh HD" stands for "hard disk," and the icon for it in your GUI may look like a hard disk drive, but increasingly, this drive is a solid-state drive with no spinning disk.)
 
-At the next level down we have a "Users" directory, which can hold directories for multiple users. In this example, there's just one user, you, whose username is whatever your username is. This is the "home" directory, on many systems represented in the GUI as &#x1f3e0; or something similar. Beneath this level, the diagram shows two directories, "Documents" and "Downloads." These are at the same level of the hierarchy; they're parallel directories. Of course, these are only two of the many directories inside your home directory. In this example, there are two directories at the next level down, one named "some_folder," the other named "another_folder." Down one more level, inside "some_folder," there are two files, "foo.txt" and "bar.txt". Climbing back up a level, "another_folder", parallel to "some_folder", also contains a file named "foo.txt". We can have two files with the same name within two different directories, but not within the same directory. The same holds true for directory names.
+At the next level down we have a "Users" directory, which can hold directories for multiple users. In this example, there's just one user, you, whose username is whatever your username is. This is the **home directory**, on many systems represented in the GUI as &#x1f3e0; or something similar. Beneath this level, the diagram shows two directories, "Documents" and "Downloads." These are at the same level of the hierarchy; they're parallel directories. Of course, these are only two of the many directories inside your home directory. In this example, there are two directories at the next level down, one named "some_folder," the other named "another_folder." Down one more level, inside "some_folder," there are two files, "foo.txt" and "bar.txt". Climbing back up a level, "another_folder", parallel to "some_folder", also contains a file named "foo.txt". We can have two files with the same name within two different directories, but not within the same directory. The same holds true for directory names.
 
 ![Illustration of file hierarchy](../assets/file-tree.png)
 
-<!-- That means there's a top level or `root` folder on your system. That folder has other folders in it, and those folders have folders in them, and so on. You can draw these relationships in a tree:
+At the command line, we can represent any location in the file system as a *path*. In a shell that accepts unix-like commands, we use a forward slash (`/`) to separate files and directories along the path. Thus, we'd represent the path to `bar.txt` in the example above as
 
-The root or highest-level folder on macOS is just called `/`. We won't need to go in there, though, since that's mostly just files for the operating system. On Windows, the root directory is usually called `C:`. (If you are curious why `C:` is the default name on Windows, you can read about it [here](http://www.todayifoundout.com/index.php/2015/04/c-drive-default-windows-based-computers-2).)
+```zsh
+/Users/your-username/Documents/some-folder/bar.txt # macOS
+/Users/c/your-username/Documents/some-folder/bar.txt # Git Bash
+```
+As we've already seen, Ubuntu for Windows installs its files outside the home directory that lives within `Users`. It creates a new directory called `home` to serve as the top level, and within it a directory named with your username. For the sake of illustration, let's say you created a `Documents` directory under your username directory and, in it, you created `some-folder` and `bar.txt`. The path to `bar.txt` in your Ubuntu-Windows installation would then be
 
-Note that we are using the word "directory" interchangeably with "folder"—they both refer to the same thing. -->
+```zsh
+/home/your-username/Documents/some-folder/bar.txt # Ubuntu for Windows
+```
+Even in Ubuntu, however, the directory treated as your **home directory** is the one bearing your username (not the one named `home`.) Yes, that's potentially a bit confusing. If you're using Ubuntu, you'll want to take note.
 
-Let's try a command that tells us where we are in the filesystem:
+You've already seen that [your browser](/mod-1/file-system#navigating-your-file-system-through-your-browser), too, will recognize this kind of path notation. You can even use it in your GUI. On a Mac, for example, go to File > Go > Go to Folder (or hold down `shift`+`command`+`G`) and type `/Users/your-username/Documents` (substituting your own username for `your-username`) and hit `enter` to see what happens.
+
+One last bit of information before we try out what we now know at the command line. The tilde (`~`) conventionally serves as shorthand for your home folder. Using it will save time and cut down on typos. Thus,
+
+```zsh
+~/Documents/some-folder/bar.txt
+```
+can be used in our example to represent the path to `bar.txt` in all three systems (Mac, Git Bash, Ubuntu-Windows). It also works in the Mac GUI.
+
+## Go places
+
+Above, you used the command `whoami` to get your username. It's good to know *where* you are as well as *who* you are. So type the following command.
 
 ```zsh
 pwd
 ```
+Unless you navigated away from your home directory during this session, your terminal should display, as output, the path to your home directory. If it displays another location, don't worry. We'll get you back home in short order.
 
-You should get output like `/Users/your-username`. That means you're in the `your-username` directory in the `Users` folder inside the `/` or root directory. This directory is often called the "home" directory.
+`pwd` is short for "print working directory." Use it frequently at the command line to make sure you're where you want to be before making your next move. 
 
-On Windows, your output would instead be `/c/Users/your-username`. The folder you're in is called the working directory, and `pwd` stands for "print working directory." "Print" as a word can be somewhat misleading. The command `pwd` won't actually print anything except on your screen. This command is easier to grasp when we interpret "print" as "display."
-
-Now we know "where" we are. But what if we want to know what files and folders are in the `your-username` directory, a.k.a. the working directory? Try entering:
+Now that we know where we are, let's see what's here. Type the following command:
 
 ```zsh
 ls
 ```
 
-You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
+You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in. 
 
-Wonder what's in the `Desktop` folder? Let's try navigating to it with the following command:
+Wonder what's in the `Documents` folder? Let's try navigating to it with the following command:
 
 ```zsh
 cd Desktop
