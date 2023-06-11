@@ -7,7 +7,7 @@ nav_order: 3
 
 # Text Editors
 
-You've seen that you can create and edit plain text documents [right from the command line](/mod-2/editing-from-the-command-line). That's a handy skill to have, especially when you find yourself needing to edit a file on a remote server. You've also seen that Word documents can be saved as plain text files. But it would be an understatement to say that for plain-text editing, Word is not an ideal tool. It's not what Word was built for.
+You've seen that you can create and edit plain text documents [right from the command line](/critical-digital-practices/mod-2/editing-from-the-command-line). That's a handy skill to have, especially when you find yourself needing to edit a file on a remote server. You've also seen that Word documents can be saved as plain text files. But it would be an understatement to say that for plain-text editing, Word is not an ideal tool. It's not what Word was built for.
 
 For most work with plain text, you want a dedicated plain-text editor. One in particular, Visual Studio Code, is described below and recommended for this course. But it's worth mentioning two others, Notepad and TextEdit, because they they're the default text editors on Windows and macOS respectively and for that reason will likely thrust themselves upon your attention even if you don't seek them out. 
 

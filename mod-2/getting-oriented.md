@@ -16,11 +16,13 @@ whoami
 
 The `whoami` command should print out your username. Congrats, you've executed your first command! This is the basic routine at the command line: type a command, press `enter`, see output in your terminal. The terminal is said to *print* the output&mdash;a nomenclature that may be a little confusing at first, if you're used to thinking of printing as something done on paper, with ink, by a physical printer&mdash;and output that's printed to the terminal window is said to be printed to `stdout` (short for "standard output").
 
+Note, however, that sometimes you'll see no output after typing a command and hitting `enter`. You'll just find yourself back at the command prompt. This could mean that your command failed to do what you wanted: for example, find content inside a file using the `grep` command. But often it means that your command succeeded splendidly. This is sometimes described as "succeeding silently." (Even the `grep` example could be read as silent success: the command succeeded in carrying out the search, it just didn't find what you told it to look for, because what you told it to look for wasn't there.)
+
 ## Know thy file system
 
-Let's revisit your computer's [file system](/mod-1/file-system) and note some things about its structure.
+Let's revisit your computer's [file system](/critical-digital-practices/mod-1/file-system) and note some things about its structure.
 
-Your file system's structure is *hierarchical*. It consists of directories (also known as "folders") containing other directories and *files*. We can also describe this hierarchical structure as a *tree*.
+Your file system's structure is *hierarchical*. It consists of *directories* (also known as *folders*) containing other directories and *files*. This hierarchical structure can also be described as a *tree*.
 
 As illustrated below, at the highest level of the tree we have the computer's main drive. By default, macOS calls this "Macintosh HD," although your Mac will let you rename it to something else. In Windows, the main drive is called the "C:" drive. (The "HD" in "Macintosh HD" stands for "hard disk," and the icon for it in your GUI may look like a hard disk drive, but increasingly, this drive is a solid-state drive with no spinning disk.)
 
@@ -28,7 +30,7 @@ At the next level down we have a "Users" directory, which can hold directories f
 
 ![Illustration of file hierarchy](../assets/file-tree.png)
 
-At the command line, we can represent any location in the file system as a *path*. In a shell that accepts unix-like commands, we use a forward slash (`/`) to separate files and directories along the path. Thus, we'd represent the path to `bar.txt` in the example above as
+At the command line, we can represent any location in the file system as a *path*. In a shell that accepts Unix-like commands, we use a forward slash (`/`) to separate files and directories along the path. Thus, we'd represent the path to `bar.txt` in the example above as
 
 ```zsh
 /Users/your-username/Documents/some-folder/bar.txt # macOS
@@ -41,7 +43,7 @@ As we've already seen, Ubuntu for Windows installs its files outside the home di
 ```
 Even in Ubuntu, however, the directory treated as your **home directory** is the one bearing your username (not the one named `home`.) Yes, that's potentially a bit confusing. If you're using Ubuntu, you'll want to take note.
 
-You've already seen that [your browser](/mod-1/file-system#navigating-your-file-system-through-your-browser), too, will recognize this kind of path notation. You can even use it in your GUI. On a Mac, for example, go to File > Go > Go to Folder (or hold down `shift`+`command`+`G`) and type `/Users/your-username/Documents` (substituting your own username for `your-username`) and hit `enter` to see what happens.
+You've already seen that [your browser](/critical-digital-practices/mod-1/file-system#navigating-your-file-system-through-your-browser), too, will recognize this kind of path notation. You can even use it in your GUI. On a Mac, for example, go to File > Go > Go to Folder (or hold down `shift`+`command`+`G`) and type `/Users/your-username/Documents` (substituting your own username for `your-username`) and hit `enter` to see what happens.
 
 One last bit of information before we try out what we now know at the command line. The tilde (`~`) conventionally serves as shorthand for your home folder. Using it will save time and cut down on typos. Thus,
 
@@ -72,7 +74,7 @@ You should see a number of folders, probably including `Documents`, `Desktop`, a
 Wonder what's in the `Documents` folder? Let's try navigating to it with the following command:
 
 ```zsh
-cd Desktop
+cd Documents
 ```
 
 The `cd` command lets us "change directory." (Make sure the "D" in "Desktop" is capitalized.) If the command was successful, you won't see any output. This is normal—often, the command line will succeed silently.
@@ -81,10 +83,12 @@ So how do we know it worked? That's right, let's use our `pwd` command again. We
 
 ```zsh
 pwd
-/Users/your-username/Desktop
+/Users/your-username/Documents
 ```
 
 Now try `ls` again to see what's on your desktop. These three commands—`pwd`, `ls`, and `cd`—are the most commonly used in the terminal. Between them, you can orient yourself and move around.
+
+![Terminal window in Git Bash showing contents of Documents folder](../assets/documents-git-bash.png)
 
 ## Challenge
 

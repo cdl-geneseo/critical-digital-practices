@@ -6,13 +6,13 @@ nav_order: 4
 ---
 # Getting to the Command Line
 
-As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/mod-2/unix-like-vs-windows.md).
+As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/critical-digital-practices/mod-2/unix-like-vs-windows.md).
 
 You can launch Terminal.app in macOS by finding it in Applications > Utilities > Terminal.app or by doing a Spotlight search for the application. Once you've installed Git Bash or Ubuntu, you can launch either by searching for it in the Start menu.
 
 ## The command prompt
 
-No matter what OS you're on or what your terminal application looks like, it will present you with a cursor to the right of a command **prompt**. The cursor may be a vertical line, underscore, or rectangular block, and it may or may not be blinking.The prompt may appear as a `$`, `~`, `%` or some other symbol. To the left of the prompt, you may see `your-username@your-computer-name:` (where `your-username` is your actual username and `your-computer-name` is the name of your own computer). On a Mac, you may see information about transitioning from Bash to Zsh. You can safely ignore that message for now and continue with Bash. You can play at your leisure with the settings of your terminal application to change the cursor style, background color, font style, font size, and more. In Terminal.app, the default font size is pretty small. That's one setting you may want to consider changing.
+No matter what OS you're on or what your terminal application looks like, it will present you with a cursor to the right of a command **prompt**. The cursor may be a vertical line, underscore, or rectangular block, and it may or may not be blinking. The prompt may appear as a `$`, `%` or other symbol. To the left of the prompt, you may see `your-username@your-computer-name:` (where `your-username` is your actual username and `your-computer-name` is the name of your own computer). On a Mac, you may see information about transitioning from Bash to Zsh. You can safely ignore that message for now and continue with Bash. You can play at your leisure with the settings of your terminal application to change the cursor style, background color, font style, font size, and more. In Terminal.app, the default font size is pretty small. That's one setting you may want to consider changing.
 
 For the most part, when example commands are displayed in this course, the prompt symbol has been omitted. In other words, you'll see this:
 ```zsh
