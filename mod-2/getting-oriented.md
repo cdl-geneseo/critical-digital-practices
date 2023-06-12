@@ -59,7 +59,7 @@ Above, you used the command `whoami` to get your username. It's good to know *wh
 ```zsh
 pwd
 ```
-Unless you navigated away from your home directory during this session, your terminal should display, as output, the path to your home directory. If it displays another location, Type the following:
+Unless you navigated away from your home directory during this session, your terminal should display, as output, the path to your home directory. If it displays another location, type the following:
 
 ```zsh
 cd ~
@@ -76,9 +76,9 @@ ls
 
 You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
 
-(Ubuntu users: After you install Ubuntu, You won't have `Desktop`, `Documents`, or any other folders inside your home directory. You can create a `Documents` folder by typing `mkdir ~/Documents` More on the `mkdir` command in a later section.)
+(**Ubuntu users:** After you install Ubuntu, you won't have `Desktop`, `Documents`, or any other folders inside your home directory. You can create a `Documents` folder by typing `mkdir ~/Documents` at the command line, followed by `enter`. The command will succeed silently. Follow up with `ls` to see your new Documents folder listed. You'll learn more about `mkdir` command in a later section.)
 
-Depending on your terminal settings and operating system, you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. (Ubuntu users: you won't see anything yet if you type `ls` once inside `Documents`, but you can still follow the navigation instructions below to get a feel for how to get around.) Additionally, whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
+Depending on your terminal settings and operating system, when you type `ls` you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. Whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable. Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
 
 Wonder what's in the `Documents` folder? Head there with the following command:
 
@@ -94,7 +94,9 @@ Now try `ls` again to see what's in your Documents directory.
 
 ![Terminal window in Git Bash showing contents of Documents folder](../assets/cd-pwd-ls.png)
 
-You'll use these three shell commands&mdash;`pwd`, `ls`, `cd`&mdash;a lot. As you practice navigating your file system, get in the habit of using them as a triad. 
+You'll use these three shell commands&mdash;`pwd`, `ls`, `cd`&mdash;a lot. As you practice navigating your file system, get in the habit of using them as a triad.
+
+(**Ubuntu users:** you won't see anything yet if you type `ls` once inside `Documents`&mdash;there aren't any files there yet!&mdash;but you can still follow the navigation instructions below to get a feel for how to get around.)
 
 Now type
 
@@ -103,7 +105,7 @@ cd ..
 ```
 This command will take you up one level in the hierarchy, to the folder enclosing the one you're in currently. If you're in `~/Documents`, typing `cd ..` will take you up a level to `~` (home). If you were in, say, `~/Documents/course_files/2021` (That is, the folder named "2021" inside the folder "course_files" inside "Documents"), then typing `cd ..` would take you up a level to `course_files`.
 
-Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/cdl-geneseo.github.io/mod-2/command-line.md#the-bigger-picture). Consider, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
+Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/cdl-geneseo.github.io/mod-2/command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
 
 ## A word of warning
 
