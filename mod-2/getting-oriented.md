@@ -105,7 +105,7 @@ cd ..
 ```
 This command will take you up one level in the hierarchy, to the folder enclosing the one you're in currently. If you're in `~/Documents`, typing `cd ..` will take you up a level to `~` (home). If you were in, say, `~/Documents/course_files/2021` (That is, the folder named "2021" inside the folder "course_files" inside "Documents"), then typing `cd ..` would take you up a level to `course_files`.
 
-Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/cdl-geneseo.github.io/mod-2/command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
+Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/critical-digital-practices/mod-2/command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
 
 ## A word of warning
 
