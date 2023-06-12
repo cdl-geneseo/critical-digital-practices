@@ -113,7 +113,7 @@ Perhaps you're wondering what you might see at the highest level of your file hi
 
 Among other things, you should see folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`. (Ubuntu users: these,  you'll see.)
 
-***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
+&#x2757;&#x2757;&#x2757; ***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
 
 This is a good place, by the way, to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
 
@@ -123,4 +123,4 @@ Take a few minutes now to move around in your file system using the command line
 
 ## Compare with the GUI
 
-You might want to try putting a terminal window and a Finder or File Explorer window side by side and, as you tool around your file system via the command line, compare what you see there to what you see in the GUI.
+You might want to try putting a terminal window and a Finder or File Explorer window side by side and, as you tool around your file system via the command line, comparing what you see there to what you see in the GUI.
