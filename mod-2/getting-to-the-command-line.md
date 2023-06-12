@@ -6,7 +6,7 @@ nav_order: 4
 ---
 # Getting to the Command Line
 
-As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/critical-digital-practices/mod-2/unix-like-vs-windows.md).
+As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/critical-digital-practices/mod-2/unix-like-vs-windows).
 
 You can launch Terminal.app in macOS by finding it in Applications > Utilities > Terminal.app or by doing a Spotlight search for the application. Once you've installed Git Bash or Ubuntu, you can launch either by searching for it in the Start menu.
 

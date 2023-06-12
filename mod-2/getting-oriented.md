@@ -16,7 +16,7 @@ whoami
 
 The `whoami` command should print out your username. Congrats, you've executed your first command! This is the basic routine at the command line: type a command, press `enter`, see output in your terminal. The terminal is said to *print* the output&mdash;a nomenclature that may be a little confusing at first, if you're used to thinking of printing as something done on paper, with ink, by a physical printer&mdash;and output that's printed to the terminal window is said to be printed to `stdout` (short for "standard output").
 
-Note, however, that sometimes you'll see no output after typing a command and hitting `enter`. You'll just find yourself back at the command prompt. This could mean that your command failed to do what you wanted: for example, find content inside a file using the `grep` command. But often it means that your command succeeded splendidly. This is sometimes described as "succeeding silently." (Even the `grep` example could be read as silent success: the command succeeded in carrying out the search, it just didn't find what you told it to look for, because what you told it to look for wasn't there.)
+Note, however, that sometimes you'll see no output after typing a command and hitting `enter`. You'll just find yourself back at the command prompt. This could mean that your command failed to do what you wanted: for example, find content inside a file using the `grep` command. But often it means that your command succeeded splendidly. This is sometimes described as "succeeding silently." (Even the `grep` example could be read as silent success: the command succeeded in carrying out the search, it just didn't find what you told it to look for, because what you told it to look for wasn't there.) By contrast, if you really do make an error in executing a command, an error message will likely be printed to stdout.
 
 ## Know thy file system
 
@@ -59,9 +59,14 @@ Above, you used the command `whoami` to get your username. It's good to know *wh
 ```zsh
 pwd
 ```
-Unless you navigated away from your home directory during this session, your terminal should display, as output, the path to your home directory. If it displays another location, don't worry. We'll get you back home in short order.
+Unless you navigated away from your home directory during this session, your terminal should display, as output, the path to your home directory. If it displays another location, Type the following:
 
-`pwd` is short for "print working directory." Use it frequently at the command line to make sure you're where you want to be before making your next move. 
+```zsh
+cd ~
+```
+Wherever you are in your file system, this command will always take you home.
+
+The `pwd` command is short for "print working directory." Use it frequently at the command line to make sure you're where you want to be before making your next move. 
 
 Now that we know where we are, let's see what's here. Type the following command:
 
@@ -69,57 +74,40 @@ Now that we know where we are, let's see what's here. Type the following command
 ls
 ```
 
-You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in. 
+You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
 
-Wonder what's in the `Documents` folder? Let's try navigating to it with the following command:
+Depending on your terminal settings and operating system, you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. Additionally, whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
+
+Wonder what's in the `Documents` folder? Head there with the following command:
 
 ```zsh
 cd Documents
 ```
 
-The `cd` command lets us "change directory." (Make sure the "D" in "Desktop" is capitalized.) If the command was successful, you won't see any output. This is normal—often, the command line will succeed silently.
+The `cd` command lets us "change directory." (Make sure the "D" in "Documents" is capitalized. Or, better, start typing "Documents" and hit `tab` to auto-complete.) 
 
-So how do we know it worked? That's right, let's use our `pwd` command again. We should get:
+Type `pwd` to see your new location in the file system.
 
-```zsh
-pwd
-/Users/your-username/Documents
-```
+Now try `ls` again to see what's in your Documents directory.
 
-Now try `ls` again to see what's on your desktop. These three commands—`pwd`, `ls`, and `cd`—are the most commonly used in the terminal. Between them, you can orient yourself and move around.
+![Terminal window in Git Bash showing contents of Documents folder](../assets/cd-pwd-ls.png)
 
-![Terminal window in Git Bash showing contents of Documents folder](../assets/documents-git-bash.png)
+You'll use these three shell commands&mdash;`pwd`, `ls`, `cd`&mdash;a lot. As you practice navigating your file system, get in the habit of using them as a triad. 
 
-## Challenge
+## A word of warning
 
-Before moving on, take a minute to navigate through our computer's file system using the command line. Use the three commands you've just learned—`pwd`, `ls` and `cd`—eight (8) times each. Go poking around your `Photos` folder, or see what's so special about that root `/` directory. When you're done, come back to your "home" folder with
+Perhaps you're wondering what you might see at the highest level of your file hierarchy, `/`. You can go there with `cd /` and see what's there by typing `ls`.
 
-```zsh
-cd ~
-```
+Among other things, you should see folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`.
 
-(That's a tilde <kbd>~</kbd>, on the top left of your keyboard.) One more command you might find useful is `cd ..` which will move you one directory up in the filesystem. That's a `cd` with two periods after it:
+***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
 
-```zsh
-cd ..
-```
+This is a good place to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
 
-### Compare with the GUI
+## Practice
 
-It's important to note that this is the same old information you can get by pointing and clicking displayed to you in a different way.
+Take a few minutes now to move around in your file system using the command line. Use the three commands you've just learned&mdash;`pwd`, `ls` and `cd`—eight (8) times each.
 
-Go ahead and use pointing and clicking to navigate to your working directory—you can get there a few ways, but try starting from "My Computer" and clicking down from there. You'll notice that the folder names should match the ones that the command line spits out for you, since it's the same information! We're just using a different mode of navigation around your computer to see it.
+## Compare with the GUI
 
-## Solution
-
-1. Type `pwd` to see where on your computer you are located.
-2. Type `cd name-of-your-folder` to enter a subfolder.
-3. Type `ls` to see the content of that folder.
-4. Type `cd ..` to leave that folder.
-5. Type `pwd` to make sure you are back to the folder where you wish to be.
-6. Type `cd ~` to go back to your home folder.
-7. Type `pwd` to make sure you are in the folder where you wish to be.
-8. Type `cd /` to go back to your root folder.
-9. Type `ls` to see the content of folder you are currently in.
-10. Type `pwd` to make sure you are in the folder where you wish to be.
-11. Type `cd name-of-your-folder` to enter a subfolder.
+You might want to try putting a terminal window and a Finder or File Explorer window side by side and, as you tool around your file system via the command line, compare what you see there to what you see in the GUI.
