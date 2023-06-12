@@ -76,7 +76,9 @@ ls
 
 You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
 
-Depending on your terminal settings and operating system, you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. Additionally, whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
+(Ubuntu users: After you install Ubuntu, You won't have `Desktop`, `Documents`, or any other folders inside your home directory. You can create a `Documents` folder by typing `mkdir ~/Documents` More on the `mkdir` command in a later section.)
+
+Depending on your terminal settings and operating system, you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. (Ubuntu users: you won't see anything yet if you type `ls` once inside `Documents`, but you can still follow the navigation instructions below to get a feel for how to get around.) Additionally, whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
 
 Wonder what's in the `Documents` folder? Head there with the following command:
 
@@ -94,15 +96,24 @@ Now try `ls` again to see what's in your Documents directory.
 
 You'll use these three shell commands&mdash;`pwd`, `ls`, `cd`&mdash;a lot. As you practice navigating your file system, get in the habit of using them as a triad. 
 
+Now type
+
+```zsh
+cd ..
+```
+This command will take you up one level in the hierarchy, to the folder enclosing the one you're in currently. If you're in `~/Documents`, typing `cd ..` will take you up a level to `~` (home). If you were in, say, `~/Documents/course_files/2021` (That is, the folder named "2021" inside the folder "course_files" inside "Documents"), then typing `cd ..` would take you up a level to `course_files`.
+
+Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/cdl-geneseo.github.io/mod-2/command-line.md#the-bigger-picture). Consider, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
+
 ## A word of warning
 
 Perhaps you're wondering what you might see at the highest level of your file hierarchy, `/`. You can go there with `cd /` and see what's there by typing `ls`.
 
-Among other things, you should see folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`.
+Among other things, you should see folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`. (Ubuntu users: these,  you'll see.)
 
 ***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
 
-This is a good place to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
+This is a good place, by the way, to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
 
 ## Practice
 

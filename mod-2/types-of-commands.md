@@ -34,40 +34,10 @@ In the Properties dialog that comes up, check the box for "Use Ctrl+Shift+C/V as
 
 ### Windows Subsystem for Linux (WSL)
 
-To install WSL, follow [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview). 
+The easiest way to get WSL is to install it from the Microsoft app store, which you can access from the Start menu. Search there for "Windows Subsystem Linux" or "Ubuntu." 
 
 After launching Unbuntu on your Windows machine, follow the same process described above for Git Bash to enable copy/paste with `ctrl`+`shift`+`C` and `ctrl`+`shift`+`V` for copy/paste.
 
 Finally, note that your WSL installation has its own area within your file system. In your File Explorer, the Linux penguin icon indicates where these are located. As you can see below, the "home" folder of your Linux installation is not the same as your Windows home folder located within This PC > Local Disk(C:) > Users
 
 ![Location of Linux files in Windows File Explorer](../assets/linux-files-in-explorer.png)
-
-<!--
-
-## What does all that text even *mean*?
-
-Let\'s take a closer look at my terminal window in the screenshot below and see if we can make some more sense of what we\'re being shown. 
-
-At the very top of the terminal window, in the grey bar, you\'ll see that the letters \"zsh\" follow my username, aschmidt. These letters stand for \"z shell\", which is the (latest) MacOS command line shell. Like PowerShell for Windows, zsh is somewhat new, and comes with a lot more features than the old bash shell. We may explore some of these features later in the semester depending on interest and usefulness.
-
-The first line you see in the main screen of the terminal window is an introductory line that notes the last time you were recorded as having logged onto terminal. According to this screenshot, the last time I logged onto terminal was Tuesday, September 28th at 10:13am.
-
-The second line is where the action is. When you see a line that begins with this series of information, you\'ll know that you can start typing!
-
-Starting at the very left, you\'ll see the **username** and, sometimes, the computer name included with it. My username is aschmidt, and my computer name immediately follows that username. This is necessary on my machine, because it\'s owned by the school, and is configured to include a unique computer ID that can be traced back to me.
-
-The next piece of the line is where you\'ll look to determine your **current directory**, that is, where you physically are in your computer\'s directory structure. The \"\~\" shown in the screenshot means that we are in my \"home\" directory. If I were to move to my desktop, that \"\~\" would be replaced with \"Desktop\". It can be easy to lose track of where you are in the terminal, so one of the ways you can keep your wits about you is to check this part of the statement.
-
-Finally, the \"%\" following the current directory section is what is considered the **prompt**. When you see this symbol appear, that means the terminal is ready for you to type a new command. In the old bash shell, this symbol was a \"\$\".
-
-![Screenshot highlighting where to find the username, current directory, prompt, and shell symbols within the terminal on a Mac.](https://canvas.geneseo.edu/courses/20408/files/1839044/preview){style="display: block; margin-left: auto; margin-right: auto;" width="670" height="465" api-endpoint="https://canvas.geneseo.edu/api/v1/courses/20408/files/1839044" api-returntype="File"}
-
-### Open your own terminal window! {#open-your-own-terminal-window style="max-width: 900px; margin: auto;"}
-
-Now it\'s time to pull up your own window and see what it looks like on *your* machine!
-
-**Mac users:** Bring up the search bar by typing \"⌘ + space bar\" then start to type in \"terminal.\" Select \"terminal\" from the search results.
-
-**Windows users:** In your search bar (either in directly in your dock or within the \"Start\" button) start typing \"Git Bash\" and select the application from the results.
-
-Try to identify everything we covered on this page in your own terminal window. -->
