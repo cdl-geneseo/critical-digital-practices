@@ -1,10 +1,10 @@
 ---
-title: Getting Oriented
+title: A Sense of Where You Are
 layout: default
 parent: The Command Line
-nav_order: 6
+nav_order: 5
 ---
-# Getting Oriented
+# A Sense of Where You Are
 
 ## Know thyself
 

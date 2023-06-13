@@ -1,10 +1,10 @@
 ---
-title: Getting to the Command Line
+title: Getting Started
 layout: default
 parent: The Command Line
 nav_order: 4
 ---
-# Getting to the Command Line
+# Getting Started
 
 As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/critical-digital-practices/mod-2/unix-like-vs-windows).
 

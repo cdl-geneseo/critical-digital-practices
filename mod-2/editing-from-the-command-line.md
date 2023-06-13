@@ -2,7 +2,7 @@
 title: Editing from the Command Line
 layout: default
 parent: The Command Line
-nav_order: 12
+nav_order: 10
 ---
 # Editing From the Command Line
 
