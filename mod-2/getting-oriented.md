@@ -76,7 +76,7 @@ ls
 
 You should see a number of folders, probably including `Documents`, `Desktop`, and so on. You may also see some files. These are the contents of the current working directory. `ls` will "list" the contents of the directory you are in.
 
-(**Ubuntu users:** After you install Ubuntu, you won't have `Desktop`, `Documents`, or any other folders inside your home directory. You can create a `Documents` folder by typing `mkdir ~/Documents` at the command line, followed by `enter`. The command will succeed silently. Follow up with `ls` to see your new Documents folder listed. You'll learn more about `mkdir` command in a later section.)
+(&#x1f427; **Ubuntu users:** After you install Ubuntu, you won't have `Desktop`, `Documents`, or any other folders inside your home directory. You can create a `Documents` folder by typing `mkdir ~/Documents` at the command line, followed by `enter`. The command will succeed silently. Follow up with `ls` to see your new Documents folder listed. You'll learn more about `mkdir` command in a later section.)
 
 Depending on your terminal settings and operating system, when you type `ls` you may get a color-coded display of your files and directories&mdash;making it easier to distinguish directories from files&mdash;or you may just get a monochrome display. Whether in color or monochrome, files and directories may be displayed horizontally across your window or in a vertical list. Directories may be displayed with a forward slash (`/`) at the end (a helpful identifier), or they may not. All these settings are adjustable. Eventually, you'll want to take the time to set things up in whatever way works best for you. For now, there's no need to bother.
 
@@ -96,7 +96,7 @@ Now try `ls` again to see what's in your Documents directory.
 
 You'll use these three shell commands&mdash;`pwd`, `ls`, `cd`&mdash;a lot. As you practice navigating your file system, get in the habit of using them as a triad.
 
-(**Ubuntu users:** you won't see anything yet if you type `ls` once inside `Documents`&mdash;there aren't any files there yet!&mdash;but you can still follow the navigation instructions below to get a feel for how to get around.)
+(&#x1f427; **Ubuntu users:** you won't see anything yet if you type `ls` once inside `Documents`&mdash;there aren't any files there yet!&mdash;but you can still follow the navigation instructions below to get a feel for how to get around.)
 
 Now type
 
@@ -116,6 +116,19 @@ Among other things, you should see folders with the names `bin`, `usr`, `tmp`, a
 &#x2757;&#x2757;&#x2757; ***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
 
 This is a good place, by the way, to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
+
+## Learning more about a command
+
+Most commands have a "man" (short for "manual") page that you can access from the command line to learn more about the command. These can be a bit daunting to read at first, but they contain a ton of valuable information, and you'll get the hang of scanning them for the information you need. For example,
+
+```zsh
+man pwd
+```
+will pull up the man page for the `pwd` command. You can page through the contents with &#x25b2; and &#x25bc; (on Mac, hold down `fn` as you do this). To exit the man page, simply type `q`. (The `q` command will also get you out of the page view when looking at files with `less`.)
+
+## Bailing out with ctrl-c
+
+Sooner or later, you'll do something at the command line that will produce a whole lot of unintended and unneeded output, or that will cause a command to hang up and not complete. Typing `ctrl-c` will interrupt any command that's running and land you back at the command-line prompt.
 
 ## Practice
 

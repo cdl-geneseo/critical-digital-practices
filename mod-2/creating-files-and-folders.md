@@ -6,121 +6,160 @@ nav_order: 7
 ---
 # Creating Files and Folders
 
-## Warm up
+Now that you understand a bit about how to get around on the command line, let's make something new there.
 
-So far, we've only performed commands that give us information. Let's use a command that creates something on the computer.
-
-First, make sure you're in your home directory:
+Make sure you're in your home directory. Type `pwd`, then `enter`
 
 ```zsh
 pwd
-/Users/your-username # What you'll see on a Mac, where your-username is your actual username
-/c/Users/your-username # What you'll see in Git Bash
-/home/your-username # What you'll see in Ubuntu
+/Users/your-username # What you should see on a Mac, where your-username is your actual username
+/c/Users/your-username # What you should see in Git Bash
+/home/your-username # What you should see in Ubuntu
 ```
-On any of these operating systems, by the way, you can always verify the location of your home folder by typing
-
-```zsh
-echo $HOME
-```
-And wherever you are in your file system, you can always get *back* home by typing
+If you see something else, type
 
 ```zsh
 cd ~
 ```
-The tilde (`~`) is shorthand for your home directory. In many (though not all) situations, using it will spare you the trouble of havng to type the full path to your home.
+Use `pwd` again to confirm that you're home.
 
-Let's move to the `Desktop` folder, or "change directory" with `cd`:
-
-```zsh
-cd Desktop
-```
-On Mac and in Windows, this will move you to your Desktop folder. In Ubuntu for Windows, a Desktop folder isn't automatically created. You can create one using the `mkdir` command. 
+Let's use the `mkdir` command (short for "make directory") to create a brand-new folder for the work we're going to do. We'll name it `critical-digital` (no spaces). (In the unlikely event that you already have a folder inside your home folder named `critical-digital`, feel free to choose another name to hold your work for our course. Make sure the name doesn't contain any spaces.)
 
 ```zsh
-mkdir Desktop # Only necessary for Ubuntu users
+mkdir critical-digital
 ```
-Or you can simply create a new folder with any other name you like. The name should not contain spaces. After doing so, use `cd` to move into the new directory, as shown above for Mac and Windows.
+Next, we'll use `cd` to descend into the folder. Remember that if you type just the first few letters of the new folder name and hit `tab`, you'll be less likely to get tripped up by typos.
 
-Use `pwd` again to make sure you're in the `Desktop` folder (or other folder you've created).
+```zsh
+cd critical-digital
+```
+
+Use `pwd` again to make sure you're in the `critical-digital` folder (or other folder you've created).
 
 ```zsh
 pwd
-/Users/your-username/Desktop # Mac
-/c/Users/schacht/Desktop # Git Bash
-/home/your-username/Desktop # Ubuntu
+/Users/your-username/critical-digital # Mac
+/c/Users/schacht/critical-digital # Git Bash
+/home/your-username/critical-digital # Ubuntu
 ```
 Go back home.
 
 ```zsh
 cd ~
 ```
-Go back to your Desktop.
+Go back to `critical-digital`.
 
 ```zsh
-cd ~/Desktop
+cd ~/critical-digital
 ```
-You could have left out the `~/` in this last move because `Desktop` is immediately inside your home directory. But including it also works. So does the full path: `cd /Users/your-username/Desktop` on Mac, for example.
+You could have left out the `~/` in this last move because `critical-digital` is immediately inside your home directory. But including it also works. So does the full path: `cd /Users/your-username/critical-digital` on Mac, for example.
 
 ## Create a file
+
+Use `pwd` to make sure you're inside `critical-digital`. If you aren't, then go there with `cd`. Then, as your next command, type the below, followed by `enter`
 
 ```zsh
 touch foo.txt
 ```
+The `touch` command is used to create a file without any content. 
 
-The `touch` command is used to create a file without any content. This command can be used when you don’t have any data yet to store in it.
+The command should succeed silently, producing no output to `stdout`. Now move your terminal window aside, if necessary, so that you can see your GUI (Finder or File Explorer)
+and go to your home folder there. You should see an icon for the file `foo.txt`. (&#x1f427; **Ubuntu users:** Remember that the home folder in your Linux installation is not the same as your regular home folder.)
 
-If the command succeeds, you won't see any output. Now move the terminal window and look at your "real" desktop, the graphical one. See any differences? If the command was successful and you were in the right place, you should see an empty text file called `foo.txt` on the desktop. Pretty cool, right?
+Go ahead and open this file from the GUI by double-clicking it.  It will likely open in Notepad (Windows) or TextEdit (Mac). You'll learn more about these text-editing applications when we get to [text editors](/critical-digital-practices/mod-3/text-editors). There should be nothing inside the file.
 
-## Handy Tip: Up Arrow
+## Create nested directories
 
-Let's say you liked that `foo.txt` file so much you'd like another! In the terminal window, press the <kbd>up arrow</kbd> on your keyboard. You'll notice this populates the line with the command that you just wrote. You can hit <kbd>enter</kbd> to create another `foo.txt,` (note - [`touch`](https://en.wikipedia.org/wiki/Touch_(Unix)) command will not overwrite your document nor will it add another document to the same directory, but it will update info about that file.) or you could use your left/right arrows to move the insert cursor around on the screen so you can, for instance, change the file name to `foot.txt` to create a different file.
-
-As we start to write more complicated and longer commands in our terminal, the <kbd>up arrow</kbd> is a great shortcut so you don't have to spend lots of time typing.
-
-## Creating Folders
-
-OK, so we're going to be doing a lot of work during the Digital Humanities Research Institute. Let's create a `projects` folder on our desktop, where we can keep all our work in one place.
-
-First, let's check to make sure we're still in the `Desktop` folder with `pwd`:
+Let's create a directory inside `critical-digital`. First, make sure you're where you want to be by using `pwd`.
 
 ```zsh
 pwd
-/Users/your-username/Desktop
+/Users/your-username/critical-digital # Mac
+/c/Users/schacht/critical-digital # Git Bash
+/home/your-username/critical-digital # Ubuntu
 ```
-
-Once you've double-checked you're in `Desktop`, we'll use the `mkdir` or "make directory" command to make a folder called `projects`:
+Not in the right place? Then do this. It will work on all systems.
 
 ```zsh
-mkdir projects
+cd ~/critical-digital
 ```
+Use `pwd` if necessary to verify you're where you want to be.
 
-Now run `ls` to see if a projects folder has appeared. Once you confirm that the projects folder was created successfully, `cd` into it.
+Before we make a new directory, let's revisit the rule, mentioned several times by now, that you shouldn't include spaces in file or directory names. That's curious, isn't it? It may have struck you that you have lots of files and folders on your computer with spaces in the names, perhaps `My Music` or `My Photos`. So why this odd prohibition?
+
+Well, let's see what happens if we try to create a directory with a space in the name. Go ahead and do this (from inside `critical-digital`):
 
 ```zsh
-cd projects
-pwd
-/Users/your-username/Desktop/projects
+mkdir some folder
 ```
+Well that seems to have worked just fine, right? Succeeded silently? Spaces&mdash;no problem! Let's take a peek inside `critical-digital` to see what's there:
 
-OK, now you've got a projects folder that you can use throughout the Institute. It should be visible on your graphical desktop, just like the `foo.txt` file we created earlier.
+![List of files and folder inside a folder at command line](../assets/some-folder.png)
 
-## Challenge
+Oof! We actually created two folders, one named `some` and the other named `folder`. That's because the shell reads the space character as marking the termination of a command, so it reads `mkdir some` as a complete command. But why did it go on, then, to create `folder` as well? That's because it reads `some` and `folder` as two independent **arguments** to the `mkdir` command. Think of an argument as something like the object of the verb in ordinary English sentence structure. In the sentence, "I kick the ball," "ball" is the object of the verb "kick." COMMAND+ARGUMENT is a structure you'll see a lot at the command line. The thing is, though, a command can take multiple arguments. In English, it wouldn't make sense to say or write, "I kick the ball can." But at the command line, `mkdir some folder` makes total sense: first, make a directory named `some`, then make a directory named `folder`. One command, two arguments.
 
-Try and create a sub-folder and file on your own!
+So how do we make a directory named `some folder`? There are two ways we can do this. One is to use the backslash (`\`) as an "escape" character: a signal to the shell *not* to treat the space that follows as the termination of the argument `some` but instead as an actual space. Thus,
 
-## Solution
+```zsh
+mkdir some\ folder
+```
+will get the job done.
 
-1. Type `pwd` to see where on your computer you are located. If you are not in the `projects` folder we just created, navigate to that folder using the commands you learned in the [lesson on navigation](https://curriculum.dhinstitutes.org/workshops/command-line/lessons/?page=6).
-2. Type `mkdir name-of-your-subfolder` to create a subfolder.
-3. Type `cd name-of-your-folder` to navigate to that folder.
-4. Type `touch challenge.txt` to create a new text file.
-5. Type `ls` to check whether you created the file correctly.
+The other option is to put quotation marks around the complete directory name, thus:
 
-## Evaluation
+```zsh
+mkdir "some folder"
+```
+This approach, too, will succeed in producing a folder named `some folder`. Try one of the above methods now and see for yourself.
 
-What does the <kbd>up arrow</kbd> command do?
-- It quits the Terminal/GitBash.
-- It undoes my last command.
-- It inserts my last command.*
-- It shows me what folder I am working in.
+Let's now descend into that new folder:
+
+```zsh
+cd "some folder"
+```
+(We could have also written `cd some\ folder`). Let's make another folder inside this one:
+
+```zsh
+mkdir some\ other\ folder # we can have multiple spaces in a directory or file name
+```
+Descend again:
+
+```zsh
+cd "some other folder"
+```
+Make a new file, this time with spaces in the name:
+
+```zsh
+touch "my awesome file.txt"
+```
+Use `ls` to see the file name. (If you'd left off the quotation marks, you'd have created three files named, respectively, `my`, `awesome`, and `file.txt`).
+
+Climb back up a level using `cd ..`
+
+```zsh
+cd ..
+```
+Type `pwd` to see where you are.
+
+## Time-saver: &#x25b2;
+
+If you followed the instructions above, you should now be in `some folder`, which is inside `critical-digital`, which is inside your home folder. You now have at least three ways to get back home. *Don't use any of them yet!* First review them, then read on before making your next move.
+
+(1)
+```zsh
+cd ~
+```
+(2)
+```zsh
+cd ../../
+```
+(3)
+Hit the up arrow (&#x25b2;) at the lower right of your keyboard twice.
+
+We're going to go with (3)&mdash;not because it's better, but just to illustrate the value of &#x25b2;. Because the last command you issued before we got to this point was `cd ..`, typing &#x25b2; will make that command re-appear at the command line, waiting to be executed again with `enter`. Executing the command and repeating this sequence will do the same thing again.
+
+The point is, your shell very helpfully stores a history of the commands you've executed in a given session, and you can scroll up and down in this history using &#x25b2; and &#x25bc;. Getting the hang of using these keys will save you a lot of time in the long run.
+
+Take note, as well, of what method (2) above is showing you. You can climb through multiple levels of your file hierarchy by adding `../` multiple times to the argument of `cd`. You move up two levels at a time with `../../`, three levels with `../../../`, and so on.
+
+One final trick to end this section. Wherever you are now, you can always return to *the most recent previous location* with `cd -`.
