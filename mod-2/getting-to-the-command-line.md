@@ -49,6 +49,3 @@ One thing you can definitely do with your mouse or trackpad, though, is select, 
 You do have one stay against the pulling of hair and gnashing of teeth that typos and misspelled words are bound to create at the command line: tab completion.
 
 Let's say you want to tell your shell to do something with a file named `supercalifragilisticexpialidocious.txt`. If you just type a few letters, say `super`, and hit the `tab` key, your shell should auto-complete the file name. If there's another file in the same directory named `superwoman.txt`, your shell will show you both filenames, and typing either `c` or `w` and hitting `tab` again will enable you to select the one you want. If you type `super`, hit `tab`, and get *no* result, your shell is silently informing you that at your current location in your file system, there is, in fact, *no file or directory* that begins with the string `super`. Maybe the file you're looking for actually has a different name, or maybe you're not at the location in your file system where the file lives. Soon, you'll learn how to see just where you are and get to where you want to be.
-
-## Bailing out
-
