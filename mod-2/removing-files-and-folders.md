@@ -2,7 +2,7 @@
 title: Removing Files and Folders
 layout: default
 parent: The Command Line
-nav_order: 9
+nav_order: 8
 ---
 # Removing Files and Folders
 
