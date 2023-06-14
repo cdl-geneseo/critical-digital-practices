@@ -10,12 +10,11 @@ nav_order: 1
 
 At the completion of this module, you should
 
-1.  Understand some basic operations of the computer.
-2.  Understand some ways in which gender, race, and other socially-constructed concepts have influenced and continue to influence our interactions with computers.
-3.  Understand the differences between common operating systems.
-4.  Understand how to navigate the file system on a Mac or Windows computer.
+1.  Understand what a computer is.
+2.  Understand basic computing concepts such as "operating system" and "file system."
+3.  Be able to set up your computer's graphical user interface (GUI) to maximize the transparency of the file system.
 
-## Readings
+## Reading
 
 - [Toward anti-racist technical terminology](https://ach.org/toward-anti-racist-technical-terminology/)
 - [GitHub's renaming statement](https://github.com/github/renaming)

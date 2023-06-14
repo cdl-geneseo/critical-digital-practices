@@ -8,10 +8,11 @@ nav_order: 1
 
 ## Outcomes
 
-1. Understand the importance of text in computing
-2. Understand a bit about the varieties of text used in computing
-3. Be able to use a text editor to work with plain text files
-4. Be able to write plain text files in Markdown
-5. Have a plan for keeping a journal in Markdown
+At the completion of this module you should
 
-## Readings
+1. Understand some different uses of the term "text" in computing.
+2. Be able to distinguish between "plain text" and other types of text.
+3. Understand some major uses of plain text for file types such as txt, html, and csv.
+3. Be able edit text effectively in a plain-text editor.
+4. Be able to write plain text files in Markdown.
+5. Be able to keep a journal of your learning for this course in Markdown.
