@@ -2,7 +2,7 @@
 title: Creating Files and Folders
 layout: default
 parent: The Command Line
-nav_order: 7
+nav_order: 6
 ---
 # Creating Files and Folders
 

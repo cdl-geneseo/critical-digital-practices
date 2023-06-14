@@ -16,7 +16,7 @@ Still, if you're a Windows user, you'll at least want to get yourself familiar w
 
 ## Using Bash on a Windows machine
 
-You have a few options for installing Bash in a Windows environment. One is to install [Git Bash](https://gitforwindows.org/). This has the advantage that the installation process also installs the git software for you, ensuring that you're all set up for using git and GitHub in one of the later modules.
+You have a few options for installing Bash in a Windows environment. One is to install [Git Bash](https://gitforwindows.org/). This has the advantage that the installation process also installs git, a powerful command-line tool for version-tracking and collaboration.
 
 Another option is to install [Windows Subsystem for Linux (WSL)](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview), which will enable you to run Ubuntu Linux in a dedicated area of your Windows machine.
 
