@@ -14,7 +14,7 @@ If you spend enough time on the command line, eventually you'll find yourself in
 
 Create a new file or open an existing one:
 
-```console
+```zsh
 $ vim filename.txt
 ```
 (The `vim` command can be used either to open a file or create one. However, unlike with `touch`, which we used earlier, the file doesn't exist in your filesystem until you save it. If you create a new file with Vim and then exit the Vim editor without saving, the file will be lost.)
@@ -37,7 +37,7 @@ After making your desired changes, type `esc`, followed by `:w` if you want to s
 
 If you type
 
-```console
+```zsh
 cat filename.txt
 ```
 you can confirm that you saved the file content successfully.
@@ -48,12 +48,12 @@ It takes a while to get the hang of Vim's keyboard commands, but once you do, it
 
 You may find Nano a little more user-friendly than Vim. Create a new text file by typing
 
-```console
+```zsh
 $ nano newfilename.txt
 ```
 Or, if you prefer, re-enter the file you just edited in Vim:
 
-```console
+```zsh
 $ nano filename.txt
 ```
 On some Mac systems, executing `nano` will open the text editor Pico, which works identically to Nano.
