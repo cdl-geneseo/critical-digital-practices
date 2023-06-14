@@ -48,7 +48,7 @@ Rest assured that this course won't require you to take a particular position on
 ## Course overview
 
 Module 1: Meet Your Computer  
-Module 2: Working at the Command Line  
+Module 2: The Command Line  
 Module 3: What is Text?  
 Module 4: The Web  
 Module 5: Open for Learning  

@@ -31,9 +31,9 @@ To begin editing the file, navigate to the location in the file where you want t
 
 You can't navigate the file in insert mode. If you're not where you want to be in the file to make changes, hit `esc` to escape, use the keyboard to go where you want to be, and type `i` again to re-enter insert mode.
 
-Type as would normally to add text. You can use your keyboard to navigate within the nex test you're adding.
+Type as you would normally to add text. You can use your keyboard to navigate within the text you're adding.
 
-After making your desired changes, type `esc`, followed by `:w` if you want to save your changes, `:wq` if you want to save them and exit the file, or `:q!` if you want to exit without saving any changes. If you typed `:w` to simply save, you can continue by entering insert mode again with `i`.
+After making your desired changes, type `esc`, followed by `:w` if you want to save your changes; by `:wq` if you want to save them and exit the file; or by `:q!` if you want to exit without saving any changes. If you typed `:w` to simply save, you can continue editing by entering insert mode again with `i`.
 
 If you type
 
@@ -41,8 +41,6 @@ If you type
 cat filename.txt
 ```
 you can confirm that you saved the file content successfully.
-
-Suppose you want to re-enter the file and add a line? 
 
 It takes a while to get the hang of Vim's keyboard commands, but once you do, it will seem much less intimidating. There are additional commands that let you perform standard editing tasks such as cut, copy, paste, and undo. One useful feature of Vim is its ability to highlight syntax in documents that include markup (HTML or XML, for example) or programming instructions. Typing `:syntax on` will turn this feature on. (If you're using Git Bash, you may find that you don't have to do anything to turn this feature on.)
 
@@ -60,6 +58,8 @@ $ nano filename.txt
 ```
 On some Mac systems, executing `nano` will open the text editor Pico, which works identically to Nano.
 
+As with Vim, if you create a new file with `nano`, it doesn't exist in your file system until you save it.
+
 With Nano, you can start moving around in the file and typing right away; no need to switch into a special "Insert" mode.
 
 Long lines in your file may not wrap to the width of the window. A `$` at the end of the line indicates that the line extends beyond the window width, as in the example below.
@@ -70,7 +70,7 @@ In Nano, as in Vim, you move your cursor using the keyboard. Type `ctrl-f` to mo
 
 Nano conveniently displays a handy list of commands right at the bottom of the editor window.
 
-Add some text to your file, then hit `ctrl-o`, followed by `enter/return`. As in Vim, you'll see feedback at the bottom of the window, such as "[Wrote one line.]"
+Add some text to your file, then hit `ctrl-o`, followed by `enter`. As in Vim, you'll see feedback at the bottom of the window, such as "[Wrote one line.]"
 
 Type `ctrl-x` to exit and close the file in one move.
 
