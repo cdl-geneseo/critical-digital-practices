@@ -44,13 +44,13 @@ Did you know that you can navigate your file system through a browser, such as F
 
 To navigate your file system in a browser window, go to the browser's location bar (where you usually see a web address that begins `http://` or `https://`). The http in a web address stands for *hyptertext transfer protocol*. Typing that into your browser location bar tells your browser to go to a location on the web.
 
-Instead of typing `http://`  or `https://`, however, type `file://`. You're now telling your browser that you want to go to a location in your file system rather than a location on the web.
+Instead of typing `http://`  or `https://`, however, type `file://`, then hit `enter`. (On many keyboards, the `return` key also functions as the `enter` key. If you have no key labeled `enter` on your keyboard, then wherever the instructions in this course tell you to hit `enter`, just hit `return`.) You're now telling your browser that you want to go to a location in your file system rather than a location on the web.
 
 How do you get to a particular location in your file system? Simply type the path to that location in your file hierarchy, beginning with `/Users`  (on a Mac) or `/C:/Users` (in Windows). *Note that this results in 3 forward slashes (`///`) following `file:`*. Keep in mind that the first two are part of the protocol (`file://`) and the third is actually part of the file path (`/Users/...`  or `/C:/Users/...`).
 
-To navigate to your Documents folder, type `file:///Users/your_username/Documents/`  (Mac) or `file:///C:/Users/your_username/Documents/` (Windows). Hit `Return` or `Enter`. Depending on your operating system and browser, your browser will either take you to your Documents folder in the operating system's GUI or display the contents of the folder in your browser window.
+To navigate to your Documents folder, type `file:///Users/your-username/Documents/` (Mac) or `file:///C:/Users/your-username/Documents/` (Windows). Hit `enter`. Depending on your operating system and browser, your browser will either take you to your Documents folder in the operating system's GUI or display the contents of the folder in your browser window.
 
-(In place of `your_username` type your actual username on the computer you're using.)
+(In place of `your-username` type your actual username on the computer you're using.)
 
 In the Mac example below, the username has been obscured.
 
