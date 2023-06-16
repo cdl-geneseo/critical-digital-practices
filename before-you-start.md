@@ -24,7 +24,7 @@ In the modules for this course, a red exclamation point (&#x2757;) signals cruci
 
 ## Be careful what you touch
 
-As you begin poking around in your computer's [file system](/critical-digital-practices/mod-1/file-system.md), whether through your computer's graphical user interface (GUI) or from the [command line](/critical-digital-practices/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. (Banishing fear is one objective of this course!) But you should handle them with extreme care&mdash;and ***&#x2757; only handle them if you're absolutely sure you know what you're doing.*** 
+As you begin poking around in your computer's [file system](/critical-digital-practices/mod-1/file-system), whether through your computer's graphical user interface (GUI) or from the [command line](/critical-digital-practices/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. (Banishing fear is one objective of this course!) But you should handle them with extreme care&mdash;and ***&#x2757; only handle them if you're absolutely sure you know what you're doing.*** 
 
 ## Search, but verify
 
