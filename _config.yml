@@ -6,3 +6,13 @@ url: https://cdl-geneseo.github.io/critical-digital-practices
 
 aux_links:
   Fork Me on GitHub: https://github.com/cdl-geneseo/critical-digital-practices
+
+callouts:
+  warning:
+    title: Be Careful
+    color: red
+  tip:
+    title: Tip
+    color: green
+  alt-warning:
+    color: red
