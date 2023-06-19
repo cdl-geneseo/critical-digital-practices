@@ -1,5 +1,5 @@
 ---
-title: Outcomes and Readings
+title: Outcomes and Reading
 layout: default
 parent: The Command Line
 nav_order: 1

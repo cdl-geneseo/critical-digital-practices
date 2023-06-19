@@ -1,5 +1,5 @@
 ---
-title: Outcomes and Readings
+title: Outcomes and Reading
 layout: default
 parent: Meet Your Computer
 nav_order: 1
