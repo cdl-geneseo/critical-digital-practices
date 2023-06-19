@@ -61,6 +61,6 @@ mv ~/critical-digital/some\ folder/better-folder/my\ awesome\ file.txt ~/critica
 ```
 If we then `cd` to `critical-digital`, we can use `ls` to confirm the move.
 
-## A word of warning
+{: .warning}
 
 The `mv` command is a powerful one. You can pretty much re-locate anything anywhere if you do it right. But doing it wrong can lead to heartache. Practice using it and get confident with it before using it with important files and folders. Consider backing up important files and folders in the GUI before you try anything fancy with them from the command line.

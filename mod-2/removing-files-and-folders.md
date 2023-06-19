@@ -8,7 +8,8 @@ nav_order: 8
 
 You can remove files and folders (together with their folder contents) with the `rm` command.
 
-&#x2757; When you use `rm`, you delete files and folders ***permanently***. This is not the same as moving them to the Trash or Recycle Bin. Files removed with `rm` are ***gone***. Your can't get them back. Before using `rm`, it's crucial that you know where you are in your file system and will be truly removing what you want to remove. Check inside folders before removing them.
+{: .warning}
+When you use `rm`, you delete files and folders ***permanently***. This is not the same as moving them to the Trash or Recycle Bin. Files removed with `rm` are ***gone***. Your can't get them back. Before using `rm`, it's crucial that you know where you are in your file system and will be truly removing what you want to remove. Check inside folders before removing them.
 
 ## Remove a file
 

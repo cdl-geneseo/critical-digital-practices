@@ -18,13 +18,10 @@ We're talking about low-stakes breakage here anyway, such as accidentally deleti
 
 When playing around with your computer, the best insurance against grief and misery is to be able to put things back the way they were. If you already back up your most important files to a cloud service, that's a good start, but if you don't also back up to physical media such as an external drive or USB stick, you should seriously consider doing so. Set up automatic backups to your attached storage or establish a daily manual backup routine.
 
-## Watch for alerts in the modules
-
-In the modules for this course, a red exclamation point (&#x2757;) signals crucial advice designed to help keep you from breaking important things. Keep an eye out for it, and follow the advice.
-
 ## Be careful what you touch
 
-As you begin poking around in your computer's [file system](/critical-digital-practices/mod-1/file-system), whether through your computer's graphical user interface (GUI) or from the [command line](/critical-digital-practices/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. Banishing fear is one objective of this course! But banishing fear shouldn't be confused with throwing caution to the winds. ***&#x2757; You should treat these files and folders with respect and handle them with care&mdash;and <u>only</u> if you're absolutely sure you know what you're doing.*** 
+{: .alt-warning}
+As you begin poking around in your computer's [file system](/critical-digital-practices/mod-1/file-system), whether through your computer's graphical user interface (GUI) or from the [command line](/critical-digital-practices/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. Banishing fear is one objective of this course! But banishing fear shouldn't be confused with throwing caution to the winds. ***You should treat these files and folders with respect and handle them with care&mdash;and <u>only</u> if you're absolutely sure you know what you're doing.*** 
 
 ## Search, but verify
 
@@ -33,7 +30,11 @@ The web is a rich information resource when you're trying to do something new on
 - Be skeptical of sites that turn up in your search results whose URL is more or less identical to the thing you're trying to figure out how to do: e.g., `launchmyterminal.com`
 - When looking at suggestions on community-driven sites like [Stack Overflow](https://stackoverflow.com/), [Stack Exchange](https://stackexchange.com/), and [Super User](https://superuser.com/), pay attention to how other users have voted on suggested answers to questions. Don't just pick the first suggestion you see.
 - No matter where you find advice, see if you can find an answer to the same question elsewhere for confirmation that the advice is reasonable.
-- **&#x2757; Exercise special care when following advice that involves using `sudo`** at the beginning of a terminal command. The term "sudo" is short for "super user do." When executing a command as a super user, you're taking an action that requires administrative privileges on your computer, and you'll be asked to enter your login password. You needn't be afraid to use `sudo`&mdash;a given command may simply require this level of privileges if you want to carry it out&mdash;but that may be because the command would affect some aspect of your computer's core functionality. Before using `sudo`, be certain that it's needed for what you want to accomplish, and be absolutely certain that you can trust the source of your advice.
+
+## sudo or sudon't?
+
+{: .alt-warning}
+Exercise special care when following advice that involves using `sudo` at the beginning of a terminal command. The term "sudo" is short for "super user do." When executing a command as a super user, you're taking an action that requires administrative privileges on your computer, and you'll be asked to enter your login password. You needn't be afraid to use `sudo`&mdash;a given command may simply require this level of privileges if you want to carry it out&mdash;but that may be because the command would affect some aspect of your computer's core functionality. Before using `sudo`, be certain that it's needed for what you want to accomplish, and be absolutely certain that you can trust the source of your advice.
 
 ## Ready to play? 
 

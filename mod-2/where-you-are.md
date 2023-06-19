@@ -107,15 +107,15 @@ This command will take you up one level in the hierarchy, to the folder enclosin
 
 Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/critical-digital-practices/mod-2/command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
 
-## A word of warning
+## Climb to the top
 
 Perhaps you're wondering what you might see at the highest level of your file hierarchy, `/`. You can go there with `cd /` and see what's there by typing `ls`.
 
-Among other things, you should see folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`. (Ubuntu users: these,  you'll see.)
+{: .warning}
+At the top level of your file hierarchy, you'll see, among other things, folders with the names `bin`, `usr`, `tmp`, and `etc`. You may also see folders with similarly non-transparent names such as `sbin`, `var`, `opt`, and `private`. (Ubuntu users: these, you'll see.) These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.
 
-&#x2757;&#x2757;&#x2757; ***These folders contain files and other folders that provide essential functionality to your operating system. Unless you're certain that you know what you're doing, you should stay out of them. A wrong move here could really mess up your computer.***
-
-This is a good place, by the way, to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
+{: .tip}
+This is a good place to emphasize the importance of ***backing up your computer regularly***. If you store important files on one or more cloud services, such as Google Drive or Dropbox, you've got some protection, but the best protection comes from also backing up everything regularly to an external drive. It's absolutely one of the best investments you can make.
 
 ## Learning more about a command
 

@@ -58,4 +58,5 @@ In the Mac example below, the username has been obscured.
 
 From here, some files (e.g., those ending with the extensions `.md`, `.txt`, `.html`, `.pdf`, `.jpg`, `.png`) should open right in your browser window if you click on them.
 
-When you browse your file system this way, you may also see files and folders that are hidden from you when browsing via your GUI. Their names begin with a `.`, e.g., `.DS_Store`. These files and folders are normally hidden from users for a reason: altering them in any way can seriously affect your computer's functioning. ***Best to leave them alone unless you're absolutely sure you know what you're doing.***
+{: .warning} 
+When you explore your file system through your browser, you may see files and folders that are hidden from you when browsing via your GUI. Their names begin with a `.`, e.g., `.DS_Store`. These files and folders are normally hidden from users for a reason: altering them in any way can seriously affect your computer's functioning. Best to leave them alone unless you're absolutely sure you know what you're doing.
