@@ -60,6 +60,6 @@ Module 8: Content Management: WordPress and Omeka
 
 Spot an error or have an idea for making the course better? Don't hesitate to [open a pull request](https://github.com/cdl-geneseo/critical-digital-practices).
 
-## Attribution
+## Attribution and acknowledgments
 
-Critical Digital Practices was created by the [Center for Digital Learning at SUNY Geneseo](https://geneseo.edu/cdl), with content contributed by Paul Schacht and Amanda Schmidt. Some of that content has been remixed, with gratitude, from [repositories shared by the CUNY Graduate Center's Digital Humanities Research Institute](https://github.com/DHRI-Curriculum/).
+Critical Digital Practices was created by the [Center for Digital Learning at SUNY Geneseo](https://geneseo.edu/cdl). Paul Schacht is the principal author. Some content has been remixed, with gratitude, from [repositories openly and generously shared by the CUNY Graduate Center's Digital Humanities Research Institute](https://github.com/DHRI-Curriculum/). Thanks to Amanda Schmidt for the many wonderful hours of conversation and brainstorming that are reflected in the underlying concept and overall design of the course.
