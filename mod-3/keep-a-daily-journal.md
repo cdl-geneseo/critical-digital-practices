@@ -13,7 +13,7 @@ Let's put together what you've learned so far about the command line and Markdow
 
 Besides giving you an opportunity to use your new skills at the command line and take advantage of Markdown's simplicity, flexibility, and interoperability, creating this workflow and keeping the journal will give you a way to document your learning in this course&mdash;and beyond.
 
-## Step 1: Write a shell script to create a new daily file
+## Step 1: Save a shell script to create a new daily file
 
 A **shell script** is a series of shell commands stored in a file that will run in succession when you execute it.
 
@@ -50,7 +50,7 @@ If you're not able to use the `code` command, you can either revisit the instruc
 
 Other options, of course, include opening the file in any other plain-text editor and opening it in your terminal using, say, Vim or Nano.
 
-Here's what you should put in the file:
+Here's what you should paste into the file. (Paste in all of it, including the lines that begin with `#`.)
 
 ```zsh
 #!/bin/bash
@@ -92,12 +92,12 @@ The next two lines, each beginning with `#`, are comments. Comments are ignored 
 filename=$HOME/journal/journal_$( date '+%Y-%m-%d_%H-%M' ).md
 ```
 
-The first line of executable code in the file creates a **variable** named `filename`, setting the variable equal to the **value** of the path where you want your script to create a new file. We create variables by making up names for them. When we want to make use of the variable's value, we put a `$` directly in front of the name. `HOME` is a variable that's typically already set in your operating system; its value is the path to your home folder. If you wanted to, you could swap out this variable for the actual path to your home folder: For example, `/Users/c/your-username` in Git Bash.
+The first line of executable code in the file creates a **variable** named `filename`, setting the variable equal to the **value** of the path where you want your script to create a new file. We create variables by making up names for them. When we want to make use of the variable's value, we put a `$` directly in front of the name. `HOME` is a variable that's typically already set in your operating system; its value is the path to your home folder. If you wanted to, you could replace `$HOME` in this line with the actual path to your home folder: For example, `/Users/c/your-username` in Git Bash.
 
 {: .tip}
 Need a refresher on home folder paths in Mac/Git Bash/Ubuntu? Look back at [A Sense of Where You Are](/critical-digital-practices/mod-2/where-you-are).
 
-The last part of the path will create a file name that begins with `journal_`, is followed by the current date and time (pulled from your system's clock) and ends with the `.md` file extension.
+The last part of the path will create a file name that begins with `journal_`, is followed by the current date and time (pulled from your system's clock) and ends with the `.md` file extension. The `$( )` notation allows us to run a command (`date`) and grab the value of the output. (To learn more about the `date` command, type `man date` at the command prompt in a terminal window.)
 
 ### Add a title line
 
