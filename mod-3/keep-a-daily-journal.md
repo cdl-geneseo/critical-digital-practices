@@ -143,7 +143,7 @@ Whether in macOS, Ubuntu, or Git Bash, you can run the code in your executable f
 ```zsh
 ./journal.sh
 ```
-After a few seconds, your new journal file should open in VS Code and be ready for you to start journaling. To repeat, if you don't have VS Code's command line tools installed, you can just navigate to the new file  (it will be waiting for you in your `~/journal` folder)  and open it from there.
+After a few seconds, your new journal file should open in VS Code and be ready for you to start journaling. To repeat, if you don't have VS Code's command line tools installed, you can just navigate to the new file in your GUI (it will be waiting for you in your `~/journal` folder) and open it from there.
 
 ## Step 3: Journal away in Markdown
 
