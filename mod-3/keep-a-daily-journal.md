@@ -119,7 +119,7 @@ The next line, beginning with `#`, is a comment. Comments are ignored when a scr
 filename=$HOME/journal/journal_$( date '+%Y-%m-%d_%H-%M' ).md
 ```
 
-The first line of executable code in the file creates a **variable** named `filename`, setting the variable equal to the **value** of the path where you want your script to create a new file. We create variables by inventing names for them. When we want to make use of the variable's value, we put a `$` directly in front of the name. `HOME` is a variable that's typically already set in your operating system; its value is the path to your home folder. If you wanted to, you could replace `$HOME` in this line with the actual path to your home folder: for example, `/Users/c/your-username` in Git Bash.
+The first line of executable code in the file creates a [variable](https://www.computerhope.com/jargon/v/variable.htm) named `filename`, setting the variable equal to the [value](https://www.computerhope.com/jargon/v/value.htm) of the path where you want your script to create a new file. We create variables by inventing names for them. When we want to make use of the variable's value, we put a `$` directly in front of the name. `HOME` is a variable that's typically already set in your operating system; its value is the path to your home folder. If you wanted to, you could replace `$HOME` in this line with the actual path to your home folder: for example, `/Users/c/your-username` in Git Bash.
 
 {: .tip}
 Need a refresher on home folder paths in Mac/Git Bash/Ubuntu? Look back at [A Sense of Where You Are](/critical-digital-practices/mod-2/where-you-are).
@@ -133,7 +133,7 @@ The last part of the path will create a file name that begins with `journal_`, i
 echo "$( date '+%A, %B %d, %Y' )" >> $filename
 ```
 
-The next line of code uses `echo` and `date` to put the date inside your file itself, this time in a reader-friendly format that  includes the day and omits hours and minutes. Earlier, we used a single right-angle bracket (`>`) as a "redirect" to write contents to a new file. The double right-angle brackets in our script (`>>`) **append** content to an existing file. Instead of writing out the whole path to that existing file again, we reference it using the variable we created earlier.
+The next line of code uses `echo` and `date` to put the date inside your file itself, this time in a reader-friendly format that includes the day and omits hours and minutes (e.g., Thursday, June 22, 2023). Earlier, we used a single right-angle bracket (`>`) as a "redirect" to write contents to a new file. The double right-angle brackets in our script (`>>`) **append** content to an existing file. Instead of writing out the whole path to that existing file again, we reference it using the variable we created earlier.
 
 #### Open the file in VS Code to start journaling
 
@@ -145,7 +145,7 @@ The final line of code opens the file in VS Code, where it's ready and waiting f
 
 ### Automation Step 2: Make the script executable
 
-We saw in [Some Plain-Text File Formats](/critical-digital-practices/mod-3/kinds-of-text) that files ending in `.sh` are **excecutable** plain-text files. You can read and edit them like other plain-text files, but you can also ask your computer to **run** the code that's inside them. How?
+We saw in [Some Plain-Text File Formats](/critical-digital-practices/mod-3/kinds-of-text) that files ending in `.sh` are **executable** plain-text files. You can read and edit them like other plain-text files, but you can also ask your computer to **run** the code that's inside them. How?
 
 In [Getting More Information About Files and Folders](/critical-digital-practices/mod-2/getting-more-information), we saw that a "long" display of a folder's contents will show us the permissions associated with each file in the folder. The `r` in these permissions stands for **read**, the `w` for **write**, and the `x` for **execute**. In order to run, an executable file must contain valid executable code and also have that `x` in its permissions.
 
@@ -178,9 +178,13 @@ After a few seconds, your new journal file should open in VS Code and be ready f
 
 ## Get journaling in Markdown
 
-The file-creation part of our journaling workflow required a bit of work up front, but the work will pay off. One short line of code at the command line will create each day's journal file in a way that follows a consistent convention. As our journal files pile up, they'll all be in one place, where we can easily search across all of them or find a particular day's writing by looking for the date in the file name. We don't even have to poke around in the GUI to find a file or search in it; VS Code will let us open the entire `journal` folder in one view, listing the individual files in its left navigation pane.
+The file-creation part of our journaling workflow required a bit of work up front, but the work will pay off. One short line of code at the command line will create each day's journal file in a way that follows a consistent convention. As our journal files pile up, they'll all be in one place, where we can easily search across all of them or find a particular day's writing by looking for the date in the file name. We don't even have to poke around in the GUI to find a file or search in it; VS Code will let us open the entire `journal` folder in one view, listing the individual files in its left navigation pane. After you've created a few journal files, try this out. Assuming (as we've been doing) that your `journal` folder is located at `~/journal`, just type the following at the command line:
 
-Now for the real work: writing. Let's start with the basics of Markdown syntax.
+```zsh
+code ~/journal
+```
+
+But now for the real work: *writing*. Let's start with the basics of Markdown syntax.
 
 ### Markdown basics
 
