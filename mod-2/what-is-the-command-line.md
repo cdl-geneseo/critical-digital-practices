@@ -6,19 +6,18 @@ nav_order: 2
 ---
 # What is the Command Line? 
 
-The command line is an interface for communicating with your computer's operaring system. You'll sometimes see it referred to with the abbreviation "CLI" for "Command Line Interface."
+The command line is an interface for communicating with your computer's operating system. You'll sometimes see it referred to with the abbreviation "CLI" for "Command Line Interface."
 
-You typically access the command line through a program called a "shell." Common shell programs for Unix-related operating systems (including macOS and Linux) are Bash (an acronym for Bourne Again SHell) and Zsh (Z shell). For Windows, there's PowerShell.
+You typically access the command line through a program called a "shell." Common shell programs for Unix-related operating systems (including macOS and Linux) are Bash (an acronym for Bourne Again SHell) and Zsh (Z shell). On a Windows computer, there's PowerShell.
 
-You can use the command line to navigate, access information about, and manipulate your file system (folders and files), access and manipulate peripherals (such as an external drive), and run programs. Before the advent of the graphical user interface (GUI), the command line was the only way to interact with a personal computer. Before the advent of the personal computer, a computer operator might use the command line on a device called a "terminal" to connect and interact with a computer located somewhere other than the operator's desktop. This "mainframe" computer might take up an entire room. One way to think about the command line on your desktop computer is as a kind of terminal emulator, recreating, on a single machine, that pre-graphical, text-based relationship between user and computer. This is why the program you use on a Mac to launch and work inside a shell is called Terminal.app. You can find it by navigating to Applications > Utilities in your file system and looking for it by name, or by searching for it using [Spotlight](https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac).
+You can use the command line to navigate, access information about, and manipulate your [file system](/critical-digital-practices/mod-1/file-system#know-thy-file-system) (folders and files), access and manipulate peripherals (such as an external drive), and run programs. Before the widespread adoption of the [graphical user interface (GUI)](https://arstechnica.com/features/2005/05/gui/), the command line provided the principal means of interacting with a "personal" or "desktop" computer. Before the advent of the personal computer, a computer operator might use the command line on a device called a "console" or "terminal" to connect and interact with a computer located somewhere other than the operator's desktop. This "mainframe" computer might take up an entire room. One way to think about the command line on your desktop computer is as a kind of terminal emulator, recreating, on a single machine, that pre-graphical, text-based relationship between user and computer. This is why the program you use on a Mac to launch and work inside a shell is called Terminal.app. You can find Terminal.app by navigating to Applications > Utilities in your file system and looking for it by name, or by searching for it using [Spotlight](https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac).
 
 ## Some things you can do at the command line
 
 - Easily automate tasks such as creating, copying, and converting files.
-- Set up your programming environment.
-- Run programs you create.
-- Access the (many) programs and utilities that do not have graphical equivalents.
-- Control other computers remotely.
+- Execute a variety of useful commands built into the shell software (aka [builtins](https://www.computerhope.com/jargon/b/builtin.htm)).
+- Run a great many other productivity-enhancing programs and [packages](https://www.computerhope.com/jargon/p/package.htm) freely shared by developers and available through sources such as [Homebrew](https://brew.sh/) and [APT](https://www.computerhope.com/jargon/a/apt.htm) .
+- Connect to and interact with a remote server, such as the server that hosts a website you own. 
 
 ## The bigger picture
 
