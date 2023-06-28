@@ -53,8 +53,8 @@ Module 3: What is Text?
 Module 4: The Web  
 Module 5: Open for Learning  
 Module 6: Working with Data  
-Module 7: A Very Brief Introduction to the Python Programming Language  
-Module 8: Content Management: WordPress and Omeka
+Module 7: Content Management: WordPress and Omeka  
+Module 8: A Very Brief Introduction to the Python Programming Language
 
 ## Improving the course
 
