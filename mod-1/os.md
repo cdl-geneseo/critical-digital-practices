@@ -20,33 +20,31 @@ It's useful to know what **version** of your computer's operating systsem is cur
 To see what version of Windows you're running (as well as other information about your Windows computer), go to the Start menu (&#x229e;) and find Settings, or type "Settings" in the search bar.
 
 ![Windows Settings in Start menu](../assets/windows-settings-start.png)
-*Pictured Above: Windows Settings in Start menu*{:.image-caption}
+*Pictured Above: Select Settings in the Windows Start menu.*
 
 **In the next window that comes up,** select "System."
 
 ![Windows Settings](../assets/windows-settings-general.png)
-*Pictured Above: Select "System" from Windows Settings*{:.image-caption}
+*Pictured Above: Select "System" from Windows Settings.*
 
 **In the next window,** select "About."
 
 ![Windows Settings with About Selected](../assets/windows-settings.png)
-*Pictured Above: Select "About" in the Systems Menu*{:.image-caption}
+*Pictured Above: Select "About" in the Systems menu.*
 
 ## Find your OS version: macOS
 
 To see what version of the Mac operating system you're running (as well as other important information about your computer's hardware, software, and firmware), go to the Apple (&#63743;) menu in Finder and select "About this Mac."
 
 ![About this Mac in Mac Finder](../assets/mbp-about-this-mac.png)  
-*Pictured Above: "About this Mac" in the Mac Finder*{:.image-caption}
+*Pictured Above: Select "About this Mac" in the Mac Finder.*
 
 **You'll be able to see which version of macOS you're running:** in this case, version 13.4 (Ventura).  
 
 ![Mac operating system info](../assets/mbp-more-info.png)  
-*Pictured Above: Basic Mac System Information*{:.image-caption}
+*Pictured Above: Basic Mac system info. Select "More Info&hellip;" to see additional system info.*
 
 **If you click the "More Info&hellip;" button** and, on the next screen, the "System Report" button, you can access complete information about your system, including hardware and firmware info.
 
 ![Mac system report screen](../assets/mbp-hardware-overview.png)  
-*Pictured Above: Clicking "More Info&hellip;" Shows Additional System Info*{:.image-caption}
-
-                                                                                                                        
+*Pictured Above: Detailed Mac system info.*
