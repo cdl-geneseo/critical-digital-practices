@@ -1,15 +1,15 @@
 ---
-title: The Web is Not the Internet
+title: The Internet is Not the Web
 layout: default
 parent: The Web
 nav_order: 2
 ---
 
-# The Web is Not the Internet
+# The Internet is Not the Web
 
 People often use the terms "internet" and "web" interchangeably. It's not hard to see why. These days, people connect to the internet primarily to access websites.
 
-But the web is not the internet. The internet is a network of networked computers: computers able to exchange information with each other through a variety of standards and protocols, the most important of which you've already encountered: [TCP/IP](https://www.howtogeek.com/751880/the-foundation-of-the-internet-tcpip-turns-40/) (Transmission Control Protocol/Internet Protocol). The web *uses* this network to make possible an ecosystem of *linked content and data*. The internet makes the web possible. Or, to put it another way, the web is a layer built on top of the internet.
+But the internet is not the web. It's a network of networked computers: computers able to exchange information with each other through a variety of standards and protocols, the most important of which you've already encountered: [TCP/IP](https://www.howtogeek.com/751880/the-foundation-of-the-internet-tcpip-turns-40/) (Transmission Control Protocol/Internet Protocol). The web *uses* this network to make possible an ecosystem of *linked content and data*. The internet makes the web possible. Or, to put it another way, the web is a layer built on top of the internet.
 
 ## Birth of the internet
 
@@ -21,4 +21,20 @@ More than one set of protocols was developed to enable these networks to speak t
 
 By the early 1990s, TCP/IP emerged as the dominant protocol holding the world's networked computers together in a network of networks, the internet.
 
-## Birth of the web
+<!-- 
+
+Packet-switching and development of router: See *Broad Band*.
+
+Handoff to NSFNET, arrival of commercial interests
+
+ISPs as access points to internet
+
+Digital inequity: https://themarkup.org/still-loading/2023/05/11/see-the-neighborhoods-internet-providers-excluded-from-fast-internet
+
+https://www.eff.org/deeplinks/2023/07/expanding-broadband-portland-time-now
+
+Net neutrality: Jon Oliver, https://youtu.be/fpbOEoRrHyU
+
+FCC, information vs. telecommunications; common carrier status
+
+-->
