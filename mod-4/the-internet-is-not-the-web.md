@@ -33,16 +33,33 @@ The fact that the internet had its origins in the nonprofit world has produced o
 
 Data flows across the internet in discrete bundles called [packets](https://www.howtogeek.com/797005/what-is-a-data-packet/). The attachment you send through email or the image file delivered to your browser from a website doesn't travel intact. Through a process called [packet switching](https://www.computerhope.com/jargon/p/packetsw.htm), the data is first broken up into packets as it leaves the sending computer. These packets don't all take the same route; if they did, packets would back up on the wires connecting computers like cars in traffic jam. When the separate packets eventually reach the destination computer, having traveled their separate ways, they're reassembled into one whole.
 
-Packet-switching was a crucial innovation in the development of the internet. Another innovation related to the flow of data was the [Spanning Tree Protocol (STP)](https://en.wikipedia.org/wiki/Spanning_Tree_Protocol) conceived in the 1980s by [Radia Perlman](https://en.wikipedia.org/wiki/Radia_Perlman) while at the Digital Equipment Corporation. The STP keeps data traveling over a network without getting caught in loops. Although Perlman's innovation earned her the nickname "Mother of the Internet," in a 2014 interview with [*The Atlantic*](https://www.theatlantic.com/technology/archive/2014/03/radia-perlman-dont-call-me-the-mother-of-the-internet/284146/) she explained that she rejects the label because 
-
-> The Internet was not invented by any individual. There are lots of people who like to take credit for it, and it drives them crazy when anyone other than them seems to want credit, so it seems best to just stay out of their way. 
-
-"I did indeed make some fundamental contributions to the underlying infrastructure," she continued, "but no single technology really caused the Internet to succeed." 
+Packet-switching was a crucial innovation in the development of the internet. Another innovation related to the flow of data was the [Spanning Tree Protocol (STP)](https://en.wikipedia.org/wiki/Spanning_Tree_Protocol) conceived in the 1980s by [Radia Perlman](https://en.wikipedia.org/wiki/Radia_Perlman) while at the Digital Equipment Corporation. The STP keeps data traveling over a network without getting caught in loops. Although Perlman's innovation earned her the nickname "Mother of the Internet," in a 2014 interview with [*The Atlantic*](https://www.theatlantic.com/technology/archive/2014/03/radia-perlman-dont-call-me-the-mother-of-the-internet/284146/) she explained that she rejects the label because the "Internet was not invented by any individual," adding, "I did indeed make some fundamental contributions to the underlying infrastructure, but no single technology really caused the Internet to succeed." 
 
 ## What's my address?
 
-<!-- 
+In order for postal mail to get to your home, your home must have a unique postal address. Similarly, data packets on the internet can find their way to your connected device only if that device has a unique internet address, known as an IP address. (That's the same "IP"&mdash;for "Internet Protocol"&mdash;we encountered earlier in TCP/IP.)
 
-DNS, ICANN, IP addresses, whois, traceroute, ipecho.net
+As the number of devices connected to the internet grows, so does the challenge of ensuring that each has a unique address. Hence the ongoing effort to expand the number of possible addresses by moving from [IPv4](https://www.computerhope.com/jargon/i/ipv4.htm) to [IPv6](https://www.computerhope.com/jargon/i/ipv6.htm).
 
--->
+You can find the "public" or "external" IP address of the device you're using to read this page by pointing your browser to [https://ipecho.net](https://ipecho.net) or [https://whatismyip.com](https://whatismyip.com), or by opening a terminal window and typing, at the prompt, 
+
+```zsh
+curl ipecho.net/plain ; echo
+```
+
+In some circumstances (for example, when connected to a coffee shop's wifi network rather than your home network), there may be security benefits to hiding your public IP address. That's one reason some people choose to connect to a [VPN](https://www.computerhope.com/jargon/v/vpn.htm) ("Virtual Private Network") in such circumstances. VPN is typically available as a subscription service.
+
+If you have multiple devices connected to your home network, those connections are handled by a router, which hands out a *local* IP address to each device. Addresses on your **local area network** (LAN)
+typically begin with `192.` or `10.`.
+
+How-To Geek has a handy [guide to finding your device's local IP address on virtually any platform](https://www.howtogeek.com/236838/how-to-find-any-devices-ip-address-mac-address-and-other-network-connection-details/).
+
+## The Domain Name System
+
+What goes for your own devices also goes for the servers that deliver websites to your devices. Each of these has an IP address as well. But navigating the web by typing a 12-digit number into your browser for each site you want to visit would quickly become a nuisance. Hence the [Domain Name System (DNS)](https://www.computerhope.com/jargon/d/dns.htm), which assigns a reader-friendly name, such as `geneseo.edu`, to a web server's numerical IP address. 
+
+The Domain Name System is another example of how standards, protocols, cooperation, and interoperability are necessary conditions for a functioning internet. Without these, you'd have no guarantee that the address you typed into your browser would actually take you to your intended destination.
+
+The [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/) and the non-profit [Internet Corporation for Assigned Names and Numbers (ICANN)](https://www.icann.org/) play crucial roles in the maintenance of a domain registry system that makes the relationship between reader-friendly domain names and numerical IP addresses orderly and reliable. 
+
+Open a terminal window, and at the command prompt type the command `whois` followed by a domain name (e.g., `geneseo.edu`, `google.com`) to see some of the publicly available records associated with that domain, including the [domain name registrar](https://www.computerhope.com/jargon/d/dom-name-regis.htm) through which the site's domain name was officially registered.
