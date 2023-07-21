@@ -21,7 +21,7 @@ When playing around with your computer, the best insurance against grief and mis
 ## Be careful what you touch
 
 {: .alt-warning}
-As you begin poking around in your computer's [file system](/critical-digital-practices/mod-1/file-system), whether through your computer's graphical user interface (GUI) or from the [command line](/critical-digital-practices/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. Banishing fear is one objective of this course! But banishing fear shouldn't be confused with throwing caution to the winds. ***You should treat these files and folders with respect and handle them with care&mdash;and <u>only</u> if you're absolutely sure you know what you're doing.*** 
+As you begin poking around in your computer's [file system]({{ site.url }}/mod-1/file-system), whether through your computer's graphical user interface (GUI) or from the [command line]({{ site.url }}/mod-2/what-is-the-command-line), you'll come across files and folders that you've likely never noticed before. These may be "hidden" files or folders (whose filenames begin with a `.`) or folders with names like `opt`, `bin`, and `usr`. You shouldn't be afraid of these files and folders. Banishing fear is one objective of this course! But banishing fear shouldn't be confused with throwing caution to the winds. ***You should treat these files and folders with respect and handle them with care&mdash;and <u>only</u> if you're absolutely sure you know what you're doing.*** 
 
 ## Search, but verify
 
@@ -38,4 +38,4 @@ Exercise special care when following advice that involves using `sudo` at the be
 
 ## Ready to play? 
 
-Okay then, [let's begin](/critical-digital-practices/mod-1/overview).
+Okay then, [let's begin]({{ site.url }}/mod-1/overview).

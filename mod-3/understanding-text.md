@@ -14,7 +14,7 @@ But not all computer text is the same. If you have Microsoft Word installed on y
 
 ## A peek inside a Word file
 
-Here's a simple Word document containing a single sentence, saved in Word's default `.docx` format. (If you haven't done so already, now is a good time to make sure that your Finder or File Explorer is [showing you the extensions at the end of file names](/critical-digital-practices/mod-1/file-system), such as .docx, .pdf, .png, .jpg, .txt. ).
+Here's a simple Word document containing a single sentence, saved in Word's default `.docx` format. (If you haven't done so already, now is a good time to make sure that your Finder or File Explorer is [showing you the extensions at the end of file names]({{ site.url }}/mod-1/file-system), such as .docx, .pdf, .png, .jpg, .txt. ).
 
 ![Word doc with a single sentence](../assets/word-doc-one-sentence.png)
 

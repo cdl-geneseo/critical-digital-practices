@@ -6,7 +6,7 @@ nav_order: 4
 ---
 # Getting Started
 
-As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands](/critical-digital-practices/mod-2/unix-like-vs-windows).
+As we saw previously, macOS comes with a terminal application you can use to start a shell session and begin working at the command line. If you're a Windows user, you should have installed Git Bash or Ubuntu, as described in [Types of Commands]({{ site.url }}/mod-2/types-of-commands).
 
 You can launch Terminal.app in macOS by finding it in Applications > Utilities > Terminal.app or by doing a Spotlight search for the application. Once you've installed Git Bash or Ubuntu, you can launch either by searching for it in the Start menu.
 
@@ -41,7 +41,7 @@ Since the command line pre-dates the GUI by many years, it also pre-dates the mo
 - `option`-f (Mac): Move forward a word at a time (Other keyboards use `alt`-f)
 - `option`-b (Mac): Move backward a word at a time (Other keyboards use `alt`-b)
 
-One thing you can definitely do with your mouse or trackpad, though, is select, copy, and paste text. This behavior is available by default in Terminal.app on Mac. You have to enable it in Git Bash and WSL, as described in [Types of Commands](/critical-digital-practices/types-of-commands).
+One thing you can definitely do with your mouse or trackpad, though, is select, copy, and paste text. This behavior is available by default in Terminal.app on Mac. You have to enable it in Git Bash and WSL, as described in [Types of Commands]({{ site.url }}/mod-2/types-of-commands).
 
 
 ## Your friend: tab completion

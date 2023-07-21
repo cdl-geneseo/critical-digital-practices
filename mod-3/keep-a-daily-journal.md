@@ -19,7 +19,7 @@ There's a case to be made for journaling as your primary means of note-taking an
 
 ## Why Markdown?
 
-Markdown is a fabulous journaling tool for the [reasons described earlier](/critical-digital-practices/mod-3/kinds-of-text#markdown): documents in Markdown are lightweight, easy to read, incredibly interoperable, and readily transformable into other file formats when needed. 
+Markdown is a fabulous journaling tool for the [reasons described earlier]({{ site.url }}/mod-3/kinds-of-text#markdown): documents in Markdown are lightweight, easy to read, incredibly interoperable, and readily transformable into other file formats when needed. 
 
 ## Why a workflow?
 
@@ -68,7 +68,7 @@ To create your file, you have a few options. One option is to use `touch`:
 ```zsh
 touch journal.sh
 ```
-However, if you followed the instructions carefully for [installing VS Code](/critical-digital-practices/mod-3/text-editors#visual-studio-code), you should be able to create the file and open it in VS Code with a single command:
+However, if you followed the instructions carefully for [installing VS Code]({{ site.url }}/mod-3/text-editors#visual-studio-code), you should be able to create the file and open it in VS Code with a single command:
 
 ```zsh
 code journal.sh
@@ -122,7 +122,7 @@ filename=$HOME/journal/journal_$( date '+%Y-%m-%d_%H-%M' ).md
 The first line of executable code in the file creates a [variable](https://www.computerhope.com/jargon/v/variable.htm) named `filename`, setting the variable equal to the [value](https://www.computerhope.com/jargon/v/value.htm) of the path where you want your script to create a new file. We create variables by inventing names for them. When we want to make use of the variable's value, we put a `$` directly in front of the name. `HOME` is a variable that's typically already set in your operating system; its value is the path to your home folder. If you wanted to, you could replace `$HOME` in this line with the actual path to your home folder: for example, `/Users/c/your-username` in Git Bash.
 
 {: .tip}
-Need a refresher on home folder paths in Mac/Git Bash/Ubuntu? Look back at [A Sense of Where You Are](/critical-digital-practices/mod-2/where-you-are).
+Need a refresher on home folder paths in Mac/Git Bash/Ubuntu? Look back at [A Sense of Where You Are]({{ site.url }}/mod-2/where-you-are).
 
 The last part of the path will create a file name that begins with `journal_`, is followed by the current date and time (pulled from your system's clock) and ends with the `.md` file extension. The `$( )` notation allows us to run a command (`date`) and grab the value of the output. (To learn more about the `date` command, type `man date` at the command prompt in a terminal window.)
 
@@ -145,9 +145,9 @@ The final line of code opens the file in VS Code, where it's ready and waiting f
 
 ### Automation Step 2: Make the script executable
 
-We saw in [Some Plain-Text File Formats](/critical-digital-practices/mod-3/kinds-of-text) that files ending in `.sh` are **executable** plain-text files. You can read and edit them like other plain-text files, but you can also ask your computer to **run** the code that's inside them. How?
+We saw in [Some Plain-Text File Formats]({{ site.url }}/mod-3/kinds-of-text) that files ending in `.sh` are **executable** plain-text files. You can read and edit them like other plain-text files, but you can also ask your computer to **run** the code that's inside them. How?
 
-In [Getting More Information About Files and Folders](/critical-digital-practices/mod-2/getting-more-information), we saw that a "long" display of a folder's contents will show us the permissions associated with each file in the folder. The `r` in these permissions stands for **read**, the `w` for **write**, and the `x` for **execute**. In order to run, an executable file must contain valid executable code and also have that `x` in its permissions.
+In [Getting More Information About Files and Folders]({{ site.url }}/mod-2/getting-more-information), we saw that a "long" display of a folder's contents will show us the permissions associated with each file in the folder. The `r` in these permissions stands for **read**, the `w` for **write**, and the `x` for **execute**. In order to run, an executable file must contain valid executable code and also have that `x` in its permissions.
 
 To make your `journal.sh` file executable in macOS or Ubuntu for Windows, make sure you're in your `~/scripts` folder and type the following:
 

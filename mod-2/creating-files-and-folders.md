@@ -66,7 +66,7 @@ The `touch` command is used to create a file without any content.
 The command should succeed silently, producing no output to `stdout`. Now move your terminal window aside, if necessary, so that you can see your GUI (Finder or File Explorer)
 and go to your home folder there. You should see an icon for the file `foo.txt`. (&#x1f427; **Ubuntu users:** Remember that the home folder in your Linux installation is not the same as your regular home folder.)
 
-Go ahead and open this file from the GUI by double-clicking it.  It will likely open in Notepad (Windows) or TextEdit (Mac). You'll learn more about these text-editing applications when we get to [text editors](/critical-digital-practices/mod-3/text-editors). There should be nothing inside the file.
+Go ahead and open this file from the GUI by double-clicking it.  It will likely open in Notepad (Windows) or TextEdit (Mac). You'll learn more about these text-editing applications when we get to [text editors]({{ site.url }}/mod-3/text-editors). There should be nothing inside the file.
 
 ## Create nested directories
 

@@ -20,7 +20,7 @@ Note, however, that sometimes you'll see no output after typing a command and hi
 
 ## Know thy file system
 
-Let's revisit your computer's [file system](/critical-digital-practices/mod-1/file-system) and note some things about its structure.
+Let's revisit your computer's [file system]({{ site.url }}/mod-1/file-system) and note some things about its structure.
 
 Your file system's structure is *hierarchical*. It consists of *directories* (also known as *folders*) containing other directories and *files*. This hierarchical structure can also be described as a *tree*.
 
@@ -43,7 +43,7 @@ As we've already seen, Ubuntu for Windows installs its files outside the home di
 ```
 Even in Ubuntu, however, the directory treated as your **home directory** is the one bearing your username (not the one named `home`.) Yes, that's potentially a bit confusing. If you're using Ubuntu, you'll want to take note.
 
-You've already seen that [your browser](/critical-digital-practices/mod-1/file-system#navigating-your-file-system-through-your-browser), too, will recognize this kind of path notation. You can even use it in your GUI. On a Mac, for example, go to File > Go > Go to Folder (or hold down `shift`+`command`+`G`) and type `/Users/your-username/Documents` (substituting your own username for `your-username`) and hit `enter` to see what happens.
+You've already seen that [your browser]({{ site.url }}/mod-1/file-system#navigating-your-file-system-through-your-browser), too, will recognize this kind of path notation. You can even use it in your GUI. On a Mac, for example, go to File > Go > Go to Folder (or hold down `shift`+`command`+`G`) and type `/Users/your-username/Documents` (substituting your own username for `your-username`) and hit `enter` to see what happens.
 
 One last bit of information before we try out what we now know at the command line. The tilde (`~`) conventionally serves as shorthand for your home folder. Using it will save time and cut down on typos. Thus,
 
@@ -105,7 +105,7 @@ cd ..
 ```
 This command will take you up one level in the hierarchy, to the folder enclosing the one you're in currently. If you're in `~/Documents`, typing `cd ..` will take you up a level to `~` (home). If you were in, say, `~/Documents/course_files/2021` (That is, the folder named "2021" inside the folder "course_files" inside "Documents"), then typing `cd ..` would take you up a level to `course_files`.
 
-Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture](/critical-digital-practices/mod-2/command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
+Does this seem like a clunky way to navigate your file system? Well, remember, first, the [bigger picture]({{ site.url }}/mod-2/what-is-the-command-line#the-bigger-picture). Keep in mind, also, that you're just getting started. In time you'll learn some tricks for getting where you need to go much more quickly. And consider, finally, that if you know that where you want to go is `~/Documents/courses/history-courses/200-level/non-western/africa/fall/2021/students` you might actually get there faster by copy-pasting this path after `cd` at the command line than by pointing and clicking at all those folders in your GUI!
 
 ## Climb to the top
 

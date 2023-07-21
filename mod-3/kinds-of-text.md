@@ -22,13 +22,13 @@ Plain text can be used to create many different kinds of documents. Some of the 
 
 Two of the extensions listed above&mdash;`.py` and `.sh`&mdash; are for **executable** files; that is, files whose purpose is to carry out a task on your computer or a computer to which you're connected. The other extensions are for **data** files of one kind or another; that is, files whose purpose is to store information, usually in the form of words and/or numbers.
 
-As we saw in [Understanding Text](/critical-digital-practices/mod-3/understanding-text), one property all these files types have in common is that they can be read and edited from the command line or any text editor; no proprietary or highly specialized software application is needed to work with them. They are highly interoperable across software applications and operating systems.
+As we saw in [Understanding Text]({{ site.url }}/mod-3/understanding-text), one property all these files types have in common is that they can be read and edited from the command line or any text editor; no proprietary or highly specialized software application is needed to work with them. They are highly interoperable across software applications and operating systems.
 
 The **data** file types differ from one another principally in the way they **structure** the information they contain. Let's look at just a few examples.
 
 ## TXT
 
-Files with a `.txt` extension typically contain a minimum of structure. If you look back at the [Project Gutenberg text of *Walden*](/critical-digital-practices/mod-3/one-text-three-views) we examined earlier, you'll see that it gets what structure it has from text conventions that have a long history and wide application in the world of handwritten and printed documents, such as the blank lines that separate paragraphs and the colons (`:`) that separate labels from their contents. Other conventions of this sort frequently seen in `.txt` documents include capital letters and blank lines to set chapter and section titles apart from body text, and asterisks (`*`) or underscores (`_`) to highlight text as important or indicate that a string of text should be construed as the title of a work.
+Files with a `.txt` extension typically contain a minimum of structure. If you look back at the [Project Gutenberg text of *Walden*]({{ site.url }}/mod-3/one-text-three-views) we examined earlier, you'll see that it gets what structure it has from text conventions that have a long history and wide application in the world of handwritten and printed documents, such as the blank lines that separate paragraphs and the colons (`:`) that separate labels from their contents. Other conventions of this sort frequently seen in `.txt` documents include capital letters and blank lines to set chapter and section titles apart from body text, and asterisks (`*`) or underscores (`_`) to highlight text as important or indicate that a string of text should be construed as the title of a work.
 
 ## CSV and TSV
 
@@ -49,7 +49,7 @@ But these plain-text files have some advantages over spreadsheets. The file size
 
 Files ending with the `.html` extension typically hold data meant to be displayed in a browser (e.g., Firefox, Chrome, Safari, Edge), and the data typically consists of text, numbers, and various kinds of rich media such as images, video, and audio. In the language of the web, an HTML file usually presents itself to us as a "page," often one containing links to other pages. You'll learn more about how these links undergird the web as a medium for information exchange in a later module.
 
-As you saw in the section on [text editors](/critical-digital-practices/mod-3/text-editors#visual-studio-code), an HTML file separates the data meant for display from various kinds of instructions, enclosed in angle brackets (`<`&nbsp;`>`), that contain information about structure or formatting.
+As you saw in the section on [text editors]({{ site.url }}/mod-3/text-editors#visual-studio-code), an HTML file separates the data meant for display from various kinds of instructions, enclosed in angle brackets (`<`&nbsp;`>`), that contain information about structure or formatting.
 
 Let's look again at the example you encountered earlier:
 
@@ -59,7 +59,7 @@ In this example, the bits in angle brackets are collectively referred to as **ma
 
 The markup bits are also commonly called **tags**. Each tag appears twice, as an "opening" tag and a "closing" tag. (The closing tag begins with a forward slash&mdash;for example, `</html>`.) The paired opening and closing tags (also called **elements**) contain various bits of the page's data contents. Everything after the DTD is contained within the opening and closing pairs `<html>` and `</html>`. Within that container, we have two containers, `<head>` &hellip; `</head>` and `<body>` &hellip; `</body>`. Inside `<head>` we have `<title>`. (From this point on, for convenience, only the opening tag will be referenced; the closing one is implied.) Within `<body>` we have a comment, which stands outside the document flow and will be ignored by the browser, and `<p>`, which indicates a paragraph.
 
-As you can see, HTML documents are quite rigorously structured. The `<head>` and `<body>` elements contain distinct types of information. Each can contain additional elements within it, those elements can contain others, and so on indefinitely. Like your computer's [file system](/critical-digital-practices/mod-1/file-system), an HTML document has a hierarchical, tree-like structure. In addition, it must adhere to certain structural constraints&mdash;for instance, elements may not overlap each other&mdash;which, if ignored, may cause the document to display improperly in a browser, or not display at all.
+As you can see, HTML documents are quite rigorously structured. The `<head>` and `<body>` elements contain distinct types of information. Each can contain additional elements within it, those elements can contain others, and so on indefinitely. Like your computer's [file system]({{ site.url }}/mod-1/file-system), an HTML document has a hierarchical, tree-like structure. In addition, it must adhere to certain structural constraints&mdash;for instance, elements may not overlap each other&mdash;which, if ignored, may cause the document to display improperly in a browser, or not display at all.
 
 {: .tip}
 You sometimes see content marked up in HTML described as **HTML code**. Keep in mind that this kind of code is not the same as executable code&mdash;the kind of code written in a programming language such as Python.
