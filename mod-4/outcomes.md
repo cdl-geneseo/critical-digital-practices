@@ -1,7 +1,7 @@
 ---
 title: Learning Outcomes
 layout: default
-parent: The Web
+parent: Internet and Web
 nav_order: 1
 ---
 # Learning Outcomes: The Web

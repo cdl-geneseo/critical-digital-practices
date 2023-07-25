@@ -50,9 +50,8 @@ Rest assured that this course won't require you to take a particular position on
 Module 1: Meet Your Computer  
 Module 2: The Command Line  
 Module 3: What is Text?  
-Module 4: Internet and Web  
-Module 5: Open for Learning  
-Module 6: Working with Data  
+Module 4: Internet and Web   
+Module 5: Working with Data  
 Module 7: Content Management: WordPress and Omeka  
 Module 8: A Very Brief Introduction to the Python Programming Language
 
