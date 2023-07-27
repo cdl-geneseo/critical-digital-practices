@@ -14,7 +14,7 @@ Open a terminal window and navigate to the [folder you created in the command li
 ```zsh
 cd ~/critical-digital
 ```
-If didn't create a folder with that name, or you've deleted it since completing the earlier module, create a new one.
+If you didn't create a folder with that name, or you've deleted it since completing the earlier module, create a new one.
 
 ```zsh
 mkdir ~/critical-digital
