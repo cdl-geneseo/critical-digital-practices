@@ -86,7 +86,7 @@ A common misapprehension about web content (whether it's images, video, audio, o
 
 It's not fine.
 
-Copyright law applies to publicly accessile content on the web every bit as much as it does to content you find in, say, a bookstore or library. The fact that it's *easy* to reproduce doesn't give you license to do so. When you pull an image into your web page from a remote URL, you're in effect reproducing that image. If the image is under copyright and you don't have the copyright owner's permission to reproduce it on your site, you're breaking the law.
+Copyright law applies to publicly accessile content on the web every bit as much as it does to content you find in, say, a bookstore or library. The fact that it's *easy* to reproduce doesn't give you license to do so. When you pull an image into your web page from a remote URL, you're in effect reproducing that image. If the image is under copyright and you don't have the copyright owner's permission to reproduce it on your site, you're violating the owner's copyright.
 
 Fortunately, there's a large community of creators out there who are more than happy to **license** you to reproduce their images free of charge, usually under the easy-to-meet condition that you credit them for their creations.
 
@@ -95,6 +95,8 @@ And fortunately, there's ["a nonprofit organization that helps overcome legal ob
 There are a number of ways to find CC-licensed images. Some photo-sharing websites, such as [Flickr](https://www.flickr.com/), enable you to filter your image searches so that only CC-licensed images show up in your search results.
 
 Both [Google](https://google.com) and the privacy-oriented [Duck Duck Go](https://duckduckgo.com) will enable you to filter you search-engine image results. After entering your search term, look for a tab labeled "Images" above the search results. Click that, then look for a dropdown to choose among license types. (Google doesn't show this dropdown till you click their "Tools" button.)
+
+You can also find hundreds of millions of CC-licensed and public domain creative works&mdash;audio as well as visual&mdash;on the [Openverse](https://openverse.org/) website, a project of the open source web content management organization [WordPress](https://wordpress.org).
 
 Keep in mind that finding CC-licensed images through a search engine (rather than through a photo-sharing site) isn't 100% reliable. Always be sure to go to the web page that's the source of the image and verify there that the image is CC-licensed.
 
