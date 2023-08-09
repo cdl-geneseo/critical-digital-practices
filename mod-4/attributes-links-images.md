@@ -96,7 +96,7 @@ There are a number of ways to find CC-licensed images. Some photo-sharing websit
 
 Both [Google](https://google.com) and the privacy-oriented [Duck Duck Go](https://duckduckgo.com) will enable you to filter you search-engine image results. After entering your search term, look for a tab labeled "Images" above the search results. Click that, then look for a dropdown to choose among license types. (Google doesn't show this dropdown till you click their "Tools" button.)
 
-You can also find hundreds of millions of CC-licensed and public domain creative works&mdash;audio as well as visual&mdash;on the [Openverse](https://openverse.org/) website, a project of the open source web content management organization [WordPress](https://wordpress.org).
+You can also find hundreds of millions of CC-licensed and public domain creative works&mdash;audio as well as visual&mdash;on the [Openverse](https://openverse.org/) website, an initiative of the open source web content management project [WordPress](https://wordpress.org).
 
 Keep in mind that finding CC-licensed images through a search engine (rather than through a photo-sharing site) isn't 100% reliable. Always be sure to go to the web page that's the source of the image and verify there that the image is CC-licensed.
 
