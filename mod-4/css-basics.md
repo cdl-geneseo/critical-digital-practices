@@ -34,7 +34,7 @@ Once the file opens in VS Code, save it before going any further. Then paste the
 
             h1 {
                 color: red;
-                font-family: verdana
+                font-family: verdana;
             }
 
             p {
@@ -88,7 +88,7 @@ written, or badly written. That is all.</p>
 his own face in a glass.</p>
 
 ```
-Let's change the font color of that second-to-last paragraph. Edit it as follows:
+Let's change the font color of that second-to-last paragraph. Edit it as follows, using the `style` attribute to specify the different color:
 
 ```html
 <p style="color:greenyellow;">There is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all.</p>
@@ -98,3 +98,52 @@ Save the file and refresh your browser. You should see that bright green color a
 Again, the syntax for defining styles at every level will be covered in a later section.
 
 ## Setting styles site-wide
+
+Changing styles for the text in a dozen paragraphs within a single web page would be tedious enough. Now imagine re-styling paragraph text for perhaps hundreds of paragraphs across multiple pages. For this task, we're helped not only by the separation of styles from HTML markup but by the ability to separate style instructions from the document(s) to which they apply.
+
+The web's defining affordance&mdash;the hyperlink&mdash;makes this separation possible. We simply put our styling instructions, written in the same syntax we used to style a single document, in their own file. Then we link to this file from every document we want to be governed by its instructions. The link in this instance isn't one your user clicks on; rather, it's one that tells the browser where, on the web, to find the file containing the style instructions.
+
+The link can point to a file on the same server hosting your website, but it can just as easily point to a URI living on another server.
+
+Inside your `~/critical-digital` folder, create a new file named `styles.css`. (This will be a plain text file. The `.css` extension enables your operating system or browser to recognize that the text inside it is written in CSS syntax.)
+
+From `practicing-stylesheets.html`, cut the style instructions inside the `<style>` element and paste them into `styles.css`. (*Cut* them, don't *copy* them, so that you're leaving the `<style>` element empty.)
+
+Inside `<head>`, above `<style>`, paste the following:
+
+```html
+<link rel="stylesheet" href="styles.css" />
+```
+The entire top portion of your `practicing-stylesheets.html` should now look like this:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing with Stylesheets</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+        </style>
+    </head>
+```
+Meanwhile, your entire `styles.css` document should look like this:
+
+```css
+body {
+    background-color: black;
+}
+
+h1 {
+    color: red;
+    font-family: verdana;
+    }
+
+p {
+    color: white;
+}
+```
+***Be sure that you've saved both files.*** Now, open `practicing-stylesheets.html` in a browser. (If it's already open, just refresh the page.) The page should look no different from how it did earlier. Why would it? Your style instructions haven't changed. But they're no longer contained inside `practicing-stylesheets.html` (except for the one inline style we added to a single paragraph); instead, they're being pulled in via the link you added in `<head>` to your external `styles.css` file.
+
+At this point, you could cut the empty `<style></style>` element from `practicing-stylesheets.html`. However, take note: If your external file specifies files across multiple documents, but you want to customize something for *just this one document*, any styles you put within `<style></style>` would override those in the external file *for this one document alone*, just as any inline styles you specify using the `style` attribute within a particular element will override those set within `<style></style>` *for that one element alone*. That's the cascade at work.
+
+Go ahead and play with the styles in your external file to see how changes you make there will affect `practicing-stylesheets.html`. Remember that the changes will only be visible after you (1) save them in `styles.css` and (2) refresh `practicing-stylesheets.html` in your browser. Notice that you needn't make *any* change to `practicing-stylesheets.html` itself for the document to display the new styles you set in `styles.css`.
