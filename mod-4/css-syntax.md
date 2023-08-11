@@ -7,7 +7,7 @@ nav_order: 9
 
 # CSS Syntax
 
-Let's look again at the style rules you worked with at the document level (inside the `<style>` element with `<head>`) and in an external file.
+Let's look again at the style rules you worked with at the document level (inside the `<style>` element within `<head>`) and in an external file.
 
 ```css
 body {
@@ -48,7 +48,7 @@ A number of CSS properties can take multiple values. You'll find an excellent ru
 
 Suppose your website has multiple pages, and across those pages you want most paragraphs to have black text in Times New Roman, while some have gray italic text in Arial, and still others have bold white Arial text against a red background. Setting the first style in an external stylesheet, and then overriding it inline every time you want the second or third style, will drive you nuts. Plus, if, down the road, you decide that second style should actually be in blue text, you'll have to go into every inline element one at a time, changing the value of `color` from `gray` to `blue`. For a case this simple, you might get away with doing a global find/replace across all your files, but even that approach will become tedious as the rules you attach to a selector begin to mount.
 
-This is the problem that CSS **classes** are designed to solve. For the example just described, we could specify two rules in our external file, like so:
+This is the problem that CSS **classes** are designed to solve. For the example just described, we could specify three rules in our external file, like so:
 
 ```css
 p {
