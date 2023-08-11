@@ -9,9 +9,9 @@ nav_order: 8
 
 **Cascading Style Sheets**&mdash;CSS for short&mdash;provide a powerful means of formatting the content of an HTML document or even an entire website. By separating formatting specifications from our markup, we gain the ability to make global adjustments to the appearance of our web pages without having to alter the markup itself.
 
-Why "cascading"? Because we can specify formatting at multiple removes from the markup to be styled. Style instructions that are closer to the affected markup supersede instructions at the next-farthest remove, and so on up the hierarchy. As a result, we can specify a set of global instructions that will govern multiple documents, fine-tune these instructions as needed for a particular document, further tune those document-level instructions for particular sections of a document, and, finally, override instructions at any of these levels with specific instructions attached to a single element in one location within the document. In addition, we can specify how content within a particular element&mdash;say, `<p>`&mdash;will be formatted in different contexts by defining different style **classes**. Content in a `<p>` that belongs to one class (assigned to it using the **class** attribute) will then appear different (in color, size, font, or any combination of these and other features) from content that belongs to another.
+Why "cascading"? Because we can specify formatting at multiple removes from the markup to be styled. Style rules that are closer to the affected markup supersede rules at the next-farthest remove, and so on up the hierarchy. As a result, we can specify a set of global rules that will govern multiple documents, fine-tune these rules as needed for a particular document, further tune those document-level rules for particular sections of a document, and, finally, override rules at any of these levels with specific rules attached to a single element in one location within the document. In addition, we can specify how content within a particular element&mdash;say, `<p>`&mdash;will be formatted in different contexts by defining different style **classes**. Content in a `<p>` that belongs to one class (assigned to it using the **class** attribute) will then appear different (in color, size, font, or any combination of these and other features) from content that belongs to another.
 
-At each level of the cascade, if we want to make adjustments to styles set at the level above, we need only specify what will be *different* from that level; the other style instructions will still hold.
+At each level of the cascade, if we want to make adjustments to styles set at the level above, we need only specify what will be *different* from that level; the other style rules will still hold.
 
 ## Setting styles for a page
 
@@ -99,15 +99,15 @@ Again, the syntax for defining styles at every level will be covered in a later 
 
 ## Setting styles site-wide
 
-Changing styles for the text in a dozen paragraphs within a single web page would be tedious enough. Now imagine re-styling paragraph text for perhaps hundreds of paragraphs across multiple pages. For this task, we're helped not only by the separation of styles from HTML markup but by the ability to separate style instructions from the document(s) to which they apply.
+Changing styles for the text in a dozen paragraphs within a single web page would be tedious enough. Now imagine re-styling paragraph text for perhaps hundreds of paragraphs across multiple pages. For this task, we're helped not only by the separation of styles from HTML markup but by the ability to separate style rules from the document(s) to which they apply.
 
-The web's defining affordance&mdash;the hyperlink&mdash;makes this separation possible. We simply put our styling instructions, written in the same syntax we used to style a single document, in their own file. Then we link to this file from every document we want to be governed by its instructions. The link in this instance isn't one your user clicks on; rather, it's one that tells the browser where, on the web, to find the file containing the style instructions.
+The web's defining affordance&mdash;the hyperlink&mdash;makes this separation possible. We simply put our style rules, written in the same syntax we used to style a single document, in their own file. Then we link to this file from every document we want to be governed by its rules. The link in this instance isn't one your user clicks on; rather, it's one that tells the browser where, on the web, to find the file containing the style rules.
 
 The link can point to a file on the same server hosting your website, but it can just as easily point to a URI living on another server.
 
 Inside your `~/critical-digital` folder, create a new file named `styles.css`. (This will be a plain text file. The `.css` extension enables your operating system or browser to recognize that the text inside it is written in CSS syntax.)
 
-From `practicing-stylesheets.html`, cut the style instructions inside the `<style>` element and paste them into `styles.css`. (*Cut* them, don't *copy* them, so that you're leaving the `<style>` element empty.)
+From `practicing-stylesheets.html`, cut the style rules inside the `<style>` element and paste them into `styles.css`. (*Cut* them, don't *copy* them, so that you're leaving the `<style>` element empty.)
 
 Inside `<head>`, above `<style>`, paste the following:
 
@@ -142,7 +142,7 @@ p {
     color: white;
 }
 ```
-***Be sure that you've saved both files.*** Now, open `practicing-stylesheets.html` in a browser. (If it's already open, just refresh the page.) The page should look no different from how it did earlier. Why would it? Your style instructions haven't changed. But they're no longer contained inside `practicing-stylesheets.html` (except for the one inline style we added to a single paragraph); instead, they're being pulled in via the link you added in `<head>` to your external `styles.css` file.
+***Be sure that you've saved both files.*** Now, open `practicing-stylesheets.html` in a browser. (If it's already open, just refresh the page.) The page should look no different from how it did earlier. Why would it? Your style rules haven't changed. But they're no longer contained inside `practicing-stylesheets.html` (except for the one inline style we added to a single paragraph); instead, they're being pulled in via the link you added in `<head>` to your external `styles.css` file.
 
 At this point, you could cut the empty `<style></style>` element from `practicing-stylesheets.html`. However, take note: If your external file specifies files across multiple documents, but you want to customize something for *just this one document*, any styles you put within `<style></style>` would override those in the external file *for this one document alone*, just as any inline styles you specify using the `style` attribute within a particular element will override those set within `<style></style>` *for that one element alone*. That's the cascade at work.
 
