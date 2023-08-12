@@ -62,12 +62,4 @@ Nowadays, Word is more interoperable than it used to be. Word documents can be o
 
 But there are still significant limits to the interoperabilty of Word and other word-processed documents, as you may have discovered for yourself if you've ever tried to copy and paste text content from a Word document or a Google doc into, say, a web form or the editor for a website content management system such as WordPress and found yourself dealing with strange characters and unexpected line breaks.
 
-Plain text, by contrast, is highly interoperable across operating systems, software applications, and platforms, as we'll shortly have occasion to see. 
-
-## A story
-
-Let's end this section with a personal anecdote from Amanda Schmidt, former Assistant Director for Digital Learning and Humanities in Geneseo's Center for Digital Learning. Amanda writes about her own early experience with word-processing, ending with a mention of Notepad, a plain-text editor available on all Windows sytems. We'll encounter several different plain-text editors in the next section.
-
-> When I was in elementary school, I thought I was going to be a writer. I would spend hours and hours on my dad's desktop computer, typing away at stories and make-believe newspapers in Microsoft Word. As far as I knew back then, that was the only way to write on a computer. Every day after school I would be dropped off by my bus at my grandparents' house to wait for my dad to pick me up a couple of hours later, when he got out of work. For a burgeoning child-writer, these hours were torturous, because, while I could keep my stories on a flash drive to move to other computers as needed, the computer at my grandparents' house *did not have Microsoft Word on it.* What was I to do? All of my amazing ideas for what I was already working on festered in my brain, and the itch to concoct and consider and knock words into place on the page as I typed gnawed against my little tween angst. It was beyond frustrating. 
-
-> And when I learned about the built-in text editor on Windows (the only OS my family would allow... we all have our loyalties, I suppose), Notepad? Imagine my elation, then almost instant, crushing devastation when there was still no way to open my MS Word document in that platform. Why was it so impossible to view what I wrote in a different program? It was only text, anyhow, plain and simple... right?
+Plain text, by contrast, is highly interoperable across operating systems, software applications, and platforms, as we'll shortly have occasion to see.
