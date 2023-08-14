@@ -142,7 +142,7 @@ p {
 }
 ```
 
-Or you can specify a color by using its hexadecimal value on a scale that runs from `#000000` (black) to `#ffffff` (white). In this syntax, the first two values represent (in base 16, using digits 0-f) how much red is in the color; the second how much blue; the third how much green. The value ff in hexadecimal is the same as 255. Try this style rule in your practice file, for example:
+Or you can specify a color by using its [hexadecimal](https://www.computerhope.com/jargon/h/hex.htm) value on a scale that runs from `#000000` (black) to `#ffffff` (white). In this syntax, the first two values represent (in base 16, using digits 0-f) how much red is in the color; the second how much blue; the third how much green. The value ff in hexadecimal is the same as 255. Try this style rule in your practice file, for example:
 
 ```css
 p {
@@ -154,14 +154,38 @@ p {
 
 ## Other CSS properties
 
-
+The extent to which you can control the design and experience of web pages using CSS is enormous&mdash;far greater than can be covered here. In addition to offering the [CSS tutorial](https://www.w3schools.com/Css/default.asp) mentioned above, W3schools maintains a helpful [reference list of CSS Properties](https://www.w3schools.com/cssref/index.php).
 
 ## CSS for layout
 
-<!--Responsive design -->
+A quick word is in order for CSS as a tool for controlling the layout of web pages.
+
+The inherent fluidity of HTML documents has always made page layout a major challenge for designers. The dimensions of a printed paper document are fixed, making it possible to put the page's building blocks (images, text, callouts, and so on) in an immutable relation to one another. [Portable Document Format (PDF)](https://en.wikipedia.org/wiki/PDF), first developed in the early 1990s at Adobe Systems as a proprietary [page description language](https://www.computerhope.com/jargon/p/pdl.htm), is by now the most common means of reproducing the immutability of print documents for electronic media. (It's been an open standard since 2008.) 
+
+But on the web, immutability comes at a steep price: the genius of HTML's fluidity lies in its adaptability (also known as [responsiveness](https://www.w3schools.com/css/css_rwd_intro.asp)) across the range of browsers, screen sizes, and device types, and in the power it gives users to control their own experience. That power is of particular importance to users who need it because of a disability. The web is awash in PDFs whose tightly fixed design comes at the expense of graceful scalability from desktop to tablet to phone and whose underlying code fails to meet standards of accessibility.
+
+As [mentioned earlier]({{ site.url }}/mod-4/tables#make-a-table), early web designers often turned to tables to provide a grid-like framework for positioning HTML elements. But tables present accessibility issues of their own (screenreaders expect them to hold data), and are in any case much less flexible as a positioning tool than CSS.
+
+Using CSS properties such as [position](https://www.w3schools.com/css/css_positioning.asp), [float](https://www.w3schools.com/css/css_float.asp), [align](https://www.w3schools.com/css/css_align.asp), and [display](https://www.w3schools.com/css/css_display_visibility.asp) (to name just a few of many), it's possible to create highly sophisticated, responsive web page layouts and&mdash;as you've already seen&mdash;adjust all aspects of a page's or even a site's design with a few changes to a style sheet.
 
 ## CSS comments
 
-## Where to learn more
+You know by now that you can [intersperse your HTML markup with comments]({{ site.url }}/mod-4/html-basics#create-an-html-file) that won't display in the browser.
 
-<!-- W3Schools, [A List Apart](https://alistapart.com/) -->
+Similarly, you can add comments to style rules in an external style sheet or in the `<style>` element within `<head>`. If you make a practice of annotating your rules to explain what they're designed to accomplish, you'll thank yourself down the road when you're looking to make adjustments. If you're collaborating with others on a site, they'll thank you, too.
+
+Use `/*` and `*/` as the bookends of your CSS comments, much as you use `<!--` and `-->` as your bookends for HTML comments.
+
+```css
+/* Tomato-red background for festive paragraphs */
+
+p.festive {
+    font-family: Arial;
+    background-color: #ff6347;
+    color: #ffffff;
+}
+```
+
+## Learn more
+
+Begun as an internet mailing list in 1997, [A List Apart](https://alistapart.com) is a web magazine devoted to exploring all aspects of web design, from the conceptual to the technical to the [ethical](https://alistapart.com/article/daily-ethical-design/).
