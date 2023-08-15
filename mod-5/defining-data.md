@@ -14,11 +14,11 @@ From [merriam-webster.com](https://www.merriam-webster.com/dictionary/data):
 
 Long story short: there's no right answer. In English, you'll encounter *data* sometimes as a singular (mass) noun and sometimes as a plural one. Occasionally context seems to make one or the other choice more natural. Unless you're writing for publication, it's all right to go back and forth between them.
 
-However you construe *data* in English, it's useful to remember that in Latin it's the plural of *datum*, a "(thing) given." Thus, one way to understand data is as *things*. Perhaps because data plays such a large role in the natural and social sciences, there's a tendency to associate data with numbers. According to [etymonline.com](https://www.etymonline.com/word/datum#etymonline_v_29276), *data* enters the English language in the 17th century, around the time of the Western [scientific revolution](https://en.wikipedia.org/wiki/Scientific_Revolution). From the 1890s it takes on the now familiar sense of "numerical facts collected for future reference"&mdash;perhaps (since the 1960s), in a computer *database*.
+However you construe *data* in English, it's useful to remember that, as we've just seen, in Latin it's the plural of *datum*, a "(thing) given." Thus, one way to understand data is as *things*. Perhaps because data plays such a large role in the natural and social sciences, there's a tendency to associate data with one type of thing: numbers. According to [etymonline.com](https://www.etymonline.com/word/datum#etymonline_v_29276), *data* enters the English language in the 17th century, around the time of the Western [scientific revolution](https://en.wikipedia.org/wiki/Scientific_Revolution). From the 1890s it takes on the now familiar sense of "numerical facts collected for future reference"&mdash;perhaps (since the 1960s), in a computer *database*.
 
-But the world is full of *things* that aren't numerical. These things can be data, too. Geographical locations can be treated as data. So can proper names and street addresses. So can the words in a dictionary or a poem or a novel.
+But the world is full of things that aren't numerical. These things can be data, too. Geographical locations can be treated as data. So can proper names and street addresses. So can the words in a dictionary or a poem or a novel.
 
-## Research Data
+## Research data
 
 The quotations below offers a variety of perspectives on research data in particular.
 
@@ -43,7 +43,7 @@ The quotations below offers a variety of perspectives on research data in partic
 
 Broadly, we can understand research data as **materials or information necessary to come to a conclusion.**  What constitutes such materials and information will depend on the project in question.
 
-## Forms of Data
+## Forms of data
 
 Just as there are many possible sources of data, there are many ways to represent data. Here are some examples:
 
