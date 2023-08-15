@@ -52,8 +52,8 @@ Module 2: The Command Line
 Module 3: What is Text?  
 Module 4: Internet and Web   
 Module 5: Working with Data  
-Module 7: Content Management: WordPress and Omeka  
-Module 8: A Very Brief Introduction to the Python Programming Language
+Module 6: Content Management: WordPress and Omeka  
+Module 7: A Very Brief Introduction to the Python Programming Language
 
 ## Improving the course
 
