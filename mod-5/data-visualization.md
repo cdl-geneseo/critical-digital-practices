@@ -1,5 +1,5 @@
 ---
-title: Data Visiualization
+title: Data Visualization
 layout: default
 parent: Working with Data
 nav_order: 7
