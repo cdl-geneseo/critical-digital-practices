@@ -25,15 +25,9 @@ Kitty,Kitty
 Foots,Smith
 Tiger,Jaws
 ```
-If we opened this file in a spreadsheet, each line would become a row. The first now would contain our column headings, and subsequent rows would contain first and last names of cats. It might look something like this:
+Notice that the commas don't have to align from one row to the next as column lines do in a spreadsheet. Notice also that there's no punctuation at the end of each line; the line-end marks the end of the row. If we opened this file in a spreadsheet, each line would become a row. The first row would contain our column headings, and subsequent rows would contain first and last names of cats. It would look something like this:
 
-| 1 | First Name | Last Name |
-| 2 | Smally     | McTiny    |
-| 3 | Kitty      | Kitty     |
-| 4 | Foots      | Smith     |
-| 5 | Tiger      | Jaws      |
-
-Notice that the commas don't have to align from one row to the next as they do in a spreadsheet. Notice also that there's no punctuation at the end of each line; the line-end marks the end of the row.
+![Cats data as viewed in a spreadsheet](../assets/librecalc_cats.png)
 
 If commas are being used by the CSV format to separate values, what happens if one of our values contains one or more commas? Let's imagine a different data set, one with names and (somewhat fanciful) addresses:
 
@@ -44,7 +38,7 @@ Kitty Kitty, "Jessie's house, next door"
 Foots Smith, "Sal's house, across the street"
 Tiger Jaws, My room 
 ```
-To prevent the commas in the first three addresses from being interpreted as separators, we enclose each entire address value in quotation marks. We can omit the quotation marks for the fourth address, although no harm will come from using them there as well.
+To prevent the commas in the first three addresses from being interpreted as separators, we enclose each entire address value in quotation marks. We can omit the quotation marks for the fourth address, although no harm would come from using them there as well.
 
 Another approach we could take is to use `\` as an escape character before the non-separator commas, marking them as not to be understood as separators, thus:
 
@@ -55,6 +49,7 @@ Kitty Kitty, Jessie's house\, next door
 Foots Smith, Sal's house\, across the street
 Tiger Jaws, My room 
 ```
+Most spreadsheet programs will open `.csv` files and ask you to confirm that you'd like the program to recognize commas as your value separators. (Other separators are possible for storing minimally structured values in plain text. Another common separator is the `tab` character. Tab-separated values files usually use the extension `.tsv` in their names. Broadly, they operate just the way comma-separated values files do, with `tab` playing the role that commas do in `.csv` files.)
 
 ## XML
 
