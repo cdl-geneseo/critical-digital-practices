@@ -10,7 +10,7 @@ Visualization is a potent way to tell a story with your data.
 
 W.E.B. Du Bois' [data portraits](https://www.loc.gov/pictures/search/?q=%22lot%2011931%22%20NOT%20medal&st=grid&co=anedub&loclr=blogpic) included in the [the Exhibit of American Negroes](https://en.wikipedia.org/wiki/The_Exhibit_of_American_Negroes_) at the Paris Exhibition of 1900 illustrate the power of effective visualization. With compelling hand-drawn graphics, Du Bois tells the story of what it means to be Black in post-Emancipation America as he translates sociological research and census data to reach beyond the academy. On the arts website [Hyperallergic](https://hyperallergic.com/), Jasmine Weber has described ["How W.E.B. Du Bois Meticulously Visualized 20th-Century Black America."](https://hyperallergic.com/476334/how-w-e-b-du-bois-meticulously-visualized-20th-century-black-america/)
 
-Different types of visualization work best for different types of analysis. The table below, reproduced from the CUNY DHRI-Curriculum GitHub repository ["Data Literacies,"](https://github.com/DHRI-Curriculum/data-literacies) (licensed [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)), offers some examples.
+Different types of visualization work best for different types of analysis. The table below, reproduced with minor modifications from the CUNY DHRI-Curriculum GitHub repository ["Data Literacies,"](https://github.com/DHRI-Curriculum/data-literacies) (licensed [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)), offers some examples.
 
 <table>
     <tr>
