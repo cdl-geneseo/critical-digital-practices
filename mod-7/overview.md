@@ -6,4 +6,4 @@ has_children: true
 ---
 # A Very Brief Introduction to the Python Programming Language
 
-Coming soon.
+Coming in 2024.
