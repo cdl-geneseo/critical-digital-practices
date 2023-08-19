@@ -84,6 +84,8 @@ Omeka uses software called ImageMagick by default to create thumbnails and other
 
 MAMP for Mac comes with this tool installed, but you'll need to tell Omeka where to find it. The path should be `/Applications/MAMP/Library/bin`. Under Settings > General in the Dashboard, drop that path into the field labeled "ImageMagick Directory Path". Click the "Test" button to confirm that the path works.
 
+![Testing the ImageMagick directory path](../assets/omeka_imagemagick_path_mac.png)
+
 In MAMP for Windows, we'll want to take a different approach. In your GUI or a terminal window, navigate to your Omeka installation folder inside `htdocs`, and from there navigate to `application > config`. Locate the file `config.ini` inside the `config` directory, and open it in VS Code or another text editor. Scroll down to find the "Derivative Images" portion of the file, and locate this line:
 
 ```ini
