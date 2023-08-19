@@ -8,41 +8,47 @@ parent: WordPress and Omeka
 
 ## 1. Download WordPress
 
-Download the WordPress software from [wordpress.org](https://wordpress.org/download/). It will download as a zip file, most like to `~/Downloads`. 
+Download the WordPress software from [wordpress.org](https://wordpress.org/download/). It will download as a zip file, most likely to `~/Downloads`. 
 
-On a Mac, you can simply find the zip file in your GUI, move it to `/Applications/MAMP/htdocs` (Mac), and double-click it to unzip it. This will create a folder named `wordpress` alongside the zip file in `htdocs`.
+## 2. Move the zip to MAMP's htdocs folder and unzip
 
-In Windows, navigate to your Downloads folder and right-click on the zip file to extract the contents by selecting "Extract all". Don't change the destination where the files will be extracted.
+On a Mac, you can simply find the zip file in your GUI, drag it to `/Applications/MAMP/htdocs` (Mac), and double-click it to unzip it. This will create a folder named `wordpress` alongside the zip file in `htdocs`.
 
-![Context menu in Windows showing uption to "Extract all"](../assets/windows-extract.png)
+In Windows, navigate to your Downloads folder, right-click on the zip file, and click "Move to" to navigate to `C:\MAMP\htocs` and move the zip file there.
 
-When the extraction is completed, you'll find yourself with a folder named `wordpress` inside the destination. Use the "Move to" button to move the folder to `C:\MAMP\htdocs`.
+!["Move to" button in File Explorer and wordpress folder to be moved](../assets/wp-moveto.png)
 
-!["Move to" button in File Explorer and wordpress folder to be moved](../assets/windows-wp-extract-in-downloads.png)
+Once you've moved the zip file to `htdocs`, right-click on it, and from the context menu choose "Extract all". **Set the destination path to** `C:\MAMP\htdocs`. Click **Extract**.
 
-Once you have the `wordpress` folder inside `htdocs`, take a peek inside the folder. Within, you'll see all the files and subfolders that make WordPress do its thing. 
+![View of Windows dialog showing the destination path for extracted files, htdocs](../assets/wp-windows-extract-htdocs.png)
+
+When the extraction is completed, you'll find yourself with a folder named `wordpress` inside `htdocs`.
+
+## 3. Check your results
+
+Take a peek inside the `wordpress` folder. Inside it (whether in Windows or macOS), you'll see all the files and subfolders that make WordPress do its thing. 
 
 ![WordPress files as seen in macOS Finder](../assets/wp-files.png)  
 *In this screenshot, the macOS finder shows the top-level WordPress files and folders in the leftmost column, with the contents of the `wp-content` subfolder showing in the middle column and the contents of the `themes` subfolder within it showing in the rightmost column.*
 
 If you're seeing something like the above, you can safely delete the zip file.
 
-## 2. Make the enclosing folder your document root
+## 4. Make the WordPress installation folder your document root
 
 Launch MAMP, and, before you start up your Apache and MySQL servers, go to Preferences and set the document root as `Applications > MAMP > htdocs > wordpress` (Mac) or `C:\MAMP\htdocs\wordpress` (Windows). Later, we'll have an `omeka` folder inside `htdocs` alongside the `wordpress` one. Changing the document root from one to the other will enable us to switch back and forth between WordPress and Omeka. After changing the document root, start up the Apache and MySQL servers.
 
 {: .tip}
 If the servers start up automatically when you launch the application, shut them down before changing the document root. Once you've made the change, start the servers up again. When you have a chance, you may want to go into the MAMP preferences and disable server startup on launch. You can just start the servers manually each time you start up MAMP.
 
-## 3. Create a database
+## 5. Create a database
 
 Now it's time to create the database that WordPress will use to store its content. From MAMP's WebStart page, go to Tools > phpMyAdmin, click the "Databases" tab, enter `wordpress` as your database name, and make sure that `utf8_general_ci` is selected from the dropdown. Then click "Create". Your database is now created.
 
-## 4. Set up WordPress
+![View of phpMyAdmin database screen](../assets/wp-create-db.png)
 
-On the MAMP WebStart page, click the "My Website" link, or point your browser to `localhost:8888` (Mac) or `localhost/MAMP/` (Windows). You should see a WordPress page asking you to choose a language.
+## 6. Set up WordPress
 
-![WordPress page asking for a choice of language](../assets/wp-choose-language.png)
+On the MAMP WebStart page, click the "My Website" link, or point your browser to `localhost:8888` (Mac) or `localhost/MAMP/` (Windows). You should see a WordPress page asking you to choose a language. Choose a language and click "Continue".
 
 After choosing a language, you'll be prompted to make sure you have some information about your database.
 
@@ -63,9 +69,11 @@ Click **Submit**.
 {: .tip}
 If at any point in the WordPress setup process, you get the message "Error establishing a database connection" in your browser, retrace your steps and make sure you properly followed the instructions for installing MAMP, setting MAMP preferences, creating your database, and filling out the database connection information for WordPress.
 
-If WordPress succeeded in connecting to your database, you'll see a message with the button "Run the installation". Click the button.
+If WordPress succeeded in connecting to your database, you'll see a message with a button to **Run the installation**. Click the button.
 
-## Create your login credentials
+![WordPress dialog to run the installation](../assets/wp-all-right-sparky.png)
+
+## 7. Create your login credentials
 
 The final step is to complete the short form asking for a site name, a username, a password, and an email address. Don't sweat the site name: you can change it down the road. Do be sure to record your username and password somewhere so that you don't find yourself locked out of your site. (Supplying your email address should enable you to get a recovery email if you do.) 
 
@@ -76,7 +84,7 @@ When the installation finishes, you'll get a message with "Success!" at the top 
 You'll land at the WordPress Dashboard. This is the site's back end, where you can customize its appearance, add plugins, and create new pages and posts. 
 
 {: .tip} 
-Note the Dashboard's location in your browser: `localhost:8888/wp-admin` (Mac) or `localhost/MAMP/wp-admin`. You can always get to the login screen by using the admin address, even if you don't include a "log in" button on the site. The site itself will be at `localhost:8888` or `localhost/MAMP/`.
+Note the Dashboard's location in your browser: `localhost:8888/wp-admin` (Mac) or `localhost/wp-admin` (Windows). You can always get to the login screen by using the admin address, even if you don't include a "log in" button on your site. The site itself will be at `localhost:8888` (Mac) or `localhost` (Windows).
 
 ![WordPress Dashboard](../assets/wp-dashboard.png)
 
