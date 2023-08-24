@@ -141,7 +141,7 @@ cd ..
 ```
 Type `pwd` to see where you are.
 
-## Time-saver: &#x25b2;
+## Time-saver: up arrow
 
 If you followed the instructions above, you should now be in `some folder`, which is inside `critical-digital`, which is inside your home folder. You now have at least three ways to get back home. *Don't use any of them yet!* First review them, then read on before making your next move.
 
