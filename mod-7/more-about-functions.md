@@ -32,7 +32,7 @@ We follow `def` with our chosen function name. The [naming conventions](https://
 
 We end the first line with a colon (`:`), then indent the next line by one or more spaces (four is common). This next line describes what the function will "do." In our case, we want the function to `print` the result of adding `1` to our input, `x`. We're asking our function to do only one task. In reality, functions typically consist of a list of tasks that will be executed in sequence.
 
-Omitting the colon and forgetting to indent are two common errors when you first start to write functions. Python will complain with a syntax error message if you do either.
+Omitting the colon and forgetting to indent are two common errors when you first start to write functions. Python will complain with `SyntaxError` if you do the first and `IndentationError` if you do the second.
 
 After adding the function to `myfunctions.py`, save the file.
 
@@ -73,7 +73,9 @@ def greet():
     print("Hello! How are you today?")
 ```
 
-*Save the file*. Return to your terminal, and at the Python prompt type
+Save the file. 
+
+Return to your terminal, and at the Python prompt type
 
 ```zsh
 >>> from myfunctions import greet
