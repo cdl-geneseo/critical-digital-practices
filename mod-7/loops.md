@@ -136,3 +136,27 @@ S
 >>> 
 ```
 Our output is the first letter of each title.
+
+## List comprehension
+
+A handy variant of the loop syntax we've been using so far is called **list comprehension**. It's more compact and doesn't require code indentation. That doesn't make it better. The best syntax in any given situation will depend on what you're trying to accomplish. But it's worth a mention here.
+
+Instead of 
+
+```zsh
+>>> for title in toRead:
+...     print(title[0])
+```
+using list comprehension, we would write:
+
+```zsh
+>>> [title[0] for title in toRead]
+```
+
+Give it a try. Here's the result you should get:
+
+```zsh
+>>> [title[0] for title in toRead]
+['W', 'B', 'T', 'S', 'S']
+```
+As you can see, we put our list comprehension code within list brackets `[]`. The REPL prints the output in the form of a list as well.
