@@ -46,14 +46,14 @@ python commencement.py
 
 Your output should look like this:
 
-```zsh
+```
 python commencement.py
 Let me help you figure out where to go for your post-commencement celebration. What's your major?
 
 ```
 Type a major, followed by `enter`, and see what you get. It might be something like this:
 
-```zsh
+```
 python commencement.py
 Let me help you figure out where to go for your post-commencement celebration. What's your major?
 Biology
