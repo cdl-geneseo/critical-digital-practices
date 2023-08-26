@@ -29,7 +29,7 @@ To avoid confusing yourself, you'll probably do best to adopt a consistent solut
 
 ## Print a list
 
-Navigate in your terminal to `~/critical-digital` or wherever you're storing your practice files for this course and create a new file there, `loop.py`. Copy and paste the code below into the file.
+Navigate in your terminal to `~/critical-digital` or wherever you're storing your practice files for this course and create a new file there, `books.py`. Copy and paste the code below into the file.
 
 ```python
 toRead = ['Walden', 'Broad Band', 'The Information', 'Surveillance Capitalism', 'Stamped from the Beginning']
@@ -39,7 +39,7 @@ print(toRead)
 
 Save the file.
 
-After confirming that you're in the same directory, in your terminal, as the file `loop.py`, type `python loop.py` at the *terminal* prompt (don't start a Python session). You should see the list printed to your terminal.
+After confirming that you're in the same directory, in your terminal, as the file `books.py`, type `python books.py` at the *terminal* prompt (don't start a Python session). You should see the list printed to your terminal.
 
 Now go back into the file and comment out the second line. Putting a hashtag (`#`) at the beginning of a line of Python code will cause the line to be treated as a comment rather than as code.
 
@@ -67,17 +67,17 @@ Save the file.
 
 Two of our four new lines use `#` not to "comment out" code but to provide genuine commentary on our code. As with HTML and CSS, adding comments like this to your code&mdash;especially as your code grows more complex&mdash;will help you remember what different chunks of your code are intended to accomplish, and will prove invaluable to others with whom you choose to share that code later on.
 
-If you didn't really pay attention to the comments you pasted into `loop.py` just now, go back and read them carefully. Ask yourself what output you're likely to get when you run this new bit of code.
+If you didn't really pay attention to the comments you pasted into `books.py` just now, go back and read them carefully. Ask yourself what output you're likely to get when you run this new bit of code.
 
 Ready? Let's do it. At the terminal prompt, type
 
 ```zsh
-python loop.py
+python books.py
 ```
 Here's what the result should look like:
 
 ```zsh
-python loop.py
+python books.py
 5
 ```
 `5` is the value `list_length`, the variable we set to store the value of `len(toRead)`. Our list contains 5 elements.

@@ -12,6 +12,8 @@ A **for loop** iterates over a series of items and performs the same action on e
 
 A **while loop** repeats a task or process until a specified condition has been met.
 
+In both cases, once the loop has completed (because the action has been taken on each relevant item or the specified condition has been met), the program exits the loop and moves on to the next line of code. If the loop has been improperly written, and the program can't exit it to move on, the program becomes stuck in an **infinite loop**. 
+
 In this section, we'll focus on the Python for loop.
 
 ## Write a for loop
@@ -37,8 +39,8 @@ Hitting `enter` should return you to the prompt:
 At the waiting prompt, type:
 
 ```zsh
-for book in toRead:
-    print("Remember to read " + book)
+for title in toRead:
+    print("Remember to read " + title)
 ```
 
 Hit `enter` *twice*. The first time you hit it, the REPL will simply return three dots. Your for loop won't run until you hit `enter` that second time. Altogether, your session should look like this:
@@ -97,7 +99,7 @@ o
 ```
 Interesting! `"hello"` is not a list; it's a string. Yet we can iterate over the characters in a string, just as we can iterate over the elements in a list.
 
-If you're suspecting that this means strings, like lists are indexed, you're right! That means we can access characters in the string by their index (don't forget that space is a character, too), and that we can slice on a string. For example:
+If you're suspecting this means that strings, like lists, are indexed, you're right! The fact that strings are indexed means that we can access characters in a string by their index (don't forget that space is a character, too), and that we can slice on a string. For example:
 
 ```zsh
 >>> greeting = "Hello, there!"
