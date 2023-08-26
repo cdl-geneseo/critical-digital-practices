@@ -91,17 +91,17 @@ That's where the `elif` statement, short for "else if", comes in. We can set an 
 
 Play around with the following program, changing the value of `field`, to see the different types of output you'll get. Try setting the value of `major` in the second line to some of the different values in the `elif` statements, and also to a variety of majors not mentioned in the `elif` statements, like Psychology.
 
-This exercise will be less tedious if, instead of writing the program in the REPL, you put it in an external file, say `orientation.py`, and run it from the terminal prompt (not the Python prompt) with
+This exercise will be less tedious if, instead of writing the program in the REPL, you put it in an external file, say `commencement.py`, and run it from the terminal prompt (not the Python prompt) with
 
 ```zsh
-python orientation.py
+python commencement.py
 ```
-Remember to save `orientation.py` each time you change it, before re-running the program.
+Remember to save `commencement.py` each time you change it, before re-running the program.
 
 The program:
 
 ```python
-leadIn = "Your post-graduation celebration will be in "
+leadIn = "Your post-commencement celebration will be in "
 major = "English"
 
 if major == "English":
