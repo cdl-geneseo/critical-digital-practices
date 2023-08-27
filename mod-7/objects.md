@@ -92,6 +92,15 @@ We can use the `len()` function with sets.
 >>> len(unique)
 131
 ```
-Some string methods you might find yourself using quite a bit are `.lower()`, which converts all letters in a string to lowercase, `.upper()`, which converts all letters to uppercase, `.title()`, which capitalizes the first leter of each word in a string (title case), `.replace()`, which enables you to search and replace within the string, `.rfind()`, which will return the last position a search term is found within the string, and `.strip()`, which will strip white space from both ends of a string.
+We can't use the `.sort()` method with sets. But if we want to sort this set alphabetically, we *can* use the function `sorted()`. Here's what we get when we do:
+
+```zsh
+>>> sorted(unique)
+['1835,', 'A', 'By', 'Easton,', 'He', 'Hillsborough,', 'I', 'Maryland.', 'Talbot', 'The', 'They', 'Tuckahoe,', 'a', 'about', 'accurate', 'age,', 'age.', 'ages', 'ages.', 'all', 'allowed', 'and', 'any', 'as', 'authentic', 'be', 'between', 'birthday.', 'born', 'can', 'cherry-time,', 'childhood.', 'children', 'come', 'concerning', 'containing', 'could', 'county,', 'deemed', 'deprived', 'do', 'during', 'estimate', 'even', 'ever', 'evidence', 'fall-time.', 'far', 'from', 'give', 'harvest-time,', 'have', 'having', 'hearing', 'his', 'horses', 'ignorant.', 'impertinent,', 'improper', 'in', 'information', 'inquiries', 'is', 'it', 'it.', 'keep', 'know', 'knowledge', 'larger', 'little', 'make', 'makes', 'master', 'masters', 'me', 'met', 'miles', 'most', 'my', 'near', 'nearer', 'nearest', 'never', 'no', 'not', 'now', 'of', 'old.', 'on', 'or', 'ought', 'own', 'part', 'planting-time,', 'privilege.', 'record', 'remember', 'restless', 'same', 'say,', 'seen', 'seldom', 'seventeen', 'slave', 'slaves', 'some', 'source', 'spirit.', 'spring-time,', 'such', 'tell', 'than', 'the', 'their', 'theirs,', 'this,', 'thus', 'time', 'to', 'twelve', 'twenty-eight', 'twenty-seven', 'unhappiness', 'want', 'was', 'white', 'who', 'why', 'wish', 'within', 'years']
+```
+
+If you look closely, you'll see that our set treats `'A'` and `'a'` as two different set elements. It does the same with `'The'` and `'the'`. If we wanted to be rigorous about counting unique words, we'd probably want to treat `The/the` and `A/a` as one word each. However, searching by eye for set elements that differ only by case is tedious and error-prone. We would have been well served by using the string method `.lower()` on our original string, before converting it to a list. This method converts all letters in a string to lowercase.
+
+Other string methods you can use with strings include `.upper()`, which converts all letters to uppercase, `.title()`, which capitalizes the first letter of each word in a string (title case), `.replace()`, which enables you to search and replace within a string, `.rfind()`, which will return the last position a search term is found within a string, and `.strip()`, which will strip white space from both ends of a string.
 
 W3Schools has a useful [list of string methods in Python](https://www.w3schools.com/python/python_strings_methods.asp).
