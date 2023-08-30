@@ -59,5 +59,3 @@ Collectively, the decentralized network of federated, interoperable web publishi
 ## The future of interoperability
 
 The future of interoperability in digital technology is by no means assured. As we've seen, it doesn't exist by accident, and where it does exist, only the hard work of standards bodies, and the freedom to access and use the standards they maintain, makes it "the default state of the world." This is true not only for interoperability on the internet but also&mdash;to return to the topic of the current module&mdash;interoperability among the documents we create on our computers every day, interoperability made possible by standards such as ASCII and Unicode.
-
-Pressures against interoperability can come from various sources&mdash;legislatures as well as profit-seeking corporations. We'll have occasion to look at more of these pressures in the module Open for Learning.
