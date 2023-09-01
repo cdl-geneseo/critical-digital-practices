@@ -63,7 +63,7 @@ Once you've created a folder to hold your plain text copy of *Walden* and moved 
 
 `curl https://www.gutenberg.org/files/205/205-0.txt > thoreau.txt`
 
-The file will be saved in the folder you created. If you switch over to your Finder or File Explorer and navigate to that folder, you should see a new file there, `thoreau.txt`. (If you're running Ubuntu for Windows, this will be the home folder of your Linux installation, not your Windows home folder. For more on navigating your Ubuntu installation, see the Appendix.)
+The file will be saved in the folder you created. If you switch over to your Finder or File Explorer and navigate to that folder, you should see a new file there, `thoreau.txt`. (If you're running Ubuntu for Windows, this will be the home folder of your Linux installation, not your Windows home folder.)
 
 You can right-click on it and tell your computer to open it in VS Code. Or, from the command line, you can type:
 

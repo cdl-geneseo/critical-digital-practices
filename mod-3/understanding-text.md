@@ -52,7 +52,10 @@ The `.docx` file weighs in at 13036 bytes, i.e., a little over 13K. The `.txt` f
 
 ![Word document byte contents as seen at the command line](../assets/xxd-b.png)
 
-(**Note:** Your shell may not have `xxd` installed, so you may not be able to run this command on your own machine.) It would appear that the content we care about represents well under 1% of what's in the Word file. The other 99+% is providing valuable functionality, but it may also make it harder for us to use the content we care about in other contexts.
+It would appear that the content we care about represents well under 1% of what's in the Word file. The other 99+% is providing valuable functionality, but it may also make it harder for us to use the content we care about in other contexts.
+
+{: .note }
+Your shell may not have `xxd` installed, so you may not be able to run this command on your own machine.
 
 ## The interoperability of plain text
 
