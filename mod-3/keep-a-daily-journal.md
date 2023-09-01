@@ -244,7 +244,7 @@ The Markdown heading syntax itself calls attention to the similarity. Think of y
 - to view just the lines at the end (tail) of the file, use `tail`
 - e.g., `$ head somefile.txt` to print just the first few lines to stdout
 ```
-You don't have to be super rigid about these headings/tags. In the example above, the level-two heading could read "head and tail at command line" or some such. But if you consistently include the key words "command line" in every heading that describes something you learned about the command line, you'll quickly surface all these headings in a multi-file search. (You'll learn a couple of ways to do such searches in a later module.)
+You don't have to be super rigid about these headings/tags. In the example above, the level-two heading could read "head and tail at command line" or some such. But if you consistently include the key words "command line" in every heading that describes something you learned about the command line, you'll quickly surface all these headings in a multi-file search. <!-- (You'll learn a couple of ways to do such searches in a later module.) -->
 
 ## P.S. Don't forget to write!
 
