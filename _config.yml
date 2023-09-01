@@ -16,3 +16,9 @@ callouts:
     color: green
   alt-warning:
     color: red
+  important:
+    title: Important
+    color: blue
+  note:
+    title: Note
+    color: purple
