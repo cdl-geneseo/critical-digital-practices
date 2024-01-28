@@ -28,7 +28,7 @@ Once you've launched the application, you'll want to take one final step. Open t
 
 ![Settings menu in Git Bash showing Properties option](../assets/git-bash-properties.png)
 
-In the Properties dialog that comes up, check the box for "Use Ctrl+Shift+C/V as Copy/Paste." Activating this property will enable you to copy-paste from other applications into your terminal window. *Note that when copying from or pasting into the terminal window, you need to hold down the `shift` key *and* the `control` key while typing `V`.
+In the Properties dialog that comes up, check the box for "Use Ctrl+Shift+C/V as Copy/Paste." Activating this property will enable you to copy-paste from other applications into your terminal window. *Note that when copying from or pasting into the terminal window, you need to hold down the `shift` key **and** the `control` key while typing `V`*.
 
 ![Properties dialog in Git Bash terminal](../assets/copy-paste-properties-git-bash.png)
 

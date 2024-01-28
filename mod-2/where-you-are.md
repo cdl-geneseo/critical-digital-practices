@@ -34,7 +34,7 @@ At the command line, we can represent any location in the file system as a *path
 
 ```zsh
 /Users/your-username/Documents/some-folder/bar.txt # macOS
-/Users/c/your-username/Documents/some-folder/bar.txt # Git Bash
+/c/Users/your-username/Documents/some-folder/bar.txt # Git Bash
 ```
 As we've already seen, Ubuntu for Windows installs its files outside the home directory that lives within `Users`. It creates a new directory called `home` to serve as the top level, and within it a directory named with your username. For the sake of illustration, let's say you created a `Documents` directory under your username directory and, in it, you created `some-folder` and `bar.txt`. The path to `bar.txt` in your Ubuntu-Windows installation would then be
 
