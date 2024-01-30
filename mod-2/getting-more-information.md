@@ -23,7 +23,8 @@ Another useful option is `-a`, for "all." Folders often contain "hidden" files&m
 
 ![Long-list display showing hidden files](../assets/ls-la.png)
 
-&#x2757;&#x2757;&#x2757; ***Hidden files are hidden for a reason, and the reason a file is hidden may well be that you shouldn't edit it, move it, rename it, or make any other changes to it unless you're absolutely certain you know what you're doing. Exercise caution.***
+{: .warning}
+Hidden files are hidden for a reason, and the reason a file is hidden may well be that you shouldn't edit it, move it, rename it, or make any other changes to it unless you're absolutely certain you know what you're doing. Exercise caution.
 
 You can learn more about `ls` and its options, including how to read the file permissions mentioned above, on [this page](https://www.computerhope.com/unix/uls.htm).
 
