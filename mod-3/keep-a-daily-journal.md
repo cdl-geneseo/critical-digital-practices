@@ -48,11 +48,16 @@ This approach avoids the typo problem, but it's just as tedious as the manual ap
 
 We can write a very short script to create our daily journal document. We only have to write it once; after that, we just execute the script with a quick terminal command whenever it's time to do some journaling. Every time the script is run, a fresh plain-text document is created with the current date in the file name and the Markdown extension (`.md`) at the file name's end. Including hours and minutes in our time stamp will enable us to have more than one journal file for a single day should the need arise.
 
-Once you get the hang of writing scripts, you'll want to write a bunch of them. So let's begin by creating a folder to hold this script and future ones you'll write. Open a terminal window and use `pwd` to make sure you're in your home folder. If you're not, go there with
+We'll need a place for our daily journal files to live. So let's create a folder inside our home folder named `journal`. First, make sure you're in your home folder with `pwd`. If you're somewhere else, get to your home folder with `cd ~`.
+
+Now create the `journal` folder using `mkdir`.
 
 ```zsh
-cd ~
+mkdir journal
 ```
+
+Once you get the hang of writing scripts, you'll want to write a bunch of them. So let's create another folder to hold this script and future ones you'll write. Check again that you're in your home folder with `pwd`. If you're somewhere else, get to your home folder with `cd ~`.
+
 Next, create a folder for your scripts. You can call it anything you want. Maybe `scripts` is a good name?
 
 ```zsh
