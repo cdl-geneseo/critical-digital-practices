@@ -7,7 +7,7 @@ nav_order: 4
 
 # HTTP and URL
 
-Open your browser of choice and, in the browser location bar, type or past this URL:
+Open your browser of choice and, in the browser location bar, type or paste this URL:
 
 `https://geneseo.edu/cdl`
 
@@ -20,7 +20,7 @@ Depending on the operating system, your browser, and your browser settings, the 
 
 Despite this variation, in all three cases your browser has sent a **request** for a file on a server whose **domain name** is `geneseo.edu`. Your request, and the file that the server has delivered in response, have used the communication protocol that was part of Tim Berners-Lee's [original conception of a "world wide web"]({{ site.url }}/mod-4/what-is-the-web#birth-of-the-web): the **Hypertext Transfer Protocol**, abbreviated **HTTP**.
 
-In all three cases, the same file has been delivered, a plain-text file using the **markup language** we [looked at earlier]({{ site.url}}/mod-3/kinds-of-text#html), **Hypertext Markup Language**, or **HTML**, short. HTML, too, was part of Berners-Lee's original conception.
+In all three cases, the same file has been delivered, a plain-text file using the **markup language** we [looked at earlier]({{ site.url}}/mod-3/kinds-of-text#html), **Hypertext Markup Language**, or **HTML**, for short. HTML, too, was part of Berners-Lee's original conception.
 
 Berners-Lee originally used the term **URI** for the address to which a browser is pointed, short for **Uniform Resource Indentifier**. This term is still used as a generic name for several different types of addresses, names, or objects that may live on the web. A URL&mdash;short for **Uniform Resource Locator**&mdash;is one type of URI.
 
