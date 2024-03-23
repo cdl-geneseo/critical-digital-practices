@@ -63,7 +63,7 @@ You may be able to open the file in your system's default browser by simply doub
 
 The result will look pretty bare bones: The sentence, "This is an HTML document with one-sentence" looking rather lonely in the upper left of your browser window, probably in the Times font, on a white background.
 
-Notice that the address in your browser's location bar doesn't begin with `http://`  or or `https://` but with `file://`, and that the rest of the address is simply the path to the file on your machine. We saw the same thing before when ...
+Notice that the address in your browser's location bar doesn't begin with `http://`  or or `https://` but with `file://`, and that the rest of the address is simply the path to the file on your machine. We saw the same thing before when [you navigated your local file system through the browser]({{ site.url }}/mod-1/file-system#navigating-your-file-system-through-your-browser).
 
 Notice that this bit of your file is nowhere to be seen:
 
@@ -179,7 +179,7 @@ To ensure that your web content is accessible, you should never use formatting i
 
 ## Bold and italic text
 
-Let's say you want some of the text on your web page to appear in **boldface** font and some text be to appear in **italic**.
+Let's say you want some of the text on your web page to appear in **boldface** font and some text to appear in **italic**.
 
 ```html
 <p>This text will be <strong>bold</strong>.</p>
@@ -187,7 +187,7 @@ Let's say you want some of the text on your web page to appear in **boldface** f
 ```
 Here we've nested two elements, `<strong>` and `<em>` respectively, each within a `<p>`.
 
-In web pages written in earlier versions of HTML, it's common to see text styled in bold by using the `<b>` tag and text styled in italic using `<i>`. These tags still worked, but they've been **deprecated** by the World Wide Web Consortium (W3C). Consider the difference between the deprecated tags and the ones that have replaced them: `<b>` and `<i>` are *merely* formatting instructions; they have little if any semantic content. By contrast, `<strong>` says, "This text is of strong importance," while `<em>` says, "This text is being emphasized." Bold formatting for `<strong>` and italic formatting for `<em>` are, like the font sizes and weights of headings, simply default browser settings. In fact, we can tell the browser, using CSS, to format them in whatever way best suits our purpose.
+In web pages written in earlier versions of HTML, it's common to see text styled in bold by using the `<b>` tag and text styled in italic using `<i>`. These tags still work, but they've been **deprecated** by the World Wide Web Consortium (W3C). Consider the difference between the deprecated tags and the ones that have replaced them: `<b>` and `<i>` are *merely* formatting instructions; they have little if any semantic content. By contrast, `<strong>` says, "This text is of strong importance," while `<em>` says, "This text is being emphasized." Bold formatting for `<strong>` and italic formatting for `<em>` are, like the font sizes and weights of headings, simply default browser settings. In fact, we can tell the browser, using CSS, to format them in whatever way best suits our purpose.
 
 ## Block and inline elements
 
