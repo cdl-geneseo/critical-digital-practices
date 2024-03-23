@@ -142,7 +142,7 @@ p {
 }
 ```
 
-Or you can specify a color by using its [hexadecimal](https://www.computerhope.com/jargon/h/hex.htm) value on a scale that runs from `#000000` (black) to `#ffffff` (white). In this syntax, the first two values represent (in base 16, using digits 0-f) how much red is in the color; the second how much blue; the third how much green. The value ff in hexadecimal is the same as 255. Try this style rule in your practice file, for example:
+Or you can specify a color by using its [hexadecimal](https://www.computerhope.com/jargon/h/hex.htm) value on a scale that runs from `#000000` (black) to `#ffffff` (white). In this syntax, the first two values represent (in base 16, using digits 0-f) how much red is in the color; the second how much green; the third how much blue. The value ff in hexadecimal is the same as 255. Try this style rule in your practice file, for example:
 
 ```css
 p {
