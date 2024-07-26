@@ -54,7 +54,7 @@ If you do this and peek into `better-folder` with `ls`, you'll see that `my awes
 
 ## Moving things with mv
 
-You can use `mv` to move files and folders in the more familiar sense of relocating them to other folders. For example, you can use it move `my awesome file.txt"` out of `better-folder` and into `critical-digital`, two levels above. For this example, we'll use full paths:
+You can use `mv` to move files and folders in the more familiar sense of relocating them to other folders. For example, you can use it move `my awesome file.txt` out of `better-folder` and into `critical-digital`, two levels above. For this example, we'll use full paths:
 
 ```zsh
 mv ~/critical-digital/some\ folder/better-folder/my\ awesome\ file.txt ~/critical-digital/my\ awesome\ file.txt
