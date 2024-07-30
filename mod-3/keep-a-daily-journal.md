@@ -95,10 +95,10 @@ Here's what you should paste into the file. (Paste in all of it, including the l
 filename=$HOME/journal/journal_$( date '+%Y-%m-%d_%H-%M' ).md
 
 # Add a reader-friendly date inside the file
-echo "$( date '+%A, %B %d, %Y' )" >> $filename
+echo "$( date '+%A, %B %d, %Y' )" >> "$filename"
 
 # Open the file in VS Code
-code $filename
+code "$filename"
 ```
 After pasting the above into `journal.sh`, save the file. 
 
@@ -135,7 +135,7 @@ The last part of the path will create a file name that begins with `journal_`, i
 
 ```zsh
 # Add a reader-friendly date inside the file
-echo "$( date '+%A, %B %d, %Y' )" >> $filename
+echo "$( date '+%A, %B %d, %Y' )" >> "$filename"
 ```
 
 The next line of code uses `echo` and `date` to put the date inside your file itself, this time in a reader-friendly format that includes the day and omits hours and minutes (e.g., Thursday, June 22, 2023). Earlier, we used a single right-angle bracket (`>`) as a "redirect" to write contents to a new file. The double right-angle brackets in our script (`>>`) **append** content to an existing file. Instead of writing out the whole path to that existing file again, we reference it using the variable we created earlier.
@@ -144,7 +144,7 @@ The next line of code uses `echo` and `date` to put the date inside your file it
 
 ```zsh
 # open file in VS Code
-code $filename
+code "$filename"
 ```
 The final line of code opens the file in VS Code, where it's ready and waiting for you to start journaling. If you don't yet have VS Code's command line tools installed, you should comment this line out until you do. Just add a `#` to the beginning of the line. To open the file without using the `code` command, go to it in your GUI. You may have to right-click on it and tell it to open in VS Code rather than TextEdit or Notepad.
 
