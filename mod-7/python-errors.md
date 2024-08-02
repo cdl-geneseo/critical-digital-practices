@@ -16,11 +16,11 @@ When you ask Python to run a program or execute a line in the REPL, it will firs
 
 In the example below, the syntax error is a common one—mismatched single and double quotes, which is not allowed in Python. You can replicate the error for yourself by opening the REPL (type `python` in the command line) and entering the line after the `>>>` prompt.
 
-```zsh
+```python
 >>> print('This string has mismatched quotes. But Python will help us figure out this bug.")
   File "<stdin>", line 1
     print('This string has mismatched quotes. But Python will help us figure out this bug.")
-                                                                                            ^
+                                                                                          ^
 SyntaxError: EOL while scanning string literal
 ```
 
