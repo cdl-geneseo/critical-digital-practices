@@ -63,8 +63,7 @@ In a string, space isn't the absence of a character; it's a character itself. Tr
 Variables can be set to data types other than `int` and `str`, including `list` and similar data types that group data elements together (aka **arrays**).
 
 ```zsh
->>> books = ['Gender Trouble', 'Cruising Utopia', 'Living a
->Feminist Life']
+>>> books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
 
 >>> books
 ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
