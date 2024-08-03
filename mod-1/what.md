@@ -6,6 +6,9 @@ nav_order: 2
 ---
 # What is a Computer?
 
+{: .alt-warning}
+Have you read [Before You Start]({{ site.url }}/before-you-start )? If not, please [go there now]({{ site.url }}/before-you-start).
+
 In the age of artificial intelligence, we often see humans and computers set in opposition to one another, as in headlines asking whether computers will soon replace humans in some job category, or even develop super-powers that enable them to destroy humanity.
 
 In fact, however, the first computers *were* humans. The [word "computer"](https://www.etymonline.com/search?q=computer) is first recorded in English in the 1640's, meaning "one who calculates, a reckoner, one whose occupation is to make arithmetical calculations." In the twentieth century, human computers, writes Claire L. Evans, "prepared ballistics trajectories for the United States Army, cracked Nazi codes at Bletchley Park, crunched astronomical data at Harvard, and assisted numerical studies at nuclear fission on the Manhattan Project. Despite the diversity of their work, they had one thing in common. They were women" (*Broadband: The Untold Story of the Women Who Made the Internet*, Penguin, 2018).  
