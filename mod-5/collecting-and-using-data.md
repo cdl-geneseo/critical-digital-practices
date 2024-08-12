@@ -6,7 +6,7 @@ nav_order: 3
 ---
 # Collecting and Using Data
 
-Work with data commonly comprises four steps:
+Work with data commonly comprises five steps:
 
 1. Collection
 2. Processing or transformation 
@@ -14,7 +14,7 @@ Work with data commonly comprises four steps:
 4. Analysis
 5. Visualization
 
-Often, our work begins with a research **question** or **hypothesis**. We hope that **collecting** and **analyzing** relevant data will enable us to answer the question, or either confirm or disconfirm the hypothesis. The data as it initially comes to us (perhaps through our own observations, perhaps as reported by someone else) is said to be **"raw"** until it has been **processed** or **transformed** to put it in a form amenable to analysis and **"cleaned"** so as to eliminate irregularities, inconsistencies, gaps, and other issues that might impede analysis or throw off our results. Our analysis of the cleaned data may involve operations such as counting recurrences or calculating a mean or median in a set of numerical values. Finally, representing the results of our analysis in a **visualization** such as a graph or chart may help us better understand those results and communicate their significance effectively to others.
+Often, our work begins with a research question or hypothesis. We hope that **collecting** and analyzing relevant data will enable us to answer the question, or either confirm or disconfirm the hypothesis. The data as it initially comes to us (perhaps through our own observations, perhaps as reported by someone else) is said to be "raw" until it has been **processed** or **transformed** to put it in a form amenable to analysis and **"cleaned"** so as to eliminate irregularities, inconsistencies, gaps, and other issues that might impede analysis or throw off our results. Our **analysis** of the cleaned data may involve operations such as counting recurrences or calculating a mean or median in a set of numerical values. Finally, representing the results of our analysis in a **visualization** such as a graph or chart may help us better understand those results and communicate their significance effectively to others.
 
 ## An example
 
