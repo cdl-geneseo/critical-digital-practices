@@ -31,7 +31,7 @@ One other thing to watch for with TextEdit. On newer Macs, by default your TextE
 
 ## Visual Studio Code
 
-For this course, it's recommended that you install Microsoft's Visual Studio Code and use it for your text editing tasks. VS Code is free to use and has a host of advanced features that will simplify your workflow and help you better understand the structure of your plain text documents. To install it, follow [these instructions if you're on a Mac](https://www.curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/macos/) or [these instructions if you're using Windows](https://www.curriculum.dhinstitutes.org/installations/microsoft-visual-studio-code/windows/).
+For this course, it's recommended that you install Microsoft's Visual Studio Code and use it for your text editing tasks. VS Code is free to use and has a host of advanced features that will simplify your workflow and help you better understand the structure of your plain text documents. To install it, follow [these instructions](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/visual-studio-code.md).
 
 {: .important }
 Be sure to follow the instructions carefully! Be particularly careful to carry out Step 6 (Mac) or Step 7 (Windows) so that, once it's installed, you'll be able to invoke VS Code from the command line.
