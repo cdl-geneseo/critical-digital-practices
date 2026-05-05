@@ -4,7 +4,11 @@ layout: default
 nav_order: 1
 parent: WordPress and Omeka
 ---
-# Learning Outcomes: WordPress and Omeka
+# Module Description
+
+This module walks you through the process of installing two widely-used website content management tools, WordPress and Omeka, on your own machine so that you can have a sandbox for learning how to use either or maintain a development instance of a website locally.
+
+# Learning Outcomes
 
 At the completion of this module you should
 

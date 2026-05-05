@@ -22,3 +22,6 @@ callouts:
   note:
     title: Note
     color: purple
+  intro:
+    title:
+    color: purple

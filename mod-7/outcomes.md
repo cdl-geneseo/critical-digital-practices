@@ -4,7 +4,11 @@ layout: default
 parent: Python Brief Intro
 nav_order: 1
 ---
-# Learning Outcomes: Python Brief Intro
+# Module Description
+
+This module provides a very brief introduction to one of the most popular programming languages in use today, Python. The general approach of the module is derived from the [CUNY DHRI-Curriculum GitHub repository "Python,"](https://github.com/DHRI-Curriculum/python) licensed [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/). In some places, examples or explanations are reproduced with little or no modification.
+
+# Learning Outcomes
 
 At the completion of this module you should
 

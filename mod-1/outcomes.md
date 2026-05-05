@@ -4,7 +4,11 @@ layout: default
 parent: Meet Your Computer
 nav_order: 1
 ---
-# Learning Outcomes: Meet Your Computer
+# Module Description
+
+In this module, you'll get acquainted with such basics as the operating and file systems of your computer.
+
+# Learning Outcomes
 
 At the completion of this module, you should
 

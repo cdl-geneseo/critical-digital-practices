@@ -4,6 +4,10 @@ layout: default
 parent: What is Text?
 nav_order: 1
 ---
+# Module Description
+
+"Text" is a foundational word in the study of literature. In computing, we have to think about this word a little differently. This module shows you why and introduces you to a kind of computer text called "plain text." 
+
 # Learning Outcomes: What is Text?
 
 At the completion of this module you should
